@@ -113,6 +113,7 @@ export function MoveCard({
           {move.orientations.map(({ key, text }) => (
             <div
               key={key}
+              data-highlighted={highlight === key || undefined}
               className={cx(
                 "flex flex-col gap-1 rounded-control p-1",
                 highlight === key && "bg-surface-muted ring-2 ring-accent",

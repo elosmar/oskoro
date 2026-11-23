@@ -40,6 +40,24 @@ export interface TableBoardProps {
 
 type Tab = "mine" | "rival";
 
+/**
+ * Brings the highlighted face row into view after the card opens. Scrolls
+ * (doesn't move focus), skips if already visible, honors reduced motion.
+ */
+function scrollToHighlightedEffect() {
+  // Two frames: one for React to commit, one for <details> to lay out.
+  requestAnimationFrame(() =>
+    requestAnimationFrame(() => {
+      const row = document.querySelector<HTMLElement>("[data-highlighted]");
+      if (!row) return;
+      const { top, bottom } = row.getBoundingClientRect();
+      if (top >= 0 && bottom <= window.innerHeight) return;
+      const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      row.scrollIntoView({ block: "center", behavior: reduced ? "auto" : "smooth" });
+    }),
+  );
+}
+
 export function TableBoard({
   storageKey,
   me,
@@ -60,7 +78,10 @@ export function TableBoard({
   useEffect(() => saveGame(storageKey, state), [storageKey, state]);
 
   const face = faces[tab];
-  const setFace = (value: Orientation | null) => setFaces((f) => ({ ...f, [tab]: value }));
+  const setFace = (value: Orientation | null) => {
+    setFaces((f) => ({ ...f, [tab]: value }));
+    if (value) scrollToHighlightedEffect();
+  };
 
   const reset = () => {
     if (window.confirm(texts.resetConfirm)) dispatch({ type: "reset" });
