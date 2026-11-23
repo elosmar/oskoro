@@ -27,7 +27,8 @@
     "weakness": "Debilidad"
   },
   "footer": {
-    "unofficial": "Proyecto de fans no oficial. No está afiliado a Pokémon, Bandai ni Nintendo."
+    "unofficial": "Proyecto de fans no oficial. No está afiliado a Pokémon, Bandai ni Nintendo.",
+    "about": "Acerca de y créditos"
   },
   "team": {
     "title": "Elige 4 ataques",
@@ -74,5 +75,23 @@
     "increase": "Sumar",
     "tabs": "Cartas",
     "changeRival": "Cambiar rival"
+  },
+  "about": {
+    "title": "Acerca de",
+    "intro": "Oskoro es un proyecto de fans, gratuito, sin anuncios y no oficial, hecho como apoyo para jugar partidas físicas de Plakoro.",
+    "disclaimerTitle": "Aviso",
+    "disclaimer": [
+      "No está afiliado, patrocinado ni respaldado por Bandai, Bandai Spirits, The Pokémon Company, Nintendo, Creatures Inc. ni GAME FREAK inc.",
+      "Plakoro, Pokémon y los nombres de personajes son marcas registradas de sus respectivos dueños. ©Pokémon. ©Nintendo/Creatures Inc./GAME FREAK inc.",
+      "Oskoro no usa arte, logos ni diseños oficiales de cartas.",
+      "Si algún titular de derechos solicita cambiar o retirar contenido, se atenderá de inmediato."
+    ],
+    "creditsTitle": "Créditos",
+    "dataCredit": "Datos y traducciones de cartas: {plakorodb}, de Jollto y colaboradores, bajo licencia {license}. Los textos se adaptaron a formato JSON (estructura normalizada, marca de traducción de fans e inglés como respaldo). Uso no comercial.",
+    "codeCredit": "Código: © 2026 Osmar, bajo licencia MIT. {source}",
+    "sourceLink": "Código fuente",
+    "fanNames": "Los nombres de ataque marcados como \"Traducción de fans\" son propuestas de la comunidad y pueden cambiar si aparece una traducción oficial.",
+    "privacyTitle": "Privacidad",
+    "privacy": "Oskoro no tiene cuentas, cookies ni analítica. Los contadores de la partida se guardan solo en tu navegador, en esta pestaña, y se borran al cerrarla."
   }
 }

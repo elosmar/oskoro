@@ -3,8 +3,9 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
 import { LangSwitcher } from "@/components/LangSwitcher";
+import { ServiceWorkerRegister } from "@/components/ServiceWorkerRegister";
 import { getDictionary, isLang } from "@/i18n";
-import { LANGS } from "@/lib/data/schema";
+import { LANGS } from "@/lib/data/constants";
 import "../globals.css";
 
 export const dynamicParams = false;
@@ -42,7 +43,13 @@ export default async function LangLayout({ children, params }: LayoutProps<"/[la
           </div>
         </header>
         <main className="mx-auto w-full max-w-3xl flex-1 px-4 py-6">{children}</main>
-        <footer className="px-4 py-6 text-center text-xs text-muted">{t.footer.unofficial}</footer>
+        <footer className="space-y-1 px-4 py-6 text-center text-xs text-muted">
+          <p>{t.footer.unofficial}</p>
+          <Link href={`/${lang}/acerca/`} className="underline hover:text-foreground">
+            {t.footer.about}
+          </Link>
+        </footer>
+        <ServiceWorkerRegister />
       </body>
     </html>
   );

@@ -1,6 +1,6 @@
 "use client";
 
-import { useRouter, useSearchParams } from "next/navigation";
+import { useSearchParams } from "next/navigation";
 import { useState } from "react";
 import type { MoveCardLabels } from "@/components/MoveCard";
 import { format } from "@/lib/format";
@@ -20,7 +20,6 @@ export interface MoveSelectorProps {
 }
 
 export function MoveSelector({ lang, pokemonCode, moves, symbols, cardLabels, texts }: MoveSelectorProps) {
-  const router = useRouter();
   const searchParams = useSearchParams();
   const allowed = moves.map((m) => m.code);
 
@@ -33,7 +32,8 @@ export function MoveSelector({ lang, pokemonCode, moves, symbols, cardLabels, te
   const toggle = (code: string) => {
     const next = toggleMove(selected, code, allowed);
     setSelected(next);
-    router.replace(`?${setupQuery({ me: pokemonCode, moves: next })}`, { scroll: false });
+    // Native history: Next syncs useSearchParams without a server round trip.
+    window.history.replaceState(null, "", `?${setupQuery({ me: pokemonCode, moves: next })}`);
   };
 
   const full = selected.length >= TEAM_SIZE;

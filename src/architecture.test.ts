@@ -12,8 +12,10 @@ const read = (f: string) => readFileSync(path.join(SRC, f), "utf8");
 
 describe("design tokens", () => {
   it("keeps raw colors only in styles/tokens.css", () => {
+    // manifest.ts can't read CSS variables; it mirrors tokens.css by hand.
+    const allowed = [path.join("styles", "tokens.css"), path.join("app", "manifest.ts")];
     const offenders = files("**/*.{ts,tsx,css}")
-      .filter((f) => f !== path.join("styles", "tokens.css"))
+      .filter((f) => !allowed.includes(f))
       .filter((f) => /#[0-9a-fA-F]{3,8}\b|rgba?\(|hsla?\(/.test(read(f)));
     expect(offenders).toEqual([]);
   });

@@ -34,7 +34,11 @@ Queremos una webapp para jugar Plakoro en físico con cartas japonesas. Cada jug
    - Pruebas con Vitest que comprueban los conteos esperados (23 Pokémon, 205 ataques) y casos concretos (por ejemplo, `STW04-001` es "Roer" en ES y "Gnaw" en EN).
 4. **i18n** con el segmento de ruta `app/[lang]/...` y `generateStaticParams` para `es` y `en`, con `dynamicParams = false`. Los textos de interfaz van en `src/i18n/<lang>.json`. No se usa middleware. La raíz `app/page.tsx` redirige del lado del cliente a `/es` o `/en` según `navigator.language`. El selector de idioma cambia el segmento y conserva los search params.
 5. **Sin imágenes oficiales.** Las cartas se dibujan con componentes propios y los iconos de tipo son propios. No se enlazan recursos de bandai-hobby.net ni se usan los PNG o .koro del repo.
-6. **PWA** con manifest y un service worker generado después de `next build` con `workbox-build` (`generateSW` sobre `out/`), que precachea las rutas estáticas y el JSON de datos. No se usa `next-pwa`.
+6. **PWA** con manifest (`app/manifest.ts`) y un service worker generado después de `next build` con `workbox-build` (`generateSW` sobre `out/`, en `scripts/build-sw.ts`). No se usa `next-pwa`.
+   - **Precache**: el HTML de todas las páginas, más JS, CSS, íconos y manifest (~600 KB comprimidos). Cualquier pantalla abre sin conexión como carga completa.
+   - **Caché en tiempo de ejecución** (StaleWhileRevalidate) para los payloads RSC (`*.txt`), que son ~60% del export. Si falta uno sin conexión, Next cae a carga completa, servida desde el precache.
+   - Se ignoran los query params al buscar en caché, porque la configuración de la partida viaja en la URL.
+   - Íconos propios generados desde `scripts/icon.svg` (`npm run icons`, solo macOS) y versionados.
 7. **Hosting** estático gratuito: Cloudflare Pages, Vercel o GitHub Pages. Para empezar se usa un subdominio gratuito (por ejemplo `oskoro.vercel.app`); el dominio `oskoro.app` está disponible y queda para después.
 
 ## Modelo de datos

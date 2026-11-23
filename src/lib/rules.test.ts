@@ -63,3 +63,16 @@ describe("tokenize", () => {
     expect(tokenize("a {zz} b")).toEqual([{ kind: "text", value: "a {zz} b" }]);
   });
 });
+
+describe("templateParts", () => {
+  it("splits text and slots", async () => {
+    const { templateParts } = await import("./format");
+    expect(templateParts("Data: {link}, {license}.")).toEqual([
+      { text: "Data: " },
+      { slot: "link" },
+      { text: ", " },
+      { slot: "license" },
+      { text: "." },
+    ]);
+  });
+});

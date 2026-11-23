@@ -4,14 +4,15 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && tsx scripts/build-sw.ts",
     "start": "next start",
     "lint": "eslint",
     "test": "vitest run",
     "test:watch": "vitest",
     "data:sync": "tsx scripts/sync-plakorodb.ts",
     "data:build": "tsx scripts/build-data.ts",
-    "typecheck": "next typegen && tsc --noEmit"
+    "typecheck": "next typegen && tsc --noEmit",
+    "icons": "tsx scripts/build-icons.ts"
   },
   "dependencies": {
     "next": "16.4.6",
@@ -29,6 +30,7 @@
     "tailwindcss": "4.3.3",
     "tsx": "^4.23.15",
     "typescript": "^5",
-    "vitest": "^4.1.12"
+    "vitest": "^4.1.12",
+    "workbox-build": "^7.4.1"
   }
 }
