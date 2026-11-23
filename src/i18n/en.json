@@ -1,0 +1,32 @@
+{
+  "meta": {
+    "description": "Unofficial companion for Plakoro matches: translate your Wazacards, pick your 4 moves and track your counters."
+  },
+  "app": {
+    "name": "Oskoro",
+    "subtitle": "Unofficial companion for Plakoro matches"
+  },
+  "home": {
+    "intro": "Read your Japanese Wazacards in English, pick your 4 moves, check your rival's moves and track your counters while you play.",
+    "start": "Start match"
+  },
+  "lang": {
+    "label": "Language",
+    "es": "Español",
+    "en": "English"
+  },
+  "sets": {
+    "ST": "Starter Set",
+    "EB01": "Exploration Box 1",
+    "EB02": "Exploration Box 2",
+    "PR": "Promo"
+  },
+  "pick": {
+    "title": "Choose your Pokémon",
+    "moveCount": "{count} moves",
+    "weakness": "Weakness"
+  },
+  "footer": {
+    "unofficial": "Unofficial fan project. Not affiliated with Pokémon, Bandai or Nintendo."
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "meta": {
+    "description": "Acompañante no oficial para partidas de Plakoro: traduce tus Wazacards, elige tus 4 ataques y lleva tus contadores."
+  },
+  "app": {
+    "name": "Oskoro",
+    "subtitle": "Acompañante no oficial para partidas de Plakoro"
+  },
+  "home": {
+    "intro": "Lee tus Wazacards japonesas en español, elige tus 4 ataques, consulta los del rival y lleva tus contadores mientras juegas.",
+    "start": "Iniciar partida"
+  },
+  "lang": {
+    "label": "Idioma",
+    "es": "Español",
+    "en": "English"
+  },
+  "sets": {
+    "ST": "Set de inicio",
+    "EB01": "Exploration Box 1",
+    "EB02": "Exploration Box 2",
+    "PR": "Promo"
+  },
+  "pick": {
+    "title": "Elige tu Pokémon",
+    "moveCount": "{count} ataques",
+    "weakness": "Debilidad"
+  },
+  "footer": {
+    "unofficial": "Proyecto de fans no oficial. No está afiliado a Pokémon, Bandai ni Nintendo."
+  }
+}
