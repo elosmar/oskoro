@@ -11,6 +11,8 @@ export interface TablePokemon {
   name: string;
   type: EnergyType;
   typeLabel: string;
+  weakness: EnergyType;
+  weaknessLabel: string;
   moveCodes: string[];
 }
 
@@ -26,6 +28,8 @@ export function toTableData(bundle: DataBundle): TableData {
       name: p.name,
       type: p.type,
       typeLabel: bundle.types[p.type].name,
+      weakness: p.weakness,
+      weaknessLabel: bundle.types[p.weakness].name,
       moveCodes: p.moveCodes,
     })),
     moves: Object.fromEntries(bundle.moves.map((m) => [m.code, toMoveView(m)])),

@@ -13,6 +13,7 @@ import { Button, SegmentedControl } from "@/ui";
 import { CountersPanel, type CountersTexts } from "./CountersPanel";
 
 export interface TableTexts extends CountersTexts {
+  weakness: string;
   face: string;
   faceNeedsMove: string;
   faceNeedsRivalMove: string;
@@ -39,6 +40,24 @@ export interface TableBoardProps {
 }
 
 type Tab = "mine" | "rival";
+
+/** Pokémon in play: type, name and its weakness (+20 from moves of that type). */
+function PokemonHeading({ pokemon, weaknessLabel }: { pokemon: TablePokemon; weaknessLabel: string }) {
+  return (
+    <h2 className="flex flex-wrap items-center gap-2 font-bold">
+      <TypeBadge type={pokemon.type} label={pokemon.typeLabel} size="sm" />
+      {pokemon.name}
+      <span className="ml-auto flex items-center gap-1 text-xs font-normal text-muted">
+        {weaknessLabel}
+        {/* Letter codes follow the TCG (F = Fighting), so spell the type out. */}
+        <span aria-hidden className="contents">
+          <TypeBadge type={pokemon.weakness} label={pokemon.weaknessLabel} size="sm" />
+        </span>
+        <span className="font-semibold text-foreground">{pokemon.weaknessLabel}</span>
+      </span>
+    </h2>
+  );
+}
 
 /**
  * Brings the highlighted face row into view after the card opens. Scrolls
@@ -130,10 +149,7 @@ export function TableBoard({
 
       {tab === "mine" ? (
         <section className="space-y-2" aria-label={texts.myCards}>
-          <h2 className="flex items-center gap-2 font-bold">
-            <TypeBadge type={me.type} label={me.typeLabel} size="sm" />
-            {me.name}
-          </h2>
+          <PokemonHeading pokemon={me} weaknessLabel={texts.weakness} />
           <p className="text-sm text-muted">{texts.markUsed}</p>
           <ul className="grid gap-3 sm:grid-cols-2">
             {myMoves.map((move) => {
@@ -165,10 +181,7 @@ export function TableBoard({
         </section>
       ) : (
         <section className="space-y-2" aria-label={format(texts.rivalCards, { name: rival.name })}>
-          <h2 className="flex items-center gap-2 font-bold">
-            <TypeBadge type={rival.type} label={rival.typeLabel} size="sm" />
-            {rival.name}
-          </h2>
+          <PokemonHeading pokemon={rival} weaknessLabel={texts.weakness} />
           <p className="text-sm text-muted">{texts.markRivalMove}</p>
           <ul className="grid gap-3 sm:grid-cols-2">
             {rivalMoves.map((move) => {

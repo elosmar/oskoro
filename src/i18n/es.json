@@ -54,6 +54,7 @@
   },
   "table": {
     "title": "Mi mesa",
+    "weakness": "Débil a",
     "turn": "Turno {n}",
     "endTurn": "Terminar turno",
     "hp": "HP",

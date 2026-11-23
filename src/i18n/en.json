@@ -54,6 +54,7 @@
   },
   "table": {
     "title": "My table",
+    "weakness": "Weak to",
     "turn": "Turn {n}",
     "endTurn": "End turn",
     "hp": "HP",
