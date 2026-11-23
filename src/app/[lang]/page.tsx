@@ -1,6 +1,6 @@
-import Link from "next/link";
 import { getDictionary } from "@/i18n";
 import type { Lang } from "@/lib/data/schema";
+import { ButtonLink } from "@/ui";
 
 export default async function Home({ params }: PageProps<"/[lang]">) {
   const lang = (await params).lang as Lang; // validated by the layout
@@ -13,12 +13,9 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
         <p className="text-sm font-medium text-muted">{t.app.subtitle}</p>
       </div>
       <p className="max-w-md text-balance">{t.home.intro}</p>
-      <Link
-        href={`/${lang}/elegir/`}
-        className="rounded-xl bg-accent px-8 py-4 text-lg font-semibold text-accent-foreground shadow-sm transition active:scale-95"
-      >
+      <ButtonLink href={`/${lang}/elegir/`} size="lg">
         {t.home.start}
-      </Link>
+      </ButtonLink>
     </section>
   );
 }

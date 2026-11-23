@@ -1,18 +1,19 @@
 import type { EnergyType } from "@/lib/data/schema";
+import { cx } from "@/ui";
 
-/** Own palette: deliberately not the official type icons or colors. */
-const TYPE_STYLES: Record<EnergyType, string> = {
-  G: "bg-[#3f9b4f] text-white",
-  R: "bg-[#e0573a] text-white",
-  W: "bg-[#2f80d1] text-white",
-  L: "bg-[#f0c419] text-[#3a2f00]",
-  P: "bg-[#b04fc9] text-white",
-  F: "bg-[#b3672b] text-white",
-  D: "bg-[#3b3b4f] text-white",
-  M: "bg-[#8797a5] text-white",
-  N: "bg-[#5a4fcf] text-white",
-  Y: "bg-[#5fb8de] text-[#062a3a]",
-  C: "bg-[#a8a29e] text-[#1c1917]",
+/** Static class names so Tailwind can detect them. Colors live in tokens.css. */
+const TYPE_CLASSES: Record<EnergyType, string> = {
+  G: "bg-type-g text-type-g-fg",
+  R: "bg-type-r text-type-r-fg",
+  W: "bg-type-w text-type-w-fg",
+  L: "bg-type-l text-type-l-fg",
+  P: "bg-type-p text-type-p-fg",
+  F: "bg-type-f text-type-f-fg",
+  D: "bg-type-d text-type-d-fg",
+  M: "bg-type-m text-type-m-fg",
+  N: "bg-type-n text-type-n-fg",
+  Y: "bg-type-y text-type-y-fg",
+  C: "bg-type-c text-type-c-fg",
 };
 
 const SIZES = {
@@ -35,7 +36,11 @@ export function TypeBadge({
       role="img"
       aria-label={label}
       title={label}
-      className={`inline-flex shrink-0 items-center justify-center rounded-full font-bold ${SIZES[size]} ${TYPE_STYLES[type]}`}
+      className={cx(
+        "inline-flex shrink-0 items-center justify-center rounded-full font-bold",
+        SIZES[size],
+        TYPE_CLASSES[type],
+      )}
     >
       {type}
     </span>

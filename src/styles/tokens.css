@@ -1,0 +1,102 @@
+/*
+ * Design tokens: the single source of truth for Oskoro's look.
+ *
+ * - Change the palette, radii or shadows HERE; components only use the
+ *   Tailwind utilities generated below (bg-surface, text-muted, bg-type-l...).
+ * - Never hardcode colors in components.
+ * - Own palette on purpose: no official Pokémon/Bandai colors or icons.
+ */
+
+/* ---------- Raw values (light) ---------- */
+:root {
+  --background: #f7f7f5;
+  --surface: #ffffff;
+  --surface-muted: #efefec;
+  --foreground: #1c1c1e;
+  --muted: #6b6b70;
+  --border: #e4e4e0;
+  --accent: #0f766e;
+  --accent-foreground: #ffffff;
+  --danger: #c2410c;
+
+  /* Energy types: background / foreground pairs */
+  --type-g: #3f9b4f;
+  --type-g-fg: #ffffff;
+  --type-r: #e0573a;
+  --type-r-fg: #ffffff;
+  --type-w: #2f80d1;
+  --type-w-fg: #ffffff;
+  --type-l: #f0c419;
+  --type-l-fg: #3a2f00;
+  --type-p: #b04fc9;
+  --type-p-fg: #ffffff;
+  --type-f: #b3672b;
+  --type-f-fg: #ffffff;
+  --type-d: #3b3b4f;
+  --type-d-fg: #ffffff;
+  --type-m: #8797a5;
+  --type-m-fg: #ffffff;
+  --type-n: #5a4fcf;
+  --type-n-fg: #ffffff;
+  --type-y: #5fb8de;
+  --type-y-fg: #062a3a;
+  --type-c: #a8a29e;
+  --type-c-fg: #1c1917;
+}
+
+/* ---------- Raw values (dark) ---------- */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #121214;
+    --surface: #1c1c20;
+    --surface-muted: #26262b;
+    --foreground: #ededee;
+    --muted: #9b9ba3;
+    --border: #2c2c32;
+    --accent: #2dd4bf;
+    --accent-foreground: #04201d;
+    --danger: #fb923c;
+  }
+}
+
+/* ---------- Tailwind utilities ---------- */
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-muted: var(--surface-muted);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-danger: var(--danger);
+
+  --color-type-g: var(--type-g);
+  --color-type-g-fg: var(--type-g-fg);
+  --color-type-r: var(--type-r);
+  --color-type-r-fg: var(--type-r-fg);
+  --color-type-w: var(--type-w);
+  --color-type-w-fg: var(--type-w-fg);
+  --color-type-l: var(--type-l);
+  --color-type-l-fg: var(--type-l-fg);
+  --color-type-p: var(--type-p);
+  --color-type-p-fg: var(--type-p-fg);
+  --color-type-f: var(--type-f);
+  --color-type-f-fg: var(--type-f-fg);
+  --color-type-d: var(--type-d);
+  --color-type-d-fg: var(--type-d-fg);
+  --color-type-m: var(--type-m);
+  --color-type-m-fg: var(--type-m-fg);
+  --color-type-n: var(--type-n);
+  --color-type-n-fg: var(--type-n-fg);
+  --color-type-y: var(--type-y);
+  --color-type-y-fg: var(--type-y-fg);
+  --color-type-c: var(--type-c);
+  --color-type-c-fg: var(--type-c-fg);
+
+  --radius-control: 0.75rem;
+  --radius-card: 0.75rem;
+  --shadow-card: 0 1px 2px rgb(0 0 0 / 0.06);
+
+  --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Hiragino Sans", "Noto Sans JP", sans-serif;
+}
