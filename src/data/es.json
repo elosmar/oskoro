@@ -1,0 +1,4654 @@
+{
+  "lang": "es",
+  "source": {
+    "repo": "https://github.com/Jollto/PlakoroDB",
+    "commit": "13abfe491618946dc6aa62925aa0e1da51dceef8",
+    "license": "CC BY-NC 4.0"
+  },
+  "types": {
+    "G": {
+      "name": "Planta",
+      "japanese": "草（くさ）"
+    },
+    "R": {
+      "name": "Fuego",
+      "japanese": "炎（ほのお）"
+    },
+    "W": {
+      "name": "Agua",
+      "japanese": "水（みず）"
+    },
+    "L": {
+      "name": "Eléctrico",
+      "japanese": "雷（かみなり）"
+    },
+    "P": {
+      "name": "Psíquico",
+      "japanese": "超（ちょう）"
+    },
+    "F": {
+      "name": "Lucha",
+      "japanese": "闘（とう）"
+    },
+    "D": {
+      "name": "Siniestro",
+      "japanese": "悪（あく）"
+    },
+    "M": {
+      "name": "Acero",
+      "japanese": "鋼（はがね）"
+    },
+    "N": {
+      "name": "Dragón",
+      "japanese": "竜（ドラゴン）"
+    },
+    "Y": {
+      "name": "Volador",
+      "japanese": "空（そら）"
+    },
+    "C": {
+      "name": "Normal",
+      "japanese": "無（むしょく）"
+    }
+  },
+  "orientations": {
+    "standing": {
+      "name": "De pie",
+      "japanese": "⽴ち"
+    },
+    "handstand": {
+      "name": "De cabeza",
+      "japanese": "さかだち"
+    },
+    "faceUp": {
+      "name": "Boca arriba",
+      "japanese": "あおむけ"
+    },
+    "faceDown": {
+      "name": "Boca abajo",
+      "japanese": "うつぶせ"
+    },
+    "sideways": {
+      "name": "De lado",
+      "japanese": "横向き"
+    }
+  },
+  "pokemon": [
+    {
+      "code": "STC01-001",
+      "name": "Bulbasaur",
+      "type": "G",
+      "weakness": "R",
+      "hp": 120,
+      "set": "ST",
+      "moveCodes": [
+        "STW01-001",
+        "STW01-002",
+        "STW01-003",
+        "STW01-004",
+        "STW01-005",
+        "STW01-006",
+        "STW01-007",
+        "PRW01-1-08"
+      ]
+    },
+    {
+      "code": "STC02-001",
+      "name": "Charmander",
+      "type": "R",
+      "weakness": "W",
+      "hp": 120,
+      "set": "ST",
+      "moveCodes": [
+        "STW02-001",
+        "STW02-002",
+        "STW02-003",
+        "STW02-004",
+        "STW02-005",
+        "STW02-006",
+        "STW02-007",
+        "PRW01-2-08"
+      ]
+    },
+    {
+      "code": "STC03-001",
+      "name": "Squirtle",
+      "type": "W",
+      "weakness": "L",
+      "hp": 120,
+      "set": "ST",
+      "moveCodes": [
+        "STW03-001",
+        "STW03-002",
+        "STW03-003",
+        "STW03-004",
+        "STW03-005",
+        "STW03-006",
+        "STW03-007",
+        "PRW01-3-08"
+      ]
+    },
+    {
+      "code": "STC04-001",
+      "name": "Pikachu",
+      "type": "L",
+      "weakness": "F",
+      "hp": 120,
+      "set": "ST",
+      "moveCodes": [
+        "STW04-001",
+        "STW04-002",
+        "STW04-003",
+        "STW04-004",
+        "STW04-005",
+        "STW04-006",
+        "STW04-007",
+        "PRW01-008"
+      ]
+    },
+    {
+      "code": "STC05-001",
+      "name": "Eevee",
+      "type": "C",
+      "weakness": "F",
+      "hp": 120,
+      "set": "ST",
+      "moveCodes": [
+        "STW05-001",
+        "STW05-002",
+        "STW05-003",
+        "STW05-004",
+        "STW05-005",
+        "STW05-006",
+        "STW05-007",
+        "PRW02-008"
+      ]
+    },
+    {
+      "code": "STC06-001",
+      "name": "Mew",
+      "type": "P",
+      "weakness": "D",
+      "hp": 120,
+      "set": "ST",
+      "moveCodes": [
+        "STW06-001",
+        "STW06-002",
+        "STW06-003",
+        "STW06-004",
+        "STW06-005",
+        "STW06-006",
+        "STW06-007",
+        "PRW03-008"
+      ]
+    },
+    {
+      "code": "STC07-001",
+      "name": "Gengar",
+      "type": "D",
+      "weakness": "P",
+      "hp": 120,
+      "set": "ST",
+      "moveCodes": [
+        "STW07-001",
+        "STW07-002",
+        "STW07-003",
+        "STW07-004",
+        "STW07-005",
+        "STW07-006",
+        "STW07-007",
+        "PRW02-1-08"
+      ]
+    },
+    {
+      "code": "STC08-001",
+      "name": "Metagross",
+      "type": "M",
+      "weakness": "R",
+      "hp": 120,
+      "set": "ST",
+      "moveCodes": [
+        "STW08-001",
+        "STW08-002",
+        "STW08-003",
+        "STW08-004",
+        "STW08-005",
+        "STW08-006",
+        "STW08-007",
+        "PRW02-2-08"
+      ]
+    },
+    {
+      "code": "STC09-001",
+      "name": "Lucario",
+      "type": "F",
+      "weakness": "R",
+      "hp": 120,
+      "set": "ST",
+      "moveCodes": [
+        "STW09-001",
+        "STW09-002",
+        "STW09-003",
+        "STW09-004",
+        "STW09-005",
+        "STW09-006",
+        "STW09-007",
+        "PRW02-3-08"
+      ]
+    },
+    {
+      "code": "STC10-001",
+      "name": "Altaria",
+      "type": "Y",
+      "weakness": "W",
+      "hp": 120,
+      "set": "ST",
+      "moveCodes": [
+        "STW10-001",
+        "STW10-002",
+        "STW10-003",
+        "STW10-004",
+        "STW10-005",
+        "STW10-006",
+        "STW10-007"
+      ]
+    },
+    {
+      "code": "STC11-001",
+      "name": "Dragonite",
+      "type": "N",
+      "weakness": "N",
+      "hp": 120,
+      "set": "ST",
+      "moveCodes": [
+        "STW11-001",
+        "STW11-002",
+        "STW11-003",
+        "STW11-004",
+        "STW11-005",
+        "STW11-006",
+        "STW11-007"
+      ]
+    },
+    {
+      "code": "EBC01-001",
+      "name": "Pinsir",
+      "type": "G",
+      "weakness": "Y",
+      "hp": 120,
+      "set": "EB01",
+      "moveCodes": [
+        "EBW01-001",
+        "EBW01-002",
+        "EBW01-003",
+        "EBW01-004",
+        "EBW01-005",
+        "EBW01-006",
+        "EBW01-007",
+        "EBW01-008",
+        "EBW01-009",
+        "EBW01-010"
+      ]
+    },
+    {
+      "code": "EBC01-002",
+      "name": "Moltres",
+      "type": "R",
+      "weakness": "W",
+      "hp": 120,
+      "set": "EB01",
+      "moveCodes": [
+        "EBW01-011",
+        "EBW01-012",
+        "EBW01-013",
+        "EBW01-014",
+        "EBW01-015",
+        "EBW01-016",
+        "EBW01-017",
+        "EBW01-018",
+        "EBW01-019",
+        "EBW01-020"
+      ]
+    },
+    {
+      "code": "EBC01-003",
+      "name": "Articuno",
+      "type": "W",
+      "weakness": "M",
+      "hp": 120,
+      "set": "EB01",
+      "moveCodes": [
+        "EBW01-021",
+        "EBW01-022",
+        "EBW01-023",
+        "EBW01-024",
+        "EBW01-025",
+        "EBW01-026",
+        "EBW01-027",
+        "EBW01-028",
+        "EBW01-029",
+        "EBW01-030"
+      ]
+    },
+    {
+      "code": "EBC01-004",
+      "name": "Zapdos",
+      "type": "L",
+      "weakness": "F",
+      "hp": 120,
+      "set": "EB01",
+      "moveCodes": [
+        "EBW01-031",
+        "EBW01-032",
+        "EBW01-033",
+        "EBW01-034",
+        "EBW01-035",
+        "EBW01-036",
+        "EBW01-037",
+        "EBW01-038",
+        "EBW01-039",
+        "EBW01-040"
+      ]
+    },
+    {
+      "code": "EBC01-005",
+      "name": "Onix",
+      "type": "F",
+      "weakness": "G",
+      "hp": 120,
+      "set": "EB01",
+      "moveCodes": [
+        "EBW01-041",
+        "EBW01-042",
+        "EBW01-043",
+        "EBW01-044",
+        "EBW01-045",
+        "EBW01-046",
+        "EBW01-047",
+        "EBW01-048",
+        "EBW01-049",
+        "EBW01-050"
+      ]
+    },
+    {
+      "code": "EBC01-006",
+      "name": "Grimer",
+      "type": "D",
+      "weakness": "F",
+      "hp": 120,
+      "set": "EB01",
+      "moveCodes": [
+        "EBW01-051",
+        "EBW01-052",
+        "EBW01-053",
+        "EBW01-054",
+        "EBW01-055",
+        "EBW01-057",
+        "EBW01-058",
+        "EBW01-059",
+        "EBW01-060"
+      ]
+    },
+    {
+      "code": "EBC02-001",
+      "name": "Greninja",
+      "type": "W",
+      "weakness": "G",
+      "hp": 120,
+      "set": "EB02",
+      "moveCodes": [
+        "EBW02-001",
+        "EBW02-002",
+        "EBW02-003",
+        "EBW02-004",
+        "EBW02-005",
+        "EBW02-006",
+        "EBW02-007",
+        "EBW02-008",
+        "EBW02-009",
+        "EBW02-010"
+      ]
+    },
+    {
+      "code": "EBC02-002",
+      "name": "Tinkatink",
+      "type": "P",
+      "weakness": "R",
+      "hp": 120,
+      "set": "EB02",
+      "moveCodes": [
+        "EBW02-011",
+        "EBW02-012",
+        "EBW02-013",
+        "EBW02-014",
+        "EBW02-015",
+        "EBW02-016",
+        "EBW02-017",
+        "EBW02-018",
+        "EBW02-019",
+        "EBW02-020"
+      ]
+    },
+    {
+      "code": "EBC02-003",
+      "name": "Sableye",
+      "type": "D",
+      "weakness": "P",
+      "hp": 120,
+      "set": "EB02",
+      "moveCodes": [
+        "EBW02-021",
+        "EBW02-022",
+        "EBW02-023",
+        "EBW02-024",
+        "EBW02-025",
+        "EBW02-026",
+        "EBW02-027",
+        "EBW02-028",
+        "EBW02-029",
+        "EBW02-030"
+      ]
+    },
+    {
+      "code": "EBC02-004",
+      "name": "Aggron",
+      "type": "M",
+      "weakness": "F",
+      "hp": 120,
+      "set": "EB02",
+      "moveCodes": [
+        "EBW02-031",
+        "EBW02-032",
+        "EBW02-033",
+        "EBW02-034",
+        "EBW02-035",
+        "EBW02-036",
+        "EBW02-037",
+        "EBW02-038",
+        "EBW02-039",
+        "EBW02-040"
+      ]
+    },
+    {
+      "code": "EBC02-005",
+      "name": "Rayquaza",
+      "type": "N",
+      "weakness": "N",
+      "hp": 120,
+      "set": "EB02",
+      "moveCodes": [
+        "EBW02-041",
+        "EBW02-042",
+        "EBW02-043",
+        "EBW02-044",
+        "EBW02-045",
+        "EBW02-046",
+        "EBW02-047",
+        "EBW02-048",
+        "EBW02-049",
+        "EBW02-050"
+      ]
+    },
+    {
+      "code": "EBC02-006",
+      "name": "Chansey",
+      "type": "C",
+      "weakness": "F",
+      "hp": 120,
+      "set": "EB02",
+      "moveCodes": [
+        "EBW02-051",
+        "EBW02-052",
+        "EBW02-053",
+        "EBW02-054",
+        "EBW02-055",
+        "EBW02-056",
+        "EBW02-057",
+        "EBW02-058",
+        "EBW02-059",
+        "EBW02-060"
+      ]
+    }
+  ],
+  "moves": [
+    {
+      "code": "EBW01-001",
+      "set": "EB01",
+      "pokemonCode": "EBC01-001",
+      "name": "Concentración",
+      "official": false,
+      "japanese": "しゅうちゅう",
+      "type": "G",
+      "energy": [
+        "G"
+      ],
+      "damage": null,
+      "effect": null,
+      "orientations": {
+        "standing": "En tu próximo turno, incrementa el número de Enekoro que tiras en 2.",
+        "sideways": "En tu próximo turno, incrementa el número de Enekoro que tiras en 2."
+      }
+    },
+    {
+      "code": "EBW01-002",
+      "set": "EB01",
+      "pokemonCode": "EBC01-001",
+      "name": "Resistir",
+      "official": false,
+      "japanese": "たえる",
+      "type": "G",
+      "energy": [
+        "G",
+        "G"
+      ],
+      "damage": null,
+      "effect": "Durante el próximo turno de tu rival, los ataques hacen 20 puntos de daño menos a este Pokémon.",
+      "orientations": {
+        "standing": "Reduce el daño recibido en 20 puntos adicionales.",
+        "faceUp": "Reduce el daño recibido en 20 puntos adicionales.",
+        "faceDown": "Reduce el daño recibido en 20 puntos adicionales."
+      }
+    },
+    {
+      "code": "EBW01-003",
+      "set": "EB01",
+      "pokemonCode": "EBC01-001",
+      "name": "Golpe Cuerno",
+      "official": false,
+      "japanese": "つのでたたく",
+      "type": "G",
+      "energy": [
+        "G",
+        "G",
+        "G"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 30 puntos de daño más.",
+        "sideways": "Este ataque hace 30 puntos de daño más."
+      }
+    },
+    {
+      "code": "EBW01-004",
+      "set": "EB01",
+      "pokemonCode": "EBC01-001",
+      "name": "Guillotina",
+      "official": true,
+      "japanese": "ハサミギロチン",
+      "type": "C",
+      "energy": [
+        "G",
+        "G",
+        "G",
+        "G",
+        "G"
+      ],
+      "damage": null,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 150 puntos de daño."
+      }
+    },
+    {
+      "code": "EBW01-005",
+      "set": "EB01",
+      "pokemonCode": "EBC01-001",
+      "name": "Demolición",
+      "official": true,
+      "japanese": "かわらわり",
+      "type": "F",
+      "energy": [
+        "F"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 20 puntos de daño más.",
+        "faceUp": "Este ataque hace 20 puntos de daño más."
+      }
+    },
+    {
+      "code": "EBW01-006",
+      "set": "EB01",
+      "pokemonCode": "EBC01-001",
+      "name": "Carga Pinzas",
+      "official": false,
+      "japanese": "チャージばさみ",
+      "type": "G",
+      "energy": [
+        "G",
+        "G"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "En tu próximo turno, incrementa el número de Enekoro que tiras en 1.",
+        "faceUp": "En tu próximo turno, incrementa el número de Enekoro que tiras en 1."
+      }
+    },
+    {
+      "code": "EBW01-007",
+      "set": "EB01",
+      "pokemonCode": "EBC01-001",
+      "name": "Golpe Cólera",
+      "official": false,
+      "japanese": "ぎゃくじょうスイング",
+      "type": "G",
+      "energy": [
+        "G",
+        "G",
+        "G"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "Durante tu último turno, si tu tirada de Enekoro falló, este ataque hace 40 puntos de daño más.",
+        "sideways": "Durante tu último turno, si tu tirada de Enekoro falló, este ataque hace 40 puntos de daño más."
+      }
+    },
+    {
+      "code": "EBW01-008",
+      "set": "EB01",
+      "pokemonCode": "EBC01-001",
+      "name": "Carga Descuidada",
+      "official": true,
+      "japanese": "とつげき",
+      "type": "G",
+      "energy": [
+        "G",
+        "G",
+        "G"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 20 puntos de daño más.",
+        "handstand": "Este Pokémon se hace 20 puntos de daño.",
+        "faceUp": "Este ataque hace 20 puntos de daño más.",
+        "faceDown": "Este Pokémon se hace 20 puntos de daño."
+      }
+    },
+    {
+      "code": "EBW01-009",
+      "set": "EB01",
+      "pokemonCode": "EBC01-001",
+      "name": "Pinzas Mortales",
+      "official": false,
+      "japanese": "ひっさつばさみ",
+      "type": "G",
+      "energy": [
+        "G",
+        "G",
+        "G",
+        "G"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 80 puntos de daño más."
+      }
+    },
+    {
+      "code": "EBW01-010",
+      "set": "EB01",
+      "pokemonCode": "EBC01-001",
+      "name": "Sumisión",
+      "official": true,
+      "japanese": "じごくぐるま",
+      "type": "F",
+      "energy": [
+        "F",
+        "C",
+        "C",
+        "C"
+      ],
+      "damage": 30,
+      "effect": "Este Pokémon se hace 20 puntos de daño.",
+      "orientations": {
+        "standing": "Este ataque hace 30 puntos de daño más.",
+        "handstand": "Este ataque hace 30 puntos de daño más.",
+        "faceUp": "Este ataque hace 30 puntos de daño más.",
+        "faceDown": "Este ataque hace 30 puntos de daño más."
+      }
+    },
+    {
+      "code": "EBW01-011",
+      "set": "EB01",
+      "pokemonCode": "EBC01-002",
+      "name": "Ala Ígnea",
+      "official": true,
+      "japanese": "ほのおのつばさ",
+      "type": "R",
+      "energy": [
+        "R",
+        "R"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 30 puntos de daño más.",
+        "faceUp": "Este ataque hace 30 puntos de daño más.",
+        "sideways": "Este Pokémon se hace 20 puntos de daño."
+      }
+    },
+    {
+      "code": "EBW01-012",
+      "set": "EB01",
+      "pokemonCode": "EBC01-002",
+      "name": "Onda Ígnea",
+      "official": true,
+      "japanese": "ねっぷう",
+      "type": "R",
+      "energy": [
+        "R",
+        "R",
+        "R"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 20 puntos de daño más.",
+        "sideways": "Este ataque hace 20 puntos de daño más."
+      }
+    },
+    {
+      "code": "EBW01-013",
+      "set": "EB01",
+      "pokemonCode": "EBC01-002",
+      "name": "Lanzallamas",
+      "official": true,
+      "japanese": "かえんほうしゃ",
+      "type": "R",
+      "energy": [
+        "R",
+        "R",
+        "R",
+        "R"
+      ],
+      "damage": 40,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 40 puntos de daño más.",
+        "handstand": "En tu próximo turno, reduce el número de Enekoro que tiras en 2.",
+        "faceUp": "Este ataque hace 40 puntos de daño más.",
+        "faceDown": "En tu próximo turno, reduce el número de Enekoro que tiras en 2.",
+        "sideways": "En tu próximo turno, reduce el número de Enekoro que tiras en 2."
+      }
+    },
+    {
+      "code": "EBW01-014",
+      "set": "EB01",
+      "pokemonCode": "EBC01-002",
+      "name": "Envite Ígneo",
+      "official": true,
+      "japanese": "フレアドライブ",
+      "type": "R",
+      "energy": [
+        "R",
+        "R",
+        "R",
+        "R",
+        "R"
+      ],
+      "damage": 50,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 40 puntos de daño más.",
+        "handstand": "Este Pokémon se hace 40 puntos de daño.",
+        "faceUp": "Este ataque hace 40 puntos de daño más.",
+        "faceDown": "Este ataque hace 40 puntos de daño más.",
+        "sideways": "Este Pokémon se hace 40 puntos de daño."
+      }
+    },
+    {
+      "code": "EBW01-015",
+      "set": "EB01",
+      "pokemonCode": "EBC01-002",
+      "name": "Vendaval",
+      "official": true,
+      "japanese": "ぼうふう",
+      "type": "Y",
+      "energy": [
+        "Y",
+        "C",
+        "C",
+        "C"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 60 puntos de daño más."
+      }
+    },
+    {
+      "code": "EBW01-016",
+      "set": "EB01",
+      "pokemonCode": "EBC01-002",
+      "name": "Giro Fuego",
+      "official": true,
+      "japanese": "ほのおのうず",
+      "type": "R",
+      "energy": [
+        "R",
+        "R"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 40 puntos de daño más.",
+        "handstand": "En tu próximo turno, reduce el número de Enekoro que tiras en 2.",
+        "faceUp": "Este ataque hace 40 puntos de daño más.",
+        "faceDown": "En tu próximo turno, reduce el número de Enekoro que tiras en 2.",
+        "sideways": "En tu próximo turno, reduce el número de Enekoro que tiras en 2."
+      }
+    },
+    {
+      "code": "EBW01-017",
+      "set": "EB01",
+      "pokemonCode": "EBC01-002",
+      "name": "Aliento Ardiente",
+      "official": true,
+      "japanese": "ヒートブレス",
+      "type": "R",
+      "energy": [
+        "R",
+        "R",
+        "R"
+      ],
+      "damage": 40,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 40 puntos de daño más.",
+        "handstand": "Este Pokémon se hace 30 puntos de daño.",
+        "faceUp": "Este ataque hace 40 puntos de daño más.",
+        "faceDown": "Este Pokémon se hace 30 puntos de daño."
+      }
+    },
+    {
+      "code": "EBW01-018",
+      "set": "EB01",
+      "pokemonCode": "EBC01-002",
+      "name": "Llama Final",
+      "official": true,
+      "japanese": "もえつきる",
+      "type": "R",
+      "energy": [
+        "R",
+        "R",
+        "R",
+        "R"
+      ],
+      "damage": 80,
+      "effect": null,
+      "orientations": {
+        "handstand": "Este ataque no hace nada.",
+        "faceUp": "Este ataque no hace nada.",
+        "faceDown": "Este ataque no hace nada."
+      }
+    },
+    {
+      "code": "EBW01-019",
+      "set": "EB01",
+      "pokemonCode": "EBC01-002",
+      "name": "Ala Rápida",
+      "official": false,
+      "japanese": "ウイングラッシュ",
+      "type": "Y",
+      "energy": [
+        "Y"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 10 puntos de daño más.",
+        "faceUp": "Este ataque hace 10 puntos de daño más.",
+        "sideways": "Este ataque hace 10 puntos de daño más."
+      }
+    },
+    {
+      "code": "EBW01-020",
+      "set": "EB01",
+      "pokemonCode": "EBC01-002",
+      "name": "Vuelo",
+      "official": true,
+      "japanese": "そらをとぶ",
+      "type": "Y",
+      "energy": [
+        "Y",
+        "C",
+        "C"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "Durante el próximo turno de tu rival, este Pokémon no recibe daño de los ataques.",
+        "handstand": "Este ataque no hace nada.",
+        "faceUp": "Este ataque no hace nada.",
+        "faceDown": "Este ataque no hace nada.",
+        "sideways": "Durante el próximo turno de tu rival, este Pokémon no recibe daño de los ataques."
+      }
+    },
+    {
+      "code": "EBW01-021",
+      "set": "EB01",
+      "pokemonCode": "EBC01-003",
+      "name": "Ala Gélida",
+      "official": true,
+      "japanese": "アイスウイング",
+      "type": "W",
+      "energy": [
+        "W",
+        "W"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "En el próximo turno de tu rival, reduce el número de Enekoro que tira en 1.",
+        "faceUp": "En el próximo turno de tu rival, reduce el número de Enekoro que tira en 1.",
+        "sideways": "En el próximo turno de tu rival, reduce el número de Enekoro que tira en 1."
+      }
+    },
+    {
+      "code": "EBW01-022",
+      "set": "EB01",
+      "pokemonCode": "EBC01-003",
+      "name": "Hoja Heladora",
+      "official": false,
+      "japanese": "いてつくやいば",
+      "type": "W",
+      "energy": [
+        "W",
+        "W",
+        "W"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "En el siguiente turno de tu rival, no pueden tirar su Charakoro.",
+        "sideways": "En el siguiente turno de tu rival, no pueden tirar su Charakoro."
+      }
+    },
+    {
+      "code": "EBW01-023",
+      "set": "EB01",
+      "pokemonCode": "EBC01-003",
+      "name": "Tormenta Ventisca",
+      "official": false,
+      "japanese": "ブリザードストーム",
+      "type": "W",
+      "energy": [
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 30 puntos de daño más.",
+        "faceUp": "Este ataque hace 30 puntos de daño más.",
+        "sideways": "Este ataque hace 30 puntos de daño más."
+      }
+    },
+    {
+      "code": "EBW01-024",
+      "set": "EB01",
+      "pokemonCode": "EBC01-003",
+      "name": "Aire Afilado",
+      "official": true,
+      "japanese": "エアカッター",
+      "type": "Y",
+      "energy": [
+        "Y",
+        "C",
+        "C",
+        "C"
+      ],
+      "damage": 40,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 30 puntos de daño más.",
+        "faceUp": "Este ataque hace 30 puntos de daño más."
+      }
+    },
+    {
+      "code": "EBW01-025",
+      "set": "EB01",
+      "pokemonCode": "EBC01-003",
+      "name": "Respiro",
+      "official": true,
+      "japanese": "はねやすめ",
+      "type": "Y",
+      "energy": [
+        "Y",
+        "Y"
+      ],
+      "damage": null,
+      "effect": "Cura 20 puntos de daño de este Pokémon.",
+      "orientations": {
+        "standing": "Cura 20 puntos de daño más de este Pokémon.",
+        "sideways": "Cura 20 puntos de daño más de este Pokémon."
+      }
+    },
+    {
+      "code": "EBW01-026",
+      "set": "EB01",
+      "pokemonCode": "EBC01-003",
+      "name": "Picada Helada",
+      "official": false,
+      "japanese": "フリーズダイブ",
+      "type": "W",
+      "energy": [
+        "W"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 20 puntos de daño más.",
+        "faceUp": "Este ataque hace 20 puntos de daño más."
+      }
+    },
+    {
+      "code": "EBW01-027",
+      "set": "EB01",
+      "pokemonCode": "EBC01-003",
+      "name": "Disparo Gélido",
+      "official": true,
+      "japanese": "アイスショット",
+      "type": "W",
+      "energy": [
+        "W",
+        "W"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 20 puntos de daño más.",
+        "sideways": "Este ataque hace 20 puntos de daño más."
+      }
+    },
+    {
+      "code": "EBW01-028",
+      "set": "EB01",
+      "pokemonCode": "EBC01-003",
+      "name": "Aliento Frío",
+      "official": true,
+      "japanese": "コールドブレス",
+      "type": "W",
+      "energy": [
+        "W",
+        "W",
+        "W"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "En el próximo turno de tu rival, reduce el número de Enekoro que tira en 2.",
+        "sideways": "En el próximo turno de tu rival, reduce el número de Enekoro que tira en 2."
+      }
+    },
+    {
+      "code": "EBW01-029",
+      "set": "EB01",
+      "pokemonCode": "EBC01-003",
+      "name": "Frío Polar",
+      "official": true,
+      "japanese": "ぜったいれいど",
+      "type": "W",
+      "energy": [
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      "damage": 40,
+      "effect": null,
+      "orientations": {
+        "standing": "En el próximo turno de tu rival, reduce el número de Enekoro que tira en 2. No pueden tirar su Charakoro.",
+        "faceUp": "En el próximo turno de tu rival, reduce el número de Enekoro que tira en 2. No pueden tirar su Charakoro."
+      }
+    },
+    {
+      "code": "EBW01-030",
+      "set": "EB01",
+      "pokemonCode": "EBC01-003",
+      "name": "Vuelo",
+      "official": true,
+      "japanese": "そらをとぶ",
+      "type": "Y",
+      "energy": [
+        "Y",
+        "C",
+        "C"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "Durante el próximo turno de tu rival, este Pokémon no recibe daño de los ataques.",
+        "handstand": "Este ataque no hace nada.",
+        "faceUp": "Este ataque no hace nada.",
+        "faceDown": "Este ataque no hace nada.",
+        "sideways": "Durante el próximo turno de tu rival, este Pokémon no recibe daño de los ataques."
+      }
+    },
+    {
+      "code": "EBW01-031",
+      "set": "EB01",
+      "pokemonCode": "EBC01-004",
+      "name": "Trueno Destello",
+      "official": false,
+      "japanese": "でんじフラッシュ",
+      "type": "L",
+      "energy": [
+        "L",
+        "L"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 30 puntos de daño más.",
+        "faceUp": "Este ataque hace 30 puntos de daño más."
+      }
+    },
+    {
+      "code": "EBW01-032",
+      "set": "EB01",
+      "pokemonCode": "EBC01-004",
+      "name": "Impactrueno",
+      "official": true,
+      "japanese": "でんきショック",
+      "type": "L",
+      "energy": [
+        "L"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 10 puntos de daño más.",
+        "faceUp": "Este ataque hace 10 puntos de daño más.",
+        "sideways": "Este ataque hace 10 puntos de daño más."
+      }
+    },
+    {
+      "code": "EBW01-033",
+      "set": "EB01",
+      "pokemonCode": "EBC01-004",
+      "name": "Electrofuria",
+      "official": false,
+      "japanese": "ボルトラッシュ",
+      "type": "L",
+      "energy": [
+        "L",
+        "L",
+        "L",
+        "L"
+      ],
+      "damage": 10,
+      "effect": "Tira tu Charakoro 3 veces.",
+      "orientations": {
+        "standing": "Cada vez que el Charakoro caiga bien en este ataque, este ataque hace 30 puntos de daño más.",
+        "sideways": "Cada vez que el Charakoro caiga bien en este ataque, este ataque hace 30 puntos de daño más."
+      }
+    },
+    {
+      "code": "EBW01-034",
+      "set": "EB01",
+      "pokemonCode": "EBC01-004",
+      "name": "Golpe Aéreo",
+      "official": true,
+      "japanese": "つばめがえし",
+      "type": "Y",
+      "energy": [
+        "Y"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 20 puntos de daño más.",
+        "faceUp": "Este ataque hace 20 puntos de daño más."
+      }
+    },
+    {
+      "code": "EBW01-035",
+      "set": "EB01",
+      "pokemonCode": "EBC01-004",
+      "name": "Ala Chispeante",
+      "official": false,
+      "japanese": "バリバリウイング",
+      "type": "Y",
+      "energy": [
+        "Y",
+        "C",
+        "C",
+        "C",
+        "C"
+      ],
+      "damage": 40,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 40 puntos de daño más.",
+        "sideways": "Este ataque hace 40 puntos de daño más."
+      }
+    },
+    {
+      "code": "EBW01-036",
+      "set": "EB01",
+      "pokemonCode": "EBC01-004",
+      "name": "Doble Trueno",
+      "official": false,
+      "japanese": "ダブルサンダー",
+      "type": "L",
+      "energy": [
+        "L"
+      ],
+      "damage": null,
+      "effect": "Tira tu Charakoro 2 veces.",
+      "orientations": {
+        "standing": "Por cada tirada correcta de Charakoro con este ataque, este ataque hace 20 puntos de daño más.",
+        "faceUp": "Por cada tirada correcta de Charakoro con este ataque, este ataque hace 20 puntos de daño más.",
+        "faceDown": "Por cada tirada correcta de Charakoro con este ataque, este ataque hace 20 puntos de daño más."
+      }
+    },
+    {
+      "code": "EBW01-037",
+      "set": "EB01",
+      "pokemonCode": "EBC01-004",
+      "name": "Electroflecha",
+      "official": false,
+      "japanese": "エレキアロー",
+      "type": "L",
+      "energy": [
+        "L",
+        "L"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 40 puntos de daño más."
+      }
+    },
+    {
+      "code": "EBW01-038",
+      "set": "EB01",
+      "pokemonCode": "EBC01-004",
+      "name": "Chispazo",
+      "official": true,
+      "japanese": "ほうでん",
+      "type": "L",
+      "energy": [
+        "L",
+        "L",
+        "L"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 20 puntos de daño más.",
+        "faceUp": "Este ataque hace 20 puntos de daño más.",
+        "faceDown": "Este ataque hace 20 puntos de daño más."
+      }
+    },
+    {
+      "code": "EBW01-039",
+      "set": "EB01",
+      "pokemonCode": "EBC01-004",
+      "name": "Cadena de Rayos",
+      "official": false,
+      "japanese": "サンダーチェイン",
+      "type": "L",
+      "energy": [
+        "L",
+        "L",
+        "L",
+        "L"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 30 puntos de daño más. Vuelve a tirar tu Charakoro. (Puede repetirse hasta que falle.)",
+        "faceUp": "Este ataque hace 30 puntos de daño más. Vuelve a tirar tu Charakoro. (Puede repetirse hasta que falle.)",
+        "faceDown": "Este ataque hace 30 puntos de daño más. Vuelve a tirar tu Charakoro. (Puede repetirse hasta que falle.)"
+      }
+    },
+    {
+      "code": "EBW01-040",
+      "set": "EB01",
+      "pokemonCode": "EBC01-004",
+      "name": "Vuelo",
+      "official": true,
+      "japanese": "そらをとぶ",
+      "type": "Y",
+      "energy": [
+        "Y",
+        "C",
+        "C"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "Durante el próximo turno de tu rival, este Pokémon no recibe daño de los ataques.",
+        "handstand": "Este ataque no hace nada.",
+        "faceUp": "Este ataque no hace nada.",
+        "faceDown": "Este ataque no hace nada.",
+        "sideways": "Durante el próximo turno de tu rival, este Pokémon no recibe daño de los ataques."
+      }
+    },
+    {
+      "code": "EBW01-041",
+      "set": "EB01",
+      "pokemonCode": "EBC01-005",
+      "name": "Placaje Rocoso",
+      "official": true,
+      "japanese": "がんせきタックル",
+      "type": "F",
+      "energy": [
+        "F",
+        "F"
+      ],
+      "damage": 10,
+      "effect": "Durante el próximo turno de tu rival, los ataques hacen 10 puntos de daño menos a este Pokémon.",
+      "orientations": {
+        "standing": "Reduce el daño recibido en 20 puntos adicionales.",
+        "sideways": "Reduce el daño recibido en 20 puntos adicionales."
+      }
+    },
+    {
+      "code": "EBW01-042",
+      "set": "EB01",
+      "pokemonCode": "EBC01-005",
+      "name": "Lanzarrocas",
+      "official": true,
+      "japanese": "いわおとし",
+      "type": "F",
+      "energy": [
+        "F",
+        "F",
+        "F"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 30 puntos de daño más.",
+        "faceUp": "Este ataque hace 30 puntos de daño más."
+      }
+    },
+    {
+      "code": "EBW01-043",
+      "set": "EB01",
+      "pokemonCode": "EBC01-005",
+      "name": "Muro de Rocas",
+      "official": true,
+      "japanese": "ロックウォール",
+      "type": "F",
+      "energy": [
+        "F",
+        "F",
+        "F"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "Durante el próximo turno de tu rival, los ataques hacen 30 puntos de daño menos a este Pokémon.",
+        "faceUp": "Durante el próximo turno de tu rival, los ataques hacen 30 puntos de daño menos a este Pokémon.",
+        "sideways": "Durante el próximo turno de tu rival, los ataques hacen 30 puntos de daño menos a este Pokémon."
+      }
+    },
+    {
+      "code": "EBW01-044",
+      "set": "EB01",
+      "pokemonCode": "EBC01-005",
+      "name": "Impacto Duro",
+      "official": false,
+      "japanese": "ハードインパクト",
+      "type": "F",
+      "energy": [
+        "F",
+        "F",
+        "F",
+        "F"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 30 puntos de daño más.",
+        "handstand": "En tu próximo turno, reduce el número de Enekoro que tiras en 1.",
+        "sideways": "Este ataque hace 30 puntos de daño más."
+      }
+    },
+    {
+      "code": "EBW01-045",
+      "set": "EB01",
+      "pokemonCode": "EBC01-005",
+      "name": "Giro Bola",
+      "official": true,
+      "japanese": "ジャイロボール",
+      "type": "M",
+      "energy": [
+        "M",
+        "C",
+        "C"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "Tu rival también tira su Charakoro. Si cae en {hs}{do}, este ataque hace 60 puntos de daño más.",
+        "faceUp": "Tu rival también tira su Charakoro. Si cae en {hs}{do}, este ataque hace 60 puntos de daño más.",
+        "sideways": "Tu rival también tira su Charakoro. Si cae en {hs}{do}, este ataque hace 60 puntos de daño más."
+      }
+    },
+    {
+      "code": "EBW01-046",
+      "set": "EB01",
+      "pokemonCode": "EBC01-005",
+      "name": "Apisonar",
+      "official": true,
+      "japanese": "ぶつかる",
+      "type": "F",
+      "energy": [
+        "F"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 10 puntos de daño más.",
+        "faceUp": "Este ataque hace 10 puntos de daño más.",
+        "faceDown": "Este ataque hace 10 puntos de daño más."
+      }
+    },
+    {
+      "code": "EBW01-047",
+      "set": "EB01",
+      "pokemonCode": "EBC01-005",
+      "name": "Avalancha",
+      "official": true,
+      "japanese": "いわなだれ",
+      "type": "F",
+      "energy": [
+        "F",
+        "F"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 20 puntos de daño más.",
+        "sideways": "Este ataque hace 20 puntos de daño más."
+      }
+    },
+    {
+      "code": "EBW01-048",
+      "set": "EB01",
+      "pokemonCode": "EBC01-005",
+      "name": "Placaje Salvaje",
+      "official": true,
+      "japanese": "ワイルドタックル",
+      "type": "F",
+      "energy": [
+        "F",
+        "F",
+        "F"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 20 puntos de daño más.",
+        "handstand": "Este Pokémon se hace 20 puntos de daño.",
+        "faceUp": "Este ataque hace 20 puntos de daño más.",
+        "faceDown": "Este Pokémon se hace 20 puntos de daño.",
+        "sideways": "Este Pokémon se hace 20 puntos de daño."
+      }
+    },
+    {
+      "code": "EBW01-049",
+      "set": "EB01",
+      "pokemonCode": "EBC01-005",
+      "name": "Barrera de Roca",
+      "official": false,
+      "japanese": "がんせきバリア",
+      "type": "F",
+      "energy": [
+        "F",
+        "F",
+        "F",
+        "F"
+      ],
+      "damage": 40,
+      "effect": null,
+      "orientations": {
+        "standing": "Durante el próximo turno de tu rival, los ataques hacen 50 puntos de daño menos a este Pokémon.",
+        "faceUp": "Durante el próximo turno de tu rival, los ataques hacen 50 puntos de daño menos a este Pokémon."
+      }
+    },
+    {
+      "code": "EBW01-050",
+      "set": "EB01",
+      "pokemonCode": "EBC01-005",
+      "name": "Cola Férrea",
+      "official": true,
+      "japanese": "アイアンテール",
+      "type": "M",
+      "energy": [
+        "M",
+        "C",
+        "C"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "Durante el próximo turno de tu rival, los ataques hacen 10 puntos de daño menos a este Pokémon.",
+        "sideways": "Durante el próximo turno de tu rival, los ataques hacen 10 puntos de daño menos a este Pokémon."
+      }
+    },
+    {
+      "code": "EBW01-051",
+      "set": "EB01",
+      "pokemonCode": "EBC01-006",
+      "name": "Gas Venenoso",
+      "official": true,
+      "japanese": "どくガス",
+      "type": "D",
+      "energy": [
+        "D"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "En el próximo turno de tu rival, reduce el número de Enekoro que tira en 1.",
+        "sideways": "En el próximo turno de tu rival, reduce el número de Enekoro que tira en 1."
+      }
+    },
+    {
+      "code": "EBW01-052",
+      "set": "EB01",
+      "pokemonCode": "EBC01-006",
+      "name": "Lanzamiento Lodo",
+      "official": false,
+      "japanese": "ベトベトなげ",
+      "type": "D",
+      "energy": [
+        "D",
+        "D"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 20 puntos de daño más.",
+        "sideways": "Este ataque hace 20 puntos de daño más."
+      }
+    },
+    {
+      "code": "EBW01-053",
+      "set": "EB01",
+      "pokemonCode": "EBC01-006",
+      "name": "Cura Tóxica",
+      "official": false,
+      "japanese": "どくどくヒール",
+      "type": "D",
+      "energy": [
+        "D",
+        "D",
+        "D"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "Durante tu último turno, si el ataque \"Gas Venenoso\" de este Pokémon tuvo éxito, cura 30 puntos de daño de este Pokémon.",
+        "faceUp": "Durante tu último turno, si el ataque \"Gas Venenoso\" de este Pokémon tuvo éxito, cura 30 puntos de daño de este Pokémon.",
+        "sideways": "Durante tu último turno, si el ataque \"Gas Venenoso\" de este Pokémon tuvo éxito, cura 30 puntos de daño de este Pokémon."
+      }
+    },
+    {
+      "code": "EBW01-054",
+      "set": "EB01",
+      "pokemonCode": "EBC01-006",
+      "name": "Anillo Lodo",
+      "official": false,
+      "japanese": "ヘドロでかこむ",
+      "type": "D",
+      "energy": [
+        "D",
+        "D",
+        "D"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "Elige 1 de los ataques de tu rival. Durante su próximo turno, no pueden usar ese ataque.",
+        "faceUp": "Elige 1 de los ataques de tu rival. Durante su próximo turno, no pueden usar ese ataque.",
+        "faceDown": "Elige 1 de los ataques de tu rival. Durante su próximo turno, no pueden usar ese ataque."
+      }
+    },
+    {
+      "code": "EBW01-055",
+      "set": "EB01",
+      "pokemonCode": "EBC01-006",
+      "name": "Puño Tóxico",
+      "official": false,
+      "japanese": "ベノムパンチ",
+      "type": "D",
+      "energy": [
+        "D",
+        "D",
+        "D",
+        "D"
+      ],
+      "damage": 40,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 30 puntos de daño más.",
+        "faceUp": "Este ataque hace 30 puntos de daño más."
+      }
+    },
+    {
+      "code": "EBW01-057",
+      "set": "EB01",
+      "pokemonCode": "EBC01-006",
+      "name": "Corte Venenoso",
+      "official": false,
+      "japanese": "ベノムスリップ",
+      "type": "D",
+      "energy": [
+        "D",
+        "D"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "Tu rival también tira su Charakoro. Si cae en {hs}{do}{s1}{s2}, este ataque hace 20 puntos de daño más.",
+        "faceUp": "Tu rival también tira su Charakoro. Si cae en {hs}{do}{s1}{s2}, este ataque hace 20 puntos de daño más.",
+        "sideways": "Tu rival también tira su Charakoro. Si cae en {hs}{do}{s1}{s2}, este ataque hace 20 puntos de daño más."
+      }
+    },
+    {
+      "code": "EBW01-058",
+      "set": "EB01",
+      "pokemonCode": "EBC01-006",
+      "name": "Chorro Tóxico",
+      "official": false,
+      "japanese": "どくどくボンバー",
+      "type": "D",
+      "energy": [
+        "D",
+        "D",
+        "D"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "Durante tu último turno, si el ataque \"Gas Venenoso\" de este Pokémon tuvo éxito, este ataque hace 30 puntos de daño más.",
+        "faceUp": "Durante tu último turno, si el ataque \"Gas Venenoso\" de este Pokémon tuvo éxito, este ataque hace 30 puntos de daño más.",
+        "faceDown": "Durante tu último turno, si el ataque \"Gas Venenoso\" de este Pokémon tuvo éxito, este ataque hace 30 puntos de daño más."
+      }
+    },
+    {
+      "code": "EBW01-059",
+      "set": "EB01",
+      "pokemonCode": "EBC01-006",
+      "name": "Placaje Venenoso",
+      "official": false,
+      "japanese": "ヘドロタックル",
+      "type": "D",
+      "energy": [
+        "D",
+        "D",
+        "D"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 40 puntos de daño más.",
+        "handstand": "Este Pokémon se hace 20 puntos de daño.",
+        "faceUp": "Este Pokémon se hace 20 puntos de daño.",
+        "faceDown": "Este Pokémon se hace 20 puntos de daño.",
+        "sideways": "Este ataque hace 40 puntos de daño más."
+      }
+    },
+    {
+      "code": "EBW01-060",
+      "set": "EB01",
+      "pokemonCode": "EBC01-006",
+      "name": "Veneno Hostil",
+      "official": false,
+      "japanese": "いやがらせベノム",
+      "type": "D",
+      "energy": [
+        "D",
+        "D",
+        "D",
+        "D"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "Durante el último turno de tu rival, si su tirada de Enekoro falló, este ataque hace 50 puntos de daño más.",
+        "sideways": "Durante el último turno de tu rival, si su tirada de Enekoro falló, este ataque hace 50 puntos de daño más."
+      }
+    },
+    {
+      "code": "EBW02-001",
+      "set": "EB02",
+      "pokemonCode": "EBC02-001",
+      "name": "Cascada",
+      "official": true,
+      "japanese": "たきのぼり",
+      "type": "W",
+      "energy": [
+        "W",
+        "W"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 20 puntos de daño más.",
+        "faceUp": "Este ataque hace 20 puntos de daño más.",
+        "faceDown": "Este ataque hace 20 puntos de daño más."
+      }
+    },
+    {
+      "code": "EBW02-002",
+      "set": "EB02",
+      "pokemonCode": "EBC02-001",
+      "name": "Tajo Cambiante",
+      "official": false,
+      "japanese": "へんげぎり",
+      "type": "W",
+      "energy": [
+        "W",
+        "W"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "Elige 1 de tus Enekoro y cambia todos los chips que quieras. (Usa chips que ya tengas.)",
+        "faceUp": "Elige 1 de tus Enekoro y cambia todos los chips que quieras. (Usa chips que ya tengas.)",
+        "sideways": "Elige 1 de tus Enekoro y cambia todos los chips que quieras. (Usa chips que ya tengas.)"
+      }
+    },
+    {
+      "code": "EBW02-003",
+      "set": "EB02",
+      "pokemonCode": "EBC02-001",
+      "name": "Shuriken de Agua",
+      "official": true,
+      "japanese": "みずしゅりけん",
+      "type": "W",
+      "energy": [
+        "W",
+        "W",
+        "W"
+      ],
+      "damage": null,
+      "effect": "Tira tu Charakoro 3 veces.",
+      "orientations": {
+        "standing": "Cada vez que el Charakoro caiga bien en este ataque, este ataque hace 20 puntos de daño más.",
+        "sideways": "Cada vez que el Charakoro caiga bien en este ataque, este ataque hace 20 puntos de daño más."
+      }
+    },
+    {
+      "code": "EBW02-004",
+      "set": "EB02",
+      "pokemonCode": "EBC02-001",
+      "name": "Sombra Vil",
+      "official": true,
+      "japanese": "かげうち",
+      "type": "P",
+      "energy": [
+        "P",
+        "C",
+        "C"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 30 puntos de daño más.",
+        "faceUp": "Este ataque hace 30 puntos de daño más."
+      }
+    },
+    {
+      "code": "EBW02-005",
+      "set": "EB02",
+      "pokemonCode": "EBC02-001",
+      "name": "Tajo Umbrío",
+      "official": true,
+      "japanese": "つじぎり",
+      "type": "D",
+      "energy": [
+        "D",
+        "C",
+        "C",
+        "C"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 30 puntos de daño más.",
+        "faceUp": "Este ataque hace 30 puntos de daño más.",
+        "faceDown": "Este ataque hace 30 puntos de daño más."
+      }
+    },
+    {
+      "code": "EBW02-006",
+      "set": "EB02",
+      "pokemonCode": "EBC02-001",
+      "name": "Pistola Agua",
+      "official": true,
+      "japanese": "みずでっぽう",
+      "type": "W",
+      "energy": [
+        "W"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 20 puntos de daño más.",
+        "faceUp": "Este ataque hace 20 puntos de daño más."
+      }
+    },
+    {
+      "code": "EBW02-007",
+      "set": "EB02",
+      "pokemonCode": "EBC02-001",
+      "name": "Golpe Niebla",
+      "official": true,
+      "japanese": "かすみぎり",
+      "type": "W",
+      "energy": [
+        "W",
+        "W"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 40 puntos de daño más."
+      }
+    },
+    {
+      "code": "EBW02-008",
+      "set": "EB02",
+      "pokemonCode": "EBC02-001",
+      "name": "Clon Jutsu",
+      "official": false,
+      "japanese": "ぶんしんのじゅつ",
+      "type": "W",
+      "energy": [
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      "damage": null,
+      "effect": "Tira tu Charakoro 2 veces.",
+      "orientations": {
+        "standing": "Cada vez que el Charakoro caiga bien en este ataque, este ataque hace 40 puntos de daño más.",
+        "sideways": "Cada vez que el Charakoro caiga bien en este ataque, este ataque hace 40 puntos de daño más."
+      }
+    },
+    {
+      "code": "EBW02-009",
+      "set": "EB02",
+      "pokemonCode": "EBC02-001",
+      "name": "Abrecaminos",
+      "official": true,
+      "japanese": "くさわけ",
+      "type": "G",
+      "energy": [
+        "G",
+        "C",
+        "C"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 30 puntos de daño más.",
+        "faceUp": "Este ataque hace 30 puntos de daño más."
+      }
+    },
+    {
+      "code": "EBW02-010",
+      "set": "EB02",
+      "pokemonCode": "EBC02-001",
+      "name": "Patada Baja",
+      "official": true,
+      "japanese": "けたぐり",
+      "type": "F",
+      "energy": [
+        "F",
+        "C",
+        "C"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 20 puntos de daño más.",
+        "sideways": "Este ataque hace 20 puntos de daño más."
+      }
+    },
+    {
+      "code": "EBW02-011",
+      "set": "EB02",
+      "pokemonCode": "EBC02-002",
+      "name": "Toque",
+      "official": true,
+      "japanese": "たたく",
+      "type": "P",
+      "energy": [
+        "P"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 20 puntos de daño más.",
+        "faceUp": "Este ataque hace 20 puntos de daño más."
+      }
+    },
+    {
+      "code": "EBW02-012",
+      "set": "EB02",
+      "pokemonCode": "EBC02-002",
+      "name": "Viento Feérico",
+      "official": true,
+      "japanese": "ようせいのかぜ",
+      "type": "P",
+      "energy": [
+        "P",
+        "P"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 30 puntos de daño más.",
+        "sideways": "Este ataque hace 30 puntos de daño más."
+      }
+    },
+    {
+      "code": "EBW02-013",
+      "set": "EB02",
+      "pokemonCode": "EBC02-002",
+      "name": "Golpe Martillo",
+      "official": false,
+      "japanese": "ハンマーストライク",
+      "type": "P",
+      "energy": [
+        "P",
+        "P",
+        "P"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 60 puntos de daño más.",
+        "handstand": "En tu próximo turno, reduce el número de Enekoro que tiras en 2.",
+        "faceUp": "Este ataque hace 60 puntos de daño más.",
+        "faceDown": "Este ataque hace 60 puntos de daño más.",
+        "sideways": "En tu próximo turno, reduce el número de Enekoro que tiras en 2."
+      }
+    },
+    {
+      "code": "EBW02-014",
+      "set": "EB02",
+      "pokemonCode": "EBC02-002",
+      "name": "Carantoña",
+      "official": true,
+      "japanese": "じゃれつく",
+      "type": "P",
+      "energy": [
+        "P",
+        "P",
+        "P",
+        "P"
+      ],
+      "damage": 10,
+      "effect": "En el próximo turno de tu rival, reduce el número de Enekoro que tira en 1.",
+      "orientations": {
+        "standing": "Este ataque hace 40 puntos de daño más.",
+        "sideways": "Este ataque hace 40 puntos de daño más."
+      }
+    },
+    {
+      "code": "EBW02-015",
+      "set": "EB02",
+      "pokemonCode": "EBC02-002",
+      "name": "Garra Metal",
+      "official": true,
+      "japanese": "メタルクロー",
+      "type": "M",
+      "energy": [
+        "M",
+        "C"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 40 puntos de daño más."
+      }
+    },
+    {
+      "code": "EBW02-016",
+      "set": "EB02",
+      "pokemonCode": "EBC02-002",
+      "name": "Puño Tirabuzón",
+      "official": true,
+      "japanese": "どつく",
+      "type": "P",
+      "energy": [
+        "P"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 10 puntos de daño más.",
+        "sideways": "Este ataque hace 10 puntos de daño más."
+      }
+    },
+    {
+      "code": "EBW02-017",
+      "set": "EB02",
+      "pokemonCode": "EBC02-002",
+      "name": "Beso Drenaje",
+      "official": true,
+      "japanese": "ドレインキッス",
+      "type": "P",
+      "energy": [
+        "P",
+        "P"
+      ],
+      "damage": 10,
+      "effect": "Cura 10 puntos de daño de este Pokémon.",
+      "orientations": {
+        "standing": "Este ataque hace 30 puntos de daño más.",
+        "faceUp": "Este ataque hace 30 puntos de daño más."
+      }
+    },
+    {
+      "code": "EBW02-018",
+      "set": "EB02",
+      "pokemonCode": "EBC02-002",
+      "name": "Sollozo",
+      "official": true,
+      "japanese": "なきわめく",
+      "type": "P",
+      "energy": [
+        "P",
+        "P",
+        "P"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 30 puntos de daño más.",
+        "faceUp": "Este ataque hace 30 puntos de daño más.",
+        "sideways": "Este ataque hace 30 puntos de daño más."
+      }
+    },
+    {
+      "code": "EBW02-019",
+      "set": "EB02",
+      "pokemonCode": "EBC02-002",
+      "name": "Golpe Salvaje",
+      "official": false,
+      "japanese": "ワイルドスタンプ",
+      "type": "P",
+      "energy": [
+        "P",
+        "P",
+        "P"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 50 puntos de daño más.",
+        "handstand": "Este Pokémon se hace 30 puntos de daño.",
+        "faceUp": "Este Pokémon se hace 30 puntos de daño.",
+        "faceDown": "Este Pokémon se hace 30 puntos de daño.",
+        "sideways": "Este ataque hace 50 puntos de daño más."
+      }
+    },
+    {
+      "code": "EBW02-020",
+      "set": "EB02",
+      "pokemonCode": "EBC02-002",
+      "name": "Impacto Extraño",
+      "official": false,
+      "japanese": "ワンダーインパクト",
+      "type": "P",
+      "energy": [
+        "P",
+        "P",
+        "P",
+        "P"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 60 puntos de daño más.",
+        "faceUp": "Este ataque hace 60 puntos de daño más.",
+        "faceDown": "Este ataque hace 60 puntos de daño más."
+      }
+    },
+    {
+      "code": "EBW02-021",
+      "set": "EB02",
+      "pokemonCode": "EBC02-003",
+      "name": "Arañazo Garfa",
+      "official": false,
+      "japanese": "ツメでひっかく",
+      "type": "D",
+      "energy": [
+        "D"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 10 puntos de daño más.",
+        "faceUp": "Este ataque hace 10 puntos de daño más.",
+        "faceDown": "Este ataque hace 10 puntos de daño más."
+      }
+    },
+    {
+      "code": "EBW02-022",
+      "set": "EB02",
+      "pokemonCode": "EBC02-003",
+      "name": "Finta",
+      "official": true,
+      "japanese": "だましうち",
+      "type": "D",
+      "energy": [
+        "D",
+        "D"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "handstand": "Este ataque hace 20 puntos de daño más.",
+        "faceDown": "Este ataque hace 20 puntos de daño más."
+      }
+    },
+    {
+      "code": "EBW02-023",
+      "set": "EB02",
+      "pokemonCode": "EBC02-003",
+      "name": "Socavar",
+      "official": true,
+      "japanese": "ほりかえす",
+      "type": "D",
+      "energy": [
+        "D",
+        "D"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "En el próximo turno de tu rival, elige 1 Enekoro lanzados, y tiralos de nuevo. (Tú eliges qué Enekoros relanzar.)",
+        "faceUp": "En el próximo turno de tu rival, elige 1 Enekoro lanzados, y tiralos de nuevo. (Tú eliges qué Enekoros relanzar.)",
+        "sideways": "En el próximo turno de tu rival, elige 1 Enekoro lanzados, y tiralos de nuevo. (Tú eliges qué Enekoros relanzar.)"
+      }
+    },
+    {
+      "code": "EBW02-024",
+      "set": "EB02",
+      "pokemonCode": "EBC02-003",
+      "name": "Instigar",
+      "official": true,
+      "japanese": "そそのかす",
+      "type": "D",
+      "energy": [
+        "D",
+        "D",
+        "D"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "Elige 1 de los ataques de tu rival. Durante su próximo turno, usan ese ataque.",
+        "sideways": "Elige 1 de los ataques de tu rival. Durante su próximo turno, usan ese ataque."
+      }
+    },
+    {
+      "code": "EBW02-025",
+      "set": "EB02",
+      "pokemonCode": "EBC02-003",
+      "name": "Viento Hielo",
+      "official": true,
+      "japanese": "こごえるかぜ",
+      "type": "W",
+      "energy": [
+        "W"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 20 puntos de daño más.",
+        "faceUp": "Este ataque hace 20 puntos de daño más."
+      }
+    },
+    {
+      "code": "EBW02-026",
+      "set": "EB02",
+      "pokemonCode": "EBC02-003",
+      "name": "Garra Sombría",
+      "official": false,
+      "japanese": "ダーククロー",
+      "type": "D",
+      "energy": [
+        "D"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 30 puntos de daño más."
+      }
+    },
+    {
+      "code": "EBW02-027",
+      "set": "EB02",
+      "pokemonCode": "EBC02-003",
+      "name": "Tropezón",
+      "official": true,
+      "japanese": "ころばす",
+      "type": "D",
+      "energy": [
+        "D",
+        "D"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "En el próximo turno de tu rival, fija la dirección de su Charakoro a {do}.",
+        "faceUp": "En el próximo turno de tu rival, fija la dirección de su Charakoro a {do}.",
+        "faceDown": "En el próximo turno de tu rival, fija la dirección de su Charakoro a {do}."
+      }
+    },
+    {
+      "code": "EBW02-028",
+      "set": "EB02",
+      "pokemonCode": "EBC02-003",
+      "name": "Pulso Umbrío",
+      "official": true,
+      "japanese": "あくのはどう",
+      "type": "D",
+      "energy": [
+        "D",
+        "D",
+        "D"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 30 puntos de daño más.",
+        "faceUp": "Este ataque hace 30 puntos de daño más."
+      }
+    },
+    {
+      "code": "EBW02-029",
+      "set": "EB02",
+      "pokemonCode": "EBC02-003",
+      "name": "Joya Destello",
+      "official": false,
+      "japanese": "ジュエルフラッシュ",
+      "type": "D",
+      "energy": [
+        "D",
+        "D",
+        "D",
+        "D"
+      ],
+      "damage": 50,
+      "effect": null,
+      "orientations": {
+        "standing": "En el próximo turno de tu rival, elige 2 Enekoro lanzados, y tiralos de nuevo. (Tú eliges qué Enekoros relanzar.)",
+        "faceUp": "En el próximo turno de tu rival, elige 2 Enekoro lanzados, y tiralos de nuevo. (Tú eliges qué Enekoros relanzar.)",
+        "sideways": "En el próximo turno de tu rival, elige 2 Enekoro lanzados, y tiralos de nuevo. (Tú eliges qué Enekoros relanzar.)"
+      }
+    },
+    {
+      "code": "EBW02-030",
+      "set": "EB02",
+      "pokemonCode": "EBC02-003",
+      "name": "Psicorrayo",
+      "official": true,
+      "japanese": "サイケこうせん",
+      "type": "P",
+      "energy": [
+        "P",
+        "P"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 20 puntos de daño más.",
+        "faceUp": "Este ataque hace 20 puntos de daño más."
+      }
+    },
+    {
+      "code": "EBW02-031",
+      "set": "EB02",
+      "pokemonCode": "EBC02-004",
+      "name": "Garra Metal",
+      "official": true,
+      "japanese": "メタルクロー",
+      "type": "M",
+      "energy": [
+        "M"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 30 puntos de daño más."
+      }
+    },
+    {
+      "code": "EBW02-032",
+      "set": "EB02",
+      "pokemonCode": "EBC02-004",
+      "name": "Cabezazo de Acero",
+      "official": true,
+      "japanese": "はがねのずつき",
+      "type": "M",
+      "energy": [
+        "M",
+        "M"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 20 puntos de daño más.",
+        "sideways": "Este ataque hace 20 puntos de daño más."
+      }
+    },
+    {
+      "code": "EBW02-033",
+      "set": "EB02",
+      "pokemonCode": "EBC02-004",
+      "name": "Escudo Tirano",
+      "official": false,
+      "japanese": "タイラントシールド",
+      "type": "M",
+      "energy": [
+        "M",
+        "M",
+        "M"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "Durante el próximo turno de tu rival, si este Pokémon resulta dañado por un ataque, evita el daño infligido por ese ataque a este Pokémon si el daño es de 40 puntos o menos.",
+        "faceUp": "Durante el próximo turno de tu rival, si este Pokémon resulta dañado por un ataque, evita el daño infligido por ese ataque a este Pokémon si el daño es de 40 puntos o menos.",
+        "faceDown": "Durante el próximo turno de tu rival, si este Pokémon resulta dañado por un ataque, evita el daño infligido por ese ataque a este Pokémon si el daño es de 40 puntos o menos."
+      }
+    },
+    {
+      "code": "EBW02-034",
+      "set": "EB02",
+      "pokemonCode": "EBC02-004",
+      "name": "Carga Descuidada",
+      "official": true,
+      "japanese": "とつげき",
+      "type": "M",
+      "energy": [
+        "M",
+        "M",
+        "M",
+        "M"
+      ],
+      "damage": 40,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 40 puntos de daño más.",
+        "handstand": "Este Pokémon se hace 40 puntos de daño.",
+        "faceUp": "Este ataque hace 40 puntos de daño más.",
+        "faceDown": "Este Pokémon se hace 40 puntos de daño."
+      }
+    },
+    {
+      "code": "EBW02-035",
+      "set": "EB02",
+      "pokemonCode": "EBC02-004",
+      "name": "Tumba Rocas",
+      "official": true,
+      "japanese": "がんせきふうじ",
+      "type": "F",
+      "energy": [
+        "F",
+        "C",
+        "C",
+        "C"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "En el próximo turno de tu rival, reduce el número de Enekoro que tira en 1.",
+        "faceUp": "En el próximo turno de tu rival, reduce el número de Enekoro que tira en 1.",
+        "faceDown": "En el próximo turno de tu rival, reduce el número de Enekoro que tira en 1."
+      }
+    },
+    {
+      "code": "EBW02-036",
+      "set": "EB02",
+      "pokemonCode": "EBC02-004",
+      "name": "Apisonar",
+      "official": true,
+      "japanese": "ぶつかる",
+      "type": "M",
+      "energy": [
+        "M"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 10 puntos de daño más.",
+        "faceUp": "Este ataque hace 10 puntos de daño más.",
+        "sideways": "Este ataque hace 10 puntos de daño más."
+      }
+    },
+    {
+      "code": "EBW02-037",
+      "set": "EB02",
+      "pokemonCode": "EBC02-004",
+      "name": "Cuerpo Acero",
+      "official": false,
+      "japanese": "こうてつボディ",
+      "type": "M",
+      "energy": [
+        "M",
+        "M"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "Durante el próximo turno de tu rival, si este Pokémon resulta dañado por un ataque, evita el daño infligido por ese ataque a este Pokémon si el daño es de 30 puntos o menos.",
+        "faceUp": "Durante el próximo turno de tu rival, si este Pokémon resulta dañado por un ataque, evita el daño infligido por ese ataque a este Pokémon si el daño es de 30 puntos o menos.",
+        "sideways": "Durante el próximo turno de tu rival, si este Pokémon resulta dañado por un ataque, evita el daño infligido por ese ataque a este Pokémon si el daño es de 30 puntos o menos."
+      }
+    },
+    {
+      "code": "EBW02-038",
+      "set": "EB02",
+      "pokemonCode": "EBC02-004",
+      "name": "Metal Poderoso",
+      "official": false,
+      "japanese": "パワフルスチール",
+      "type": "M",
+      "energy": [
+        "M",
+        "M",
+        "M"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "Si este Pokémon no fue dañado por un ataque durante el último turno de tu rival, este ataque hace 40 puntos de daño más.",
+        "sideways": "Si este Pokémon no fue dañado por un ataque durante el último turno de tu rival, este ataque hace 40 puntos de daño más."
+      }
+    },
+    {
+      "code": "EBW02-039",
+      "set": "EB02",
+      "pokemonCode": "EBC02-004",
+      "name": "Cabeza de Hierro",
+      "official": true,
+      "japanese": "アイアンヘッド",
+      "type": "M",
+      "energy": [
+        "M",
+        "M",
+        "M"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 20 puntos de daño más.",
+        "faceUp": "Este ataque hace 20 puntos de daño más.",
+        "faceDown": "Este ataque hace 20 puntos de daño más."
+      }
+    },
+    {
+      "code": "EBW02-040",
+      "set": "EB02",
+      "pokemonCode": "EBC02-004",
+      "name": "Puño Hielo",
+      "official": true,
+      "japanese": "れいとうパンチ",
+      "type": "W",
+      "energy": [
+        "W",
+        "C",
+        "C",
+        "C"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 20 puntos de daño más.",
+        "sideways": "Este ataque hace 20 puntos de daño más."
+      }
+    },
+    {
+      "code": "EBW02-041",
+      "set": "EB02",
+      "pokemonCode": "EBC02-005",
+      "name": "Hacer Trizas",
+      "official": true,
+      "japanese": "ひきさく",
+      "type": "N",
+      "energy": [
+        "R"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 10 puntos de daño más.",
+        "sideways": "Este ataque hace 10 puntos de daño más."
+      }
+    },
+    {
+      "code": "EBW02-042",
+      "set": "EB02",
+      "pokemonCode": "EBC02-005",
+      "name": "Pulso Dragón",
+      "official": true,
+      "japanese": "りゅうのはどう",
+      "type": "N",
+      "energy": [
+        "R",
+        "R"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 30 puntos de daño más.",
+        "handstand": "En tu próximo turno, reduce el número de Enekoro que tiras en 2.",
+        "faceUp": "Este ataque hace 30 puntos de daño más.",
+        "faceDown": "En tu próximo turno, reduce el número de Enekoro que tiras en 2."
+      }
+    },
+    {
+      "code": "EBW02-043",
+      "set": "EB02",
+      "pokemonCode": "EBC02-005",
+      "name": "Vasto Impacto",
+      "official": true,
+      "japanese": "ワイドブレイカー",
+      "type": "N",
+      "energy": [
+        "R",
+        "R",
+        "L"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "sideways": "En el próximo turno de tu rival, reduce el número de Enekoro que tira en 1."
+      }
+    },
+    {
+      "code": "EBW02-044",
+      "set": "EB02",
+      "pokemonCode": "EBC02-005",
+      "name": "Estampida Salvaje",
+      "official": false,
+      "japanese": "げきりんランページ",
+      "type": "N",
+      "energy": [
+        "R",
+        "R",
+        "R",
+        "L",
+        "L"
+      ],
+      "damage": 60,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 60 puntos de daño más.",
+        "faceUp": "Este ataque hace 60 puntos de daño más."
+      }
+    },
+    {
+      "code": "EBW02-045",
+      "set": "EB02",
+      "pokemonCode": "EBC02-005",
+      "name": "Llama Dragón",
+      "official": false,
+      "japanese": "ドラゴンフレイム",
+      "type": "R",
+      "energy": [
+        "R",
+        "R",
+        "C",
+        "C"
+      ],
+      "damage": 40,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 30 puntos de daño más.",
+        "handstand": "Este Pokémon se hace 30 puntos de daño.",
+        "faceUp": "Este Pokémon se hace 30 puntos de daño.",
+        "faceDown": "Este Pokémon se hace 30 puntos de daño.",
+        "sideways": "Este ataque hace 30 puntos de daño más."
+      }
+    },
+    {
+      "code": "EBW02-046",
+      "set": "EB02",
+      "pokemonCode": "EBC02-005",
+      "name": "Ciclón",
+      "official": true,
+      "japanese": "たつまき",
+      "type": "N",
+      "energy": [
+        "L"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 10 puntos de daño más.",
+        "faceUp": "Este ataque hace 10 puntos de daño más.",
+        "sideways": "Este ataque hace 10 puntos de daño más."
+      }
+    },
+    {
+      "code": "EBW02-047",
+      "set": "EB02",
+      "pokemonCode": "EBC02-005",
+      "name": "Garra Dragón",
+      "official": true,
+      "japanese": "ドラゴンクロー",
+      "type": "N",
+      "energy": [
+        "R",
+        "L"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 30 puntos de daño más.",
+        "faceUp": "Este ataque hace 30 puntos de daño más."
+      }
+    },
+    {
+      "code": "EBW02-048",
+      "set": "EB02",
+      "pokemonCode": "EBC02-005",
+      "name": "Cola Dragón",
+      "official": true,
+      "japanese": "ドラゴンテール",
+      "type": "N",
+      "energy": [
+        "R",
+        "L",
+        "L"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 20 puntos de daño más.",
+        "sideways": "Este ataque hace 20 puntos de daño más."
+      }
+    },
+    {
+      "code": "EBW02-049",
+      "set": "EB02",
+      "pokemonCode": "EBC02-005",
+      "name": "Explosión Dragón",
+      "official": true,
+      "japanese": "ドラゴンバースト",
+      "type": "N",
+      "energy": [
+        "R",
+        "C",
+        "C",
+        "C"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 20 puntos de daño por cada Energía {L} producida.",
+        "faceUp": "Este ataque hace 20 puntos de daño por cada Energía {L} producida."
+      }
+    },
+    {
+      "code": "EBW02-050",
+      "set": "EB02",
+      "pokemonCode": "EBC02-005",
+      "name": "Trueno",
+      "official": true,
+      "japanese": "かみなり",
+      "type": "L",
+      "energy": [
+        "L",
+        "L",
+        "L"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 60 puntos de daño más."
+      }
+    },
+    {
+      "code": "EBW02-051",
+      "set": "EB02",
+      "pokemonCode": "EBC02-006",
+      "name": "Destructor",
+      "official": true,
+      "japanese": "はたく",
+      "type": "C",
+      "energy": [
+        "Y",
+        "Y"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 40 puntos de daño más."
+      }
+    },
+    {
+      "code": "EBW02-052",
+      "set": "EB02",
+      "pokemonCode": "EBC02-006",
+      "name": "Placaje Oportuno",
+      "official": false,
+      "japanese": "チャンスタックル",
+      "type": "C",
+      "energy": [
+        "Y",
+        "Y"
+      ],
+      "damage": 20,
+      "effect": "En tu próximo turno, puedes volver a lanzar tu Charakoro.",
+      "orientations": {
+        "standing": "Puedes relanzarlo dos veces, no solo una vez."
+      }
+    },
+    {
+      "code": "EBW02-053",
+      "set": "EB02",
+      "pokemonCode": "EBC02-006",
+      "name": "Golpe Curva",
+      "official": true,
+      "japanese": "まるまるアタック",
+      "type": "C",
+      "energy": [
+        "Y",
+        "Y",
+        "Y"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 50 puntos de daño más."
+      }
+    },
+    {
+      "code": "EBW02-054",
+      "set": "EB02",
+      "pokemonCode": "EBC02-006",
+      "name": "Absorbebofetón",
+      "official": true,
+      "japanese": "ドレインビンタ",
+      "type": "C",
+      "energy": [
+        "Y",
+        "Y",
+        "Y",
+        "Y"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "Cura 50 puntos de daño de este Pokémon."
+      }
+    },
+    {
+      "code": "EBW02-055",
+      "set": "EB02",
+      "pokemonCode": "EBC02-006",
+      "name": "Bola Sombra",
+      "official": true,
+      "japanese": "シャドーボール",
+      "type": "P",
+      "energy": [
+        "P",
+        "C",
+        "C",
+        "C"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 30 puntos de daño más.",
+        "faceUp": "Este ataque hace 30 puntos de daño más."
+      }
+    },
+    {
+      "code": "EBW02-056",
+      "set": "EB02",
+      "pokemonCode": "EBC02-006",
+      "name": "Palmetazo",
+      "official": true,
+      "japanese": "ひらてうち",
+      "type": "C",
+      "energy": [
+        "Y"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 40 puntos de daño más."
+      }
+    },
+    {
+      "code": "EBW02-057",
+      "set": "EB02",
+      "pokemonCode": "EBC02-006",
+      "name": "Ovocuración",
+      "official": true,
+      "japanese": "タマゴうみ",
+      "type": "C",
+      "energy": [
+        "Y",
+        "Y"
+      ],
+      "damage": null,
+      "effect": "Cura 20 puntos de daño de este Pokémon.",
+      "orientations": {
+        "standing": "Cura todos los puntos de daño a este Pokémon."
+      }
+    },
+    {
+      "code": "EBW02-058",
+      "set": "EB02",
+      "pokemonCode": "EBC02-006",
+      "name": "Puño Suerte",
+      "official": true,
+      "japanese": "ラッキーパンチ",
+      "type": "C",
+      "energy": [
+        "Y",
+        "Y",
+        "Y"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "En tu próximo turno, puedes volver a lanzar tu Charakoro."
+      }
+    },
+    {
+      "code": "EBW02-059",
+      "set": "EB02",
+      "pokemonCode": "EBC02-006",
+      "name": "Martillear",
+      "official": true,
+      "japanese": "ぶちかます",
+      "type": "C",
+      "energy": [
+        "Y",
+        "Y",
+        "Y",
+        "Y"
+      ],
+      "damage": 40,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 60 puntos de daño más."
+      }
+    },
+    {
+      "code": "EBW02-060",
+      "set": "EB02",
+      "pokemonCode": "EBC02-006",
+      "name": "Lanzallamas",
+      "official": true,
+      "japanese": "かえんほうしゃ",
+      "type": "R",
+      "energy": [
+        "R",
+        "C",
+        "C",
+        "C"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 30 puntos de daño más.",
+        "handstand": "En tu próximo turno, reduce el número de Enekoro que tiras en 1."
+      }
+    },
+    {
+      "code": "STW01-001",
+      "set": "ST",
+      "pokemonCode": "STC01-001",
+      "name": "Látigo Cepa",
+      "official": true,
+      "japanese": "つるのムチ",
+      "type": "G",
+      "energy": [
+        "G"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 20 puntos de daño más.",
+        "faceUp": "Este ataque hace 20 puntos de daño más.",
+        "faceDown": "Este ataque hace 20 puntos de daño más."
+      }
+    },
+    {
+      "code": "STW01-002",
+      "set": "ST",
+      "pokemonCode": "STC01-001",
+      "name": "Hoja Afilada",
+      "official": true,
+      "japanese": "はっぱカッター",
+      "type": "G",
+      "energy": [
+        "G",
+        "G"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 20 puntos de daño más.",
+        "sideways": "Este ataque hace 20 puntos de daño más."
+      }
+    },
+    {
+      "code": "STW01-003",
+      "set": "ST",
+      "pokemonCode": "STC01-001",
+      "name": "Drenadoras",
+      "official": true,
+      "japanese": "やどりぎのタネ",
+      "type": "G",
+      "energy": [
+        "G",
+        "G"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "En el próximo turno de tu rival, reduce el número de Enekoro que tira en 1. En tu próximo turno, incrementa el número de Enekoro que tiras en 1.",
+        "faceUp": "En el próximo turno de tu rival, reduce el número de Enekoro que tira en 1. En tu próximo turno, incrementa el número de Enekoro que tiras en 1.",
+        "sideways": "En el próximo turno de tu rival, reduce el número de Enekoro que tira en 1. En tu próximo turno, incrementa el número de Enekoro que tiras en 1."
+      }
+    },
+    {
+      "code": "STW01-004",
+      "set": "ST",
+      "pokemonCode": "STC01-001",
+      "name": "Hierba Lazo",
+      "official": true,
+      "japanese": "くさむすび",
+      "type": "G",
+      "energy": [
+        "G",
+        "G",
+        "G"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "Elige 1 de los ataques de tu rival. Durante su próximo turno, no pueden usar ese ataque.",
+        "faceUp": "Elige 1 de los ataques de tu rival. Durante su próximo turno, no pueden usar ese ataque.",
+        "faceDown": "Elige 1 de los ataques de tu rival. Durante su próximo turno, no pueden usar ese ataque."
+      }
+    },
+    {
+      "code": "STW01-005",
+      "set": "ST",
+      "pokemonCode": "STC01-001",
+      "name": "Carga Descuidada",
+      "official": true,
+      "japanese": "とつげき",
+      "type": "G",
+      "energy": [
+        "G",
+        "G",
+        "G"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 40 puntos de daño más.",
+        "handstand": "Este Pokémon se hace 30 puntos de daño.",
+        "faceUp": "Este ataque hace 40 puntos de daño más.",
+        "faceDown": "Este Pokémon se hace 30 puntos de daño."
+      }
+    },
+    {
+      "code": "STW01-006",
+      "set": "ST",
+      "pokemonCode": "STC01-001",
+      "name": "Gigadrenado",
+      "official": true,
+      "japanese": "ギガドレイン",
+      "type": "G",
+      "energy": [
+        "G",
+        "G",
+        "G",
+        "G"
+      ],
+      "damage": 40,
+      "effect": null,
+      "orientations": {
+        "standing": "Cura 40 puntos de daño de este Pokémon.",
+        "sideways": "Cura 40 puntos de daño de este Pokémon."
+      }
+    },
+    {
+      "code": "STW01-007",
+      "set": "ST",
+      "pokemonCode": "STC01-001",
+      "name": "Bomba Ácida",
+      "official": true,
+      "japanese": "アシッドボム",
+      "type": "D",
+      "energy": [
+        "D",
+        "C",
+        "C"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 20 puntos de daño más.",
+        "sideways": "Este ataque hace 20 puntos de daño más."
+      }
+    },
+    {
+      "code": "PRW01-1-08",
+      "set": "PR",
+      "pokemonCode": "STC01-001",
+      "name": "Tormenta Aroma",
+      "official": false,
+      "japanese": "アロマストーム",
+      "type": "G",
+      "energy": [
+        "G",
+        "G",
+        "G",
+        "G"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "Cura 50 puntos de daño de este Pokémon."
+      }
+    },
+    {
+      "code": "STW02-001",
+      "set": "ST",
+      "pokemonCode": "STC02-001",
+      "name": "Ascuas",
+      "official": true,
+      "japanese": "ひのこ",
+      "type": "R",
+      "energy": [
+        "R",
+        "R"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 30 puntos de daño más.",
+        "faceUp": "Este ataque hace 30 puntos de daño más."
+      }
+    },
+    {
+      "code": "STW02-002",
+      "set": "ST",
+      "pokemonCode": "STC02-001",
+      "name": "Calentar",
+      "official": false,
+      "japanese": "ヒートアップ",
+      "type": "R",
+      "energy": [
+        "R",
+        "R"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "En tu próximo turno, incrementa el número de Enekoro que tiras en 2.",
+        "faceUp": "En tu próximo turno, incrementa el número de Enekoro que tiras en 2."
+      }
+    },
+    {
+      "code": "STW02-003",
+      "set": "ST",
+      "pokemonCode": "STC02-001",
+      "name": "Lanzallamas",
+      "official": true,
+      "japanese": "かえんほうしゃ",
+      "type": "R",
+      "energy": [
+        "R",
+        "R",
+        "R"
+      ],
+      "damage": 40,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 20 puntos de daño más.",
+        "handstand": "En tu próximo turno, reduce el número de Enekoro que tiras en 1.",
+        "faceUp": "Este ataque hace 20 puntos de daño más.",
+        "faceDown": "En tu próximo turno, reduce el número de Enekoro que tiras en 1.",
+        "sideways": "En tu próximo turno, reduce el número de Enekoro que tiras en 1."
+      }
+    },
+    {
+      "code": "STW02-004",
+      "set": "ST",
+      "pokemonCode": "STC02-001",
+      "name": "Colmillo Ígneo",
+      "official": true,
+      "japanese": "ほのおのキバ",
+      "type": "R",
+      "energy": [
+        "R",
+        "R",
+        "R",
+        "R"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 30 puntos de daño más.",
+        "faceUp": "Este ataque hace 30 puntos de daño más.",
+        "faceDown": "Este ataque hace 30 puntos de daño más."
+      }
+    },
+    {
+      "code": "STW02-005",
+      "set": "ST",
+      "pokemonCode": "STC02-001",
+      "name": "Tormenta de Llamas",
+      "official": true,
+      "japanese": "フレアストーム",
+      "type": "R",
+      "energy": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 10 puntos de daño por cada Energía {R} producida.",
+        "sideways": "Este ataque hace 10 puntos de daño por cada Energía {R} producida."
+      }
+    },
+    {
+      "code": "STW02-006",
+      "set": "ST",
+      "pokemonCode": "STC02-001",
+      "name": "Puño Trueno",
+      "official": true,
+      "japanese": "かみなりパンチ",
+      "type": "L",
+      "energy": [
+        "L",
+        "C",
+        "C"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 20 puntos de daño más.",
+        "faceUp": "Este ataque hace 20 puntos de daño más.",
+        "sideways": "Este ataque hace 20 puntos de daño más."
+      }
+    },
+    {
+      "code": "STW02-007",
+      "set": "ST",
+      "pokemonCode": "STC02-001",
+      "name": "Garra Metal",
+      "official": true,
+      "japanese": "メタルクロー",
+      "type": "M",
+      "energy": [
+        "M",
+        "C",
+        "C"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 40 puntos de daño más."
+      }
+    },
+    {
+      "code": "PRW01-2-08",
+      "set": "PR",
+      "pokemonCode": "STC02-001",
+      "name": "Avivar",
+      "official": false,
+      "japanese": "フレイムアップ",
+      "type": "R",
+      "energy": [
+        "R",
+        "R",
+        "R"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "En tu próximo turno, incrementa el número de Enekoro que tiras en 2.",
+        "handstand": "En tu próximo turno, reduce el número de Enekoro que tiras en 2."
+      }
+    },
+    {
+      "code": "STW03-001",
+      "set": "ST",
+      "pokemonCode": "STC03-001",
+      "name": "Pistola Agua",
+      "official": true,
+      "japanese": "みずでっぽう",
+      "type": "W",
+      "energy": [
+        "W"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 20 puntos de daño más.",
+        "faceDown": "Este ataque hace 20 puntos de daño más."
+      }
+    },
+    {
+      "code": "STW03-002",
+      "set": "ST",
+      "pokemonCode": "STC03-001",
+      "name": "Refugio",
+      "official": true,
+      "japanese": "からにこもる",
+      "type": "W",
+      "energy": [
+        "W"
+      ],
+      "damage": null,
+      "effect": "Durante el próximo turno de tu rival, los ataques hacen 20 puntos de daño menos a este Pokémon.",
+      "orientations": {
+        "faceDown": "Cura 30 puntos de daño de este Pokémon."
+      }
+    },
+    {
+      "code": "STW03-003",
+      "set": "ST",
+      "pokemonCode": "STC03-001",
+      "name": "Hidropulso",
+      "official": true,
+      "japanese": "みずのはどう",
+      "type": "W",
+      "energy": [
+        "W",
+        "W"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 20 puntos de daño más.",
+        "sideways": "Este ataque hace 20 puntos de daño más."
+      }
+    },
+    {
+      "code": "STW03-004",
+      "set": "ST",
+      "pokemonCode": "STC03-001",
+      "name": "Ataque Caparazón",
+      "official": true,
+      "japanese": "シェルアタック",
+      "type": "W",
+      "energy": [
+        "W",
+        "W",
+        "W"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "Durante el próximo turno de tu rival, los ataques hacen 20 puntos de daño menos a este Pokémon.",
+        "faceUp": "Durante el próximo turno de tu rival, los ataques hacen 20 puntos de daño menos a este Pokémon.",
+        "faceDown": "Durante el próximo turno de tu rival, los ataques hacen 20 puntos de daño menos a este Pokémon."
+      }
+    },
+    {
+      "code": "STW03-005",
+      "set": "ST",
+      "pokemonCode": "STC03-001",
+      "name": "Rayo Burbuja",
+      "official": true,
+      "japanese": "バブルこうせん",
+      "type": "W",
+      "energy": [
+        "W",
+        "W",
+        "W"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "En el próximo turno de tu rival, reduce el número de Enekoro que tira en 1.",
+        "faceUp": "En el próximo turno de tu rival, reduce el número de Enekoro que tira en 1.",
+        "faceDown": "En el próximo turno de tu rival, reduce el número de Enekoro que tira en 1."
+      }
+    },
+    {
+      "code": "STW03-006",
+      "set": "ST",
+      "pokemonCode": "STC03-001",
+      "name": "Hidrofuria",
+      "official": false,
+      "japanese": "ハイドロアンガー",
+      "type": "W",
+      "energy": [
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      "damage": 40,
+      "effect": null,
+      "orientations": {
+        "standing": "Si este Pokémon tiene 40 o menos PS, este ataque hace 60 puntos de daño más.",
+        "faceUp": "Si este Pokémon tiene 40 o menos PS, este ataque hace 60 puntos de daño más.",
+        "faceDown": "Si este Pokémon tiene 40 o menos PS, este ataque hace 60 puntos de daño más."
+      }
+    },
+    {
+      "code": "STW03-007",
+      "set": "ST",
+      "pokemonCode": "STC03-001",
+      "name": "Disparo Lodo",
+      "official": true,
+      "japanese": "マッドショット",
+      "type": "F",
+      "energy": [
+        "F",
+        "C",
+        "C",
+        "C"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 30 puntos de daño más.",
+        "sideways": "Este ataque hace 30 puntos de daño más."
+      }
+    },
+    {
+      "code": "PRW01-3-08",
+      "set": "PR",
+      "pokemonCode": "STC03-001",
+      "name": "Coraza Dura",
+      "official": false,
+      "japanese": "カチカチこうら",
+      "type": "W",
+      "energy": [
+        "W",
+        "W",
+        "W"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "faceDown": "Durante el próximo turno de tu rival, los ataques hacen 50 puntos de daño menos a este Pokémon."
+      }
+    },
+    {
+      "code": "STW04-001",
+      "set": "ST",
+      "pokemonCode": "STC04-001",
+      "name": "Roer",
+      "official": true,
+      "japanese": "かじる",
+      "type": "L",
+      "energy": [
+        "L"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 30 puntos de daño más.",
+        "faceUp": "Este ataque hace 30 puntos de daño más."
+      }
+    },
+    {
+      "code": "STW04-002",
+      "set": "ST",
+      "pokemonCode": "STC04-001",
+      "name": "Impactrueno",
+      "official": true,
+      "japanese": "でんきショック",
+      "type": "L",
+      "energy": [
+        "L",
+        "L"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 20 puntos de daño más.",
+        "handstand": "Este ataque hace 20 puntos de daño más.",
+        "sideways": "Este ataque hace 20 puntos de daño más."
+      }
+    },
+    {
+      "code": "STW04-003",
+      "set": "ST",
+      "pokemonCode": "STC04-001",
+      "name": "Asalto Eléctrico",
+      "official": false,
+      "japanese": "エレキラッシュ",
+      "type": "L",
+      "energy": [
+        "L",
+        "L"
+      ],
+      "damage": 20,
+      "effect": "El daño de este ataque no se ve afectado por Debilidad.",
+      "orientations": {
+        "standing": "Usa \"Asalto Eléctrico\" 1 vez más. (Puede repetirse hasta que falle.)",
+        "faceUp": "Usa \"Asalto Eléctrico\" 1 vez más. (Puede repetirse hasta que falle.)"
+      }
+    },
+    {
+      "code": "STW04-004",
+      "set": "ST",
+      "pokemonCode": "STC04-001",
+      "name": "Rayo",
+      "official": true,
+      "japanese": "10まんボルト",
+      "type": "L",
+      "energy": [
+        "L",
+        "L",
+        "L"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 30 puntos de daño más.",
+        "handstand": "En tu próximo turno, reduce el número de Enekoro que tiras en 2.",
+        "faceUp": "En tu próximo turno, reduce el número de Enekoro que tiras en 2.",
+        "faceDown": "En tu próximo turno, reduce el número de Enekoro que tiras en 2.",
+        "sideways": "Este ataque hace 30 puntos de daño más."
+      }
+    },
+    {
+      "code": "STW04-005",
+      "set": "ST",
+      "pokemonCode": "STC04-001",
+      "name": "Trueno",
+      "official": true,
+      "japanese": "かみなり",
+      "type": "L",
+      "energy": [
+        "L",
+        "L",
+        "L"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 60 puntos de daño más."
+      }
+    },
+    {
+      "code": "STW04-006",
+      "set": "ST",
+      "pokemonCode": "STC04-001",
+      "name": "Placaje Eléctrico",
+      "official": true,
+      "japanese": "ボルテッカー",
+      "type": "L",
+      "energy": [
+        "L",
+        "L",
+        "L",
+        "L"
+      ],
+      "damage": 40,
+      "effect": "Este Pokémon se hace 30 puntos de daño.",
+      "orientations": {
+        "standing": "Este ataque hace 40 puntos de daño más.",
+        "faceUp": "Este ataque hace 40 puntos de daño más.",
+        "faceDown": "Este ataque hace 40 puntos de daño más."
+      }
+    },
+    {
+      "code": "STW04-007",
+      "set": "ST",
+      "pokemonCode": "STC04-001",
+      "name": "Cola Férrea",
+      "official": true,
+      "japanese": "アイアンテール",
+      "type": "M",
+      "energy": [
+        "M"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "Durante el próximo turno de tu rival, los ataques hacen 10 puntos de daño menos a este Pokémon.",
+        "faceUp": "Durante el próximo turno de tu rival, los ataques hacen 10 puntos de daño menos a este Pokémon.",
+        "faceDown": "Durante el próximo turno de tu rival, los ataques hacen 10 puntos de daño menos a este Pokémon."
+      }
+    },
+    {
+      "code": "PRW01-008",
+      "set": "PR",
+      "pokemonCode": "STC04-001",
+      "name": "Voltaje Crítico",
+      "official": false,
+      "japanese": "クリティカルボルト",
+      "type": "L",
+      "energy": [
+        "L",
+        "L",
+        "L",
+        "L"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 60 puntos de daño más."
+      }
+    },
+    {
+      "code": "STW05-001",
+      "set": "ST",
+      "pokemonCode": "STC05-001",
+      "name": "Plumerazo",
+      "official": true,
+      "japanese": "しっぽではたく",
+      "type": "C",
+      "energy": [
+        "Y"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 10 puntos de daño más.",
+        "sideways": "Este ataque hace 10 puntos de daño más."
+      }
+    },
+    {
+      "code": "STW05-002",
+      "set": "ST",
+      "pokemonCode": "STC05-001",
+      "name": "Placaje",
+      "official": true,
+      "japanese": "たいあたり",
+      "type": "C",
+      "energy": [
+        "Y",
+        "Y"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 20 puntos de daño más.",
+        "faceUp": "Este ataque hace 20 puntos de daño más.",
+        "sideways": "Este ataque hace 20 puntos de daño más."
+      }
+    },
+    {
+      "code": "STW05-003",
+      "set": "ST",
+      "pokemonCode": "STC05-001",
+      "name": "Derribo",
+      "official": true,
+      "japanese": "とっしん",
+      "type": "C",
+      "energy": [
+        "Y",
+        "Y"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 20 puntos de daño más.",
+        "handstand": "Este Pokémon se hace 20 puntos de daño.",
+        "faceUp": "Este ataque hace 20 puntos de daño más.",
+        "faceDown": "Este Pokémon se hace 20 puntos de daño."
+      }
+    },
+    {
+      "code": "STW05-004",
+      "set": "ST",
+      "pokemonCode": "STC05-001",
+      "name": "Vuelta",
+      "official": true,
+      "japanese": "はねまわる",
+      "type": "C",
+      "energy": [
+        "Y",
+        "Y",
+        "Y"
+      ],
+      "damage": null,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 70 puntos de daño.",
+        "handstand": "Este ataque hace 20 puntos de daño.",
+        "faceUp": "Este ataque hace 40 puntos de daño.",
+        "faceDown": "Este ataque hace 40 puntos de daño.",
+        "sideways": "Este ataque hace 20 puntos de daño."
+      }
+    },
+    {
+      "code": "STW05-005",
+      "set": "ST",
+      "pokemonCode": "STC05-001",
+      "name": "Mejor Carrera",
+      "official": true,
+      "japanese": "ぜんりょくダッシュ",
+      "type": "C",
+      "energy": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C"
+      ],
+      "damage": 40,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 40 puntos de daño más.",
+        "faceUp": "Este ataque hace 40 puntos de daño más.",
+        "faceDown": "Este ataque hace 40 puntos de daño más."
+      }
+    },
+    {
+      "code": "STW05-006",
+      "set": "ST",
+      "pokemonCode": "STC05-001",
+      "name": "Encanto",
+      "official": true,
+      "japanese": "あまえる",
+      "type": "P",
+      "energy": [
+        "P"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "En el próximo turno de tu rival, reduce el número de Enekoro que tira en 2.",
+        "faceUp": "En el próximo turno de tu rival, reduce el número de Enekoro que tira en 2.",
+        "sideways": "En el próximo turno de tu rival, reduce el número de Enekoro que tira en 2."
+      }
+    },
+    {
+      "code": "STW05-007",
+      "set": "ST",
+      "pokemonCode": "STC05-001",
+      "name": "Mordisco",
+      "official": true,
+      "japanese": "かみつく",
+      "type": "D",
+      "energy": [
+        "D",
+        "C",
+        "C"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 20 puntos de daño más.",
+        "sideways": "Este ataque hace 20 puntos de daño más."
+      }
+    },
+    {
+      "code": "PRW02-008",
+      "set": "PR",
+      "pokemonCode": "STC05-001",
+      "name": "Tumbarse",
+      "official": false,
+      "japanese": "ねころぶ",
+      "type": "C",
+      "energy": [
+        "Y",
+        "Y"
+      ],
+      "damage": null,
+      "effect": "Cura 10 puntos de daño de este Pokémon.",
+      "orientations": {
+        "faceUp": "Cura 20 puntos de daño más de este Pokémon.",
+        "faceDown": "Cura 20 puntos de daño más de este Pokémon."
+      }
+    },
+    {
+      "code": "STW06-001",
+      "set": "ST",
+      "pokemonCode": "STC06-001",
+      "name": "Confusión",
+      "official": true,
+      "japanese": "ねんりき",
+      "type": "P",
+      "energy": [
+        "P"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 20 puntos de daño más.",
+        "sideways": "Este ataque hace 20 puntos de daño más."
+      }
+    },
+    {
+      "code": "STW06-002",
+      "set": "ST",
+      "pokemonCode": "STC06-001",
+      "name": "Psicorrayo",
+      "official": true,
+      "japanese": "サイケこうせん",
+      "type": "P",
+      "energy": [
+        "P",
+        "P"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 30 puntos de daño más.",
+        "handstand": "Este ataque hace 30 puntos de daño más."
+      }
+    },
+    {
+      "code": "STW06-003",
+      "set": "ST",
+      "pokemonCode": "STC06-001",
+      "name": "Barrera",
+      "official": true,
+      "japanese": "バリアー",
+      "type": "P",
+      "energy": [
+        "P",
+        "P"
+      ],
+      "damage": null,
+      "effect": "Durante el próximo turno de tu rival, los ataques hacen 20 puntos de daño menos a este Pokémon.",
+      "orientations": {
+        "standing": "Reduce el daño recibido en 30 puntos adicionales.",
+        "faceUp": "Reduce el daño recibido en 30 puntos adicionales."
+      }
+    },
+    {
+      "code": "STW06-004",
+      "set": "ST",
+      "pokemonCode": "STC06-001",
+      "name": "Salto de Memoria",
+      "official": true,
+      "japanese": "メモリースキップ",
+      "type": "P",
+      "energy": [
+        "P",
+        "P"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "Elige 1 de los ataques de tu rival. Durante su próximo turno, no pueden usar ese ataque.",
+        "sideways": "Elige 1 de los ataques de tu rival. Durante su próximo turno, no pueden usar ese ataque."
+      }
+    },
+    {
+      "code": "STW06-005",
+      "set": "ST",
+      "pokemonCode": "STC06-001",
+      "name": "Disparo Psi",
+      "official": true,
+      "japanese": "サイコショット",
+      "type": "P",
+      "energy": [
+        "P",
+        "P",
+        "P"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 20 puntos de daño más.",
+        "handstand": "Este ataque hace 20 puntos de daño más.",
+        "faceUp": "Este ataque hace 20 puntos de daño más.",
+        "faceDown": "Este ataque hace 20 puntos de daño más."
+      }
+    },
+    {
+      "code": "STW06-006",
+      "set": "ST",
+      "pokemonCode": "STC06-001",
+      "name": "Psíquico",
+      "official": true,
+      "japanese": "サイコキネシス",
+      "type": "P",
+      "energy": [
+        "P",
+        "P",
+        "P"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "El rival tira 3 Enekoro. Añade 10 puntos de daño por cada Energía del tipo de energías que haya salido más.",
+        "faceUp": "El rival tira 3 Enekoro. Añade 10 puntos de daño por cada Energía del tipo de energías que haya salido más.",
+        "faceDown": "El rival tira 3 Enekoro. Añade 10 puntos de daño por cada Energía del tipo de energías que haya salido más."
+      }
+    },
+    {
+      "code": "STW06-007",
+      "set": "ST",
+      "pokemonCode": "STC06-001",
+      "name": "Rebote",
+      "official": false,
+      "japanese": "リフレクション",
+      "type": "P",
+      "energy": [
+        "P",
+        "P",
+        "P",
+        "P"
+      ],
+      "damage": null,
+      "effect": "Este ataque hace daño igual al daño del último ataque seleccionado por tu rival. (Ignora cualquier efecto de Charakoro del ataque seleccionado.)",
+      "orientations": {
+        "standing": "El daño causado por este ataque se duplica.",
+        "sideways": "El daño causado por este ataque se duplica."
+      }
+    },
+    {
+      "code": "PRW03-008",
+      "set": "PR",
+      "pokemonCode": "STC06-001",
+      "name": "Rayo Miráculo",
+      "official": false,
+      "japanese": "ミラクルビーム",
+      "type": "P",
+      "energy": [
+        "P",
+        "P"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 50 puntos de daño más."
+      }
+    },
+    {
+      "code": "STW07-001",
+      "set": "ST",
+      "pokemonCode": "STC07-001",
+      "name": "Gas Sofocante",
+      "official": true,
+      "japanese": "ガスでつつむ",
+      "type": "D",
+      "energy": [
+        "D"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 10 puntos de daño más.",
+        "sideways": "Este ataque hace 10 puntos de daño más."
+      }
+    },
+    {
+      "code": "STW07-002",
+      "set": "ST",
+      "pokemonCode": "STC07-001",
+      "name": "Disparo Embrujado",
+      "official": true,
+      "japanese": "ホロウショット",
+      "type": "D",
+      "energy": [
+        "D",
+        "D"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 20 puntos de daño más.",
+        "faceUp": "Este ataque hace 20 puntos de daño más.",
+        "faceDown": "Este ataque hace 20 puntos de daño más."
+      }
+    },
+    {
+      "code": "STW07-003",
+      "set": "ST",
+      "pokemonCode": "STC07-001",
+      "name": "Boca Abajo",
+      "official": false,
+      "japanese": "まっさかさま",
+      "type": "D",
+      "energy": [
+        "D",
+        "D"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "En el próximo turno de tu rival, fija la dirección de su Charakoro a {hs}.",
+        "sideways": "En el próximo turno de tu rival, fija la dirección de su Charakoro a {hs}."
+      }
+    },
+    {
+      "code": "STW07-004",
+      "set": "ST",
+      "pokemonCode": "STC07-001",
+      "name": "Atadura Sombría",
+      "official": true,
+      "japanese": "かげしばり",
+      "type": "D",
+      "energy": [
+        "D",
+        "D",
+        "D"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "En el siguiente turno de tu rival, no pueden tirar su Charakoro.",
+        "faceUp": "En el siguiente turno de tu rival, no pueden tirar su Charakoro.",
+        "sideways": "En el siguiente turno de tu rival, no pueden tirar su Charakoro."
+      }
+    },
+    {
+      "code": "STW07-005",
+      "set": "ST",
+      "pokemonCode": "STC07-001",
+      "name": "Bomba Lodo",
+      "official": true,
+      "japanese": "ヘドロばくだん",
+      "type": "D",
+      "energy": [
+        "D",
+        "D",
+        "D"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 20 puntos de daño más.",
+        "faceUp": "Este ataque hace 20 puntos de daño más.",
+        "sideways": "Este ataque hace 20 puntos de daño más."
+      }
+    },
+    {
+      "code": "STW07-006",
+      "set": "ST",
+      "pokemonCode": "STC07-001",
+      "name": "Truco Fantasmal",
+      "official": false,
+      "japanese": "ファントムトリック",
+      "type": "D",
+      "energy": [
+        "D",
+        "D",
+        "D",
+        "D"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "Tu rival también tira su Charakoro 3 veces. Por cada {hs}{do}, este ataque hace 40 puntos de daño más.",
+        "handstand": "Tu rival también tira su Charakoro 3 veces. Por cada {hs}{do}, este ataque hace 40 puntos de daño más.",
+        "faceUp": "Tu rival también tira su Charakoro 3 veces. Por cada {hs}{do}, este ataque hace 40 puntos de daño más.",
+        "faceDown": "Tu rival también tira su Charakoro 3 veces. Por cada {hs}{do}, este ataque hace 40 puntos de daño más."
+      }
+    },
+    {
+      "code": "STW07-007",
+      "set": "ST",
+      "pokemonCode": "STC07-001",
+      "name": "Psicoonda",
+      "official": true,
+      "japanese": "サイコウェーブ",
+      "type": "P",
+      "energy": [
+        "P",
+        "C",
+        "C",
+        "C"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 40 puntos de daño más."
+      }
+    },
+    {
+      "code": "PRW02-1-08",
+      "set": "PR",
+      "pokemonCode": "STC07-001",
+      "name": "Parálisis Nocturna",
+      "official": false,
+      "japanese": "ナイトロック",
+      "type": "D",
+      "energy": [
+        "D",
+        "D",
+        "D",
+        "D"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "En el próximo turno de tu rival, reduce el número de Enekoro que tira en 2."
+      }
+    },
+    {
+      "code": "STW08-001",
+      "set": "ST",
+      "pokemonCode": "STC08-001",
+      "name": "Transmisión",
+      "official": true,
+      "japanese": "ビーム",
+      "type": "M",
+      "energy": [
+        "M"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 20 puntos de daño más.",
+        "faceUp": "Este ataque hace 20 puntos de daño más."
+      }
+    },
+    {
+      "code": "STW08-002",
+      "set": "ST",
+      "pokemonCode": "STC08-001",
+      "name": "Operación Básica",
+      "official": false,
+      "japanese": "しそくえんざん",
+      "type": "M",
+      "energy": [
+        "M",
+        "M"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "En tu siguiente turno, la dirección de tu Charakoro se convierte en la misma posición que ha salido con este ataque.",
+        "faceUp": "En tu siguiente turno, la dirección de tu Charakoro se convierte en la misma posición que ha salido con este ataque.",
+        "sideways": "En tu siguiente turno, la dirección de tu Charakoro se convierte en la misma posición que ha salido con este ataque."
+      }
+    },
+    {
+      "code": "STW08-003",
+      "set": "ST",
+      "pokemonCode": "STC08-001",
+      "name": "Vasta Prensa",
+      "official": false,
+      "japanese": "ワイドプレス",
+      "type": "M",
+      "energy": [
+        "M",
+        "M"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "sideways": "Este ataque hace 30 puntos de daño más."
+      }
+    },
+    {
+      "code": "STW08-004",
+      "set": "ST",
+      "pokemonCode": "STC08-001",
+      "name": "Golpe Recto",
+      "official": false,
+      "japanese": "ストレートスタンプ",
+      "type": "M",
+      "energy": [
+        "M",
+        "M",
+        "M"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 20 puntos de daño más.",
+        "faceUp": "Este ataque hace 20 puntos de daño más.",
+        "faceDown": "Este ataque hace 20 puntos de daño más."
+      }
+    },
+    {
+      "code": "STW08-005",
+      "set": "ST",
+      "pokemonCode": "STC08-001",
+      "name": "Puño Meteoro",
+      "official": true,
+      "japanese": "コメットパンチ",
+      "type": "M",
+      "energy": [
+        "M",
+        "M",
+        "M"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 40 puntos de daño más.",
+        "faceUp": "Este ataque hace 40 puntos de daño más."
+      }
+    },
+    {
+      "code": "STW08-006",
+      "set": "ST",
+      "pokemonCode": "STC08-001",
+      "name": "Cuerpo Pesado",
+      "official": true,
+      "japanese": "ヘビーボンバー",
+      "type": "M",
+      "energy": [
+        "M",
+        "M",
+        "M",
+        "M"
+      ],
+      "damage": 40,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 40 puntos de daño más.",
+        "handstand": "En tu próximo turno, reduce el número de Enekoro que tiras en 2.",
+        "faceUp": "En tu próximo turno, reduce el número de Enekoro que tiras en 2.",
+        "faceDown": "En tu próximo turno, reduce el número de Enekoro que tiras en 2.",
+        "sideways": "Este ataque hace 40 puntos de daño más."
+      }
+    },
+    {
+      "code": "STW08-007",
+      "set": "ST",
+      "pokemonCode": "STC08-001",
+      "name": "Explosión",
+      "official": true,
+      "japanese": "だいばくはつ",
+      "type": "C",
+      "energy": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C"
+      ],
+      "damage": 100,
+      "effect": "Este Pokémon se hace 120 puntos de daño.",
+      "orientations": {
+        "standing": "Evita el daño que este ataque causaría a tu Pokémon."
+      }
+    },
+    {
+      "code": "PRW02-2-08",
+      "set": "PR",
+      "pokemonCode": "STC08-001",
+      "name": "Garra Acero",
+      "official": false,
+      "japanese": "こうてつのツメ",
+      "type": "M",
+      "energy": [
+        "M"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 30 puntos de daño más."
+      }
+    },
+    {
+      "code": "STW09-001",
+      "set": "ST",
+      "pokemonCode": "STC09-001",
+      "name": "Patada",
+      "official": true,
+      "japanese": "キック",
+      "type": "F",
+      "energy": [
+        "F"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 10 puntos de daño más.",
+        "faceUp": "Este ataque hace 10 puntos de daño más.",
+        "faceDown": "Este ataque hace 10 puntos de daño más."
+      }
+    },
+    {
+      "code": "STW09-002",
+      "set": "ST",
+      "pokemonCode": "STC09-001",
+      "name": "Palmeo",
+      "official": true,
+      "japanese": "はっけい",
+      "type": "F",
+      "energy": [
+        "F",
+        "F"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "En el próximo turno de tu rival, reduce el número de Enekoro que tira en 1.",
+        "faceUp": "En el próximo turno de tu rival, reduce el número de Enekoro que tira en 1."
+      }
+    },
+    {
+      "code": "STW09-003",
+      "set": "ST",
+      "pokemonCode": "STC09-001",
+      "name": "Nudillo Aural",
+      "official": true,
+      "japanese": "はどうナックル",
+      "type": "F",
+      "energy": [
+        "F",
+        "F"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "Si este Pokémon tiene 80 o menos PS, este ataque hace 30 puntos de daño más.",
+        "faceUp": "Si este Pokémon tiene 80 o menos PS, este ataque hace 30 puntos de daño más.",
+        "faceDown": "Si este Pokémon tiene 80 o menos PS, este ataque hace 30 puntos de daño más."
+      }
+    },
+    {
+      "code": "STW09-004",
+      "set": "ST",
+      "pokemonCode": "STC09-001",
+      "name": "Patada Giro",
+      "official": true,
+      "japanese": "まわしげり",
+      "type": "F",
+      "energy": [
+        "F",
+        "F",
+        "F"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 30 puntos de daño más.",
+        "sideways": "Este ataque hace 30 puntos de daño más."
+      }
+    },
+    {
+      "code": "STW09-005",
+      "set": "ST",
+      "pokemonCode": "STC09-001",
+      "name": "Puya Aural",
+      "official": false,
+      "japanese": "オーラづき",
+      "type": "F",
+      "energy": [
+        "F",
+        "F",
+        "F"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "Si este Pokémon tiene 80 o menos PS, durante el próximo turno de tu rival, los ataques hacen 20 puntos de daño menos a este Pokémon.",
+        "faceUp": "Si este Pokémon tiene 80 o menos PS, durante el próximo turno de tu rival, los ataques hacen 20 puntos de daño menos a este Pokémon.",
+        "sideways": "Si este Pokémon tiene 80 o menos PS, durante el próximo turno de tu rival, los ataques hacen 20 puntos de daño menos a este Pokémon."
+      }
+    },
+    {
+      "code": "STW09-006",
+      "set": "ST",
+      "pokemonCode": "STC09-001",
+      "name": "Esfera Aural",
+      "official": true,
+      "japanese": "はどうだん",
+      "type": "F",
+      "energy": [
+        "F",
+        "F",
+        "F",
+        "F"
+      ],
+      "damage": 40,
+      "effect": null,
+      "orientations": {
+        "standing": "Si este Pokémon tiene 40 o menos PS, este ataque hace 50 puntos de daño más.",
+        "faceUp": "Si este Pokémon tiene 40 o menos PS, este ataque hace 50 puntos de daño más.",
+        "faceDown": "Si este Pokémon tiene 40 o menos PS, este ataque hace 50 puntos de daño más."
+      }
+    },
+    {
+      "code": "STW09-007",
+      "set": "ST",
+      "pokemonCode": "STC09-001",
+      "name": "Garra Metal",
+      "official": true,
+      "japanese": "メタルクロー",
+      "type": "M",
+      "energy": [
+        "M",
+        "C",
+        "C",
+        "C"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 40 puntos de daño más."
+      }
+    },
+    {
+      "code": "PRW02-3-08",
+      "set": "PR",
+      "pokemonCode": "STC09-001",
+      "name": "Onda Vacío",
+      "official": true,
+      "japanese": "しんくうは",
+      "type": "F",
+      "energy": [
+        "F",
+        "F",
+        "F"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 50 puntos de daño más."
+      }
+    },
+    {
+      "code": "STW10-001",
+      "set": "ST",
+      "pokemonCode": "STC10-001",
+      "name": "Picotazo",
+      "official": true,
+      "japanese": "つつく",
+      "type": "Y",
+      "energy": [
+        "Y"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 20 puntos de daño más.",
+        "faceUp": "Este ataque hace 20 puntos de daño más."
+      }
+    },
+    {
+      "code": "STW10-002",
+      "set": "ST",
+      "pokemonCode": "STC10-001",
+      "name": "Vuelo Suave",
+      "official": false,
+      "japanese": "ふわふわひこう",
+      "type": "Y",
+      "energy": [
+        "Y",
+        "Y"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "En el próximo turno de tu rival, si el Charakoro cae en {s1}{s2}, no recibes daño de los ataques. (Aún te afectan otros efectos.)",
+        "sideways": "En el próximo turno de tu rival, si el Charakoro cae en {s1}{s2}, no recibes daño de los ataques. (Aún te afectan otros efectos.)"
+      }
+    },
+    {
+      "code": "STW10-003",
+      "set": "ST",
+      "pokemonCode": "STC10-001",
+      "name": "Respiro",
+      "official": true,
+      "japanese": "はねやすめ",
+      "type": "Y",
+      "energy": [
+        "Y",
+        "Y"
+      ],
+      "damage": null,
+      "effect": "Cura 20 puntos de daño de este Pokémon.",
+      "orientations": {
+        "standing": "Cura 20 puntos de daño más de este Pokémon.",
+        "sideways": "Cura 20 puntos de daño más de este Pokémon."
+      }
+    },
+    {
+      "code": "STW10-004",
+      "set": "ST",
+      "pokemonCode": "STC10-001",
+      "name": "Golpe Aéreo",
+      "official": true,
+      "japanese": "つばめがえし",
+      "type": "Y",
+      "energy": [
+        "Y",
+        "Y",
+        "Y"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 20 puntos de daño más.",
+        "faceUp": "Este ataque hace 20 puntos de daño más."
+      }
+    },
+    {
+      "code": "STW10-005",
+      "set": "ST",
+      "pokemonCode": "STC10-001",
+      "name": "Vuelo",
+      "official": true,
+      "japanese": "そらをとぶ",
+      "type": "Y",
+      "energy": [
+        "Y",
+        "Y",
+        "Y"
+      ],
+      "damage": 40,
+      "effect": null,
+      "orientations": {
+        "standing": "Durante el próximo turno de tu rival, este Pokémon no recibe daño de los ataques. (Aún te afectan otros efectos.)",
+        "handstand": "Este ataque no hace nada.",
+        "faceUp": "Este ataque no hace nada.",
+        "faceDown": "Este ataque no hace nada.",
+        "sideways": "Durante el próximo turno de tu rival, este Pokémon no recibe daño de los ataques. (Aún te afectan otros efectos.)"
+      }
+    },
+    {
+      "code": "STW10-006",
+      "set": "ST",
+      "pokemonCode": "STC10-001",
+      "name": "Ataque Aéreo",
+      "official": true,
+      "japanese": "ゴッドバード",
+      "type": "Y",
+      "energy": [
+        "Y",
+        "Y",
+        "Y",
+        "Y"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 50 puntos de daño más.",
+        "handstand": "En tu próximo turno, reduce el número de Enekoro que tiras en 2.",
+        "faceUp": "Este ataque hace 50 puntos de daño más.",
+        "faceDown": "En tu próximo turno, reduce el número de Enekoro que tiras en 2."
+      }
+    },
+    {
+      "code": "STW10-007",
+      "set": "ST",
+      "pokemonCode": "STC10-001",
+      "name": "Fuerza Lunar",
+      "official": true,
+      "japanese": "ムーンフォース",
+      "type": "P",
+      "energy": [
+        "P",
+        "C",
+        "C",
+        "C"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "Si el rival es de tipo {N}, este ataque hace 40 puntos de daño más.",
+        "sideways": "Si el rival es de tipo {N}, este ataque hace 40 puntos de daño más."
+      }
+    },
+    {
+      "code": "STW11-001",
+      "set": "ST",
+      "pokemonCode": "STC11-001",
+      "name": "Pulso Dragón",
+      "official": true,
+      "japanese": "りゅうのはどう",
+      "type": "N",
+      "energy": [
+        "W",
+        "L"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 30 puntos de daño más.",
+        "handstand": "En tu próximo turno, reduce el número de Enekoro que tiras en 1.",
+        "faceUp": "Este ataque hace 30 puntos de daño más.",
+        "faceDown": "En tu próximo turno, reduce el número de Enekoro que tiras en 1."
+      }
+    },
+    {
+      "code": "STW11-002",
+      "set": "ST",
+      "pokemonCode": "STC11-001",
+      "name": "Cuchillada Garra",
+      "official": true,
+      "japanese": "ツメできりさく",
+      "type": "N",
+      "energy": [
+        "L",
+        "L"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 20 puntos de daño más.",
+        "sideways": "Este ataque hace 20 puntos de daño más."
+      }
+    },
+    {
+      "code": "STW11-003",
+      "set": "ST",
+      "pokemonCode": "STC11-001",
+      "name": "Desmoronar",
+      "official": true,
+      "japanese": "たたきつぶす",
+      "type": "N",
+      "energy": [
+        "W",
+        "W",
+        "W"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 30 puntos de daño más.",
+        "faceUp": "Este ataque hace 30 puntos de daño más.",
+        "faceDown": "Este ataque hace 30 puntos de daño más."
+      }
+    },
+    {
+      "code": "STW11-004",
+      "set": "ST",
+      "pokemonCode": "STC11-001",
+      "name": "Sacudida Dragón",
+      "official": true,
+      "japanese": "ドラゴンブラスト",
+      "type": "N",
+      "energy": [
+        "W",
+        "W",
+        "W",
+        "L",
+        "L"
+      ],
+      "damage": 60,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 40 puntos de daño más.",
+        "faceUp": "Este ataque hace 40 puntos de daño más.",
+        "faceDown": "Este ataque hace 40 puntos de daño más."
+      }
+    },
+    {
+      "code": "STW11-005",
+      "set": "ST",
+      "pokemonCode": "STC11-001",
+      "name": "Plancha Escamas",
+      "official": false,
+      "japanese": "スケイルプレス",
+      "type": "W",
+      "energy": [
+        "W",
+        "W",
+        "C",
+        "C"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "Durante el próximo turno de tu rival, los ataques hacen 50 puntos de daño menos a este Pokémon.",
+        "faceUp": "Durante el próximo turno de tu rival, los ataques hacen 50 puntos de daño menos a este Pokémon."
+      }
+    },
+    {
+      "code": "STW11-006",
+      "set": "ST",
+      "pokemonCode": "STC11-001",
+      "name": "Cola Vendaval",
+      "official": false,
+      "japanese": "ハリケーンテール",
+      "type": "L",
+      "energy": [
+        "L",
+        "L",
+        "C",
+        "C"
+      ],
+      "damage": 20,
+      "effect": "Tira tu Charakoro 3 veces.",
+      "orientations": {
+        "standing": "Por cada tirada correcta de Charakoro con este ataque, este ataque hace 20 puntos de daño más.",
+        "sideways": "Por cada tirada correcta de Charakoro con este ataque, este ataque hace 20 puntos de daño más."
+      }
+    },
+    {
+      "code": "STW11-007",
+      "set": "ST",
+      "pokemonCode": "STC11-001",
+      "name": "Velocidad Extrema",
+      "official": true,
+      "japanese": "しんそく",
+      "type": "C",
+      "energy": [
+        "C",
+        "C",
+        "C",
+        "C"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "Este ataque hace 40 puntos de daño más."
+      }
+    }
+  ]
+}

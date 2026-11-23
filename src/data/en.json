@@ -1,0 +1,4654 @@
+{
+  "lang": "en",
+  "source": {
+    "repo": "https://github.com/Jollto/PlakoroDB",
+    "commit": "13abfe491618946dc6aa62925aa0e1da51dceef8",
+    "license": "CC BY-NC 4.0"
+  },
+  "types": {
+    "G": {
+      "name": "Grass",
+      "japanese": "草（くさ）"
+    },
+    "R": {
+      "name": "Fire",
+      "japanese": "炎（ほのお）"
+    },
+    "W": {
+      "name": "Water",
+      "japanese": "水（みず）"
+    },
+    "L": {
+      "name": "Electric",
+      "japanese": "雷（かみなり）"
+    },
+    "P": {
+      "name": "Psychic",
+      "japanese": "超（ちょう）"
+    },
+    "F": {
+      "name": "Fighting",
+      "japanese": "闘（とう）"
+    },
+    "D": {
+      "name": "Dark",
+      "japanese": "悪（あく）"
+    },
+    "M": {
+      "name": "Steel",
+      "japanese": "鋼（はがね）"
+    },
+    "N": {
+      "name": "Dragon",
+      "japanese": "竜（ドラゴン）"
+    },
+    "Y": {
+      "name": "Flying",
+      "japanese": "空（そら）"
+    },
+    "C": {
+      "name": "Normal",
+      "japanese": "無（むしょく）"
+    }
+  },
+  "orientations": {
+    "standing": {
+      "name": "Standing",
+      "japanese": "⽴ち"
+    },
+    "handstand": {
+      "name": "Handstand",
+      "japanese": "さかだち"
+    },
+    "faceUp": {
+      "name": "Back",
+      "japanese": "あおむけ"
+    },
+    "faceDown": {
+      "name": "Down",
+      "japanese": "うつぶせ"
+    },
+    "sideways": {
+      "name": "Sideways",
+      "japanese": "横向き"
+    }
+  },
+  "pokemon": [
+    {
+      "code": "STC01-001",
+      "name": "Bulbasaur",
+      "type": "G",
+      "weakness": "R",
+      "hp": 120,
+      "set": "ST",
+      "moveCodes": [
+        "STW01-001",
+        "STW01-002",
+        "STW01-003",
+        "STW01-004",
+        "STW01-005",
+        "STW01-006",
+        "STW01-007",
+        "PRW01-1-08"
+      ]
+    },
+    {
+      "code": "STC02-001",
+      "name": "Charmander",
+      "type": "R",
+      "weakness": "W",
+      "hp": 120,
+      "set": "ST",
+      "moveCodes": [
+        "STW02-001",
+        "STW02-002",
+        "STW02-003",
+        "STW02-004",
+        "STW02-005",
+        "STW02-006",
+        "STW02-007",
+        "PRW01-2-08"
+      ]
+    },
+    {
+      "code": "STC03-001",
+      "name": "Squirtle",
+      "type": "W",
+      "weakness": "L",
+      "hp": 120,
+      "set": "ST",
+      "moveCodes": [
+        "STW03-001",
+        "STW03-002",
+        "STW03-003",
+        "STW03-004",
+        "STW03-005",
+        "STW03-006",
+        "STW03-007",
+        "PRW01-3-08"
+      ]
+    },
+    {
+      "code": "STC04-001",
+      "name": "Pikachu",
+      "type": "L",
+      "weakness": "F",
+      "hp": 120,
+      "set": "ST",
+      "moveCodes": [
+        "STW04-001",
+        "STW04-002",
+        "STW04-003",
+        "STW04-004",
+        "STW04-005",
+        "STW04-006",
+        "STW04-007",
+        "PRW01-008"
+      ]
+    },
+    {
+      "code": "STC05-001",
+      "name": "Eevee",
+      "type": "C",
+      "weakness": "F",
+      "hp": 120,
+      "set": "ST",
+      "moveCodes": [
+        "STW05-001",
+        "STW05-002",
+        "STW05-003",
+        "STW05-004",
+        "STW05-005",
+        "STW05-006",
+        "STW05-007",
+        "PRW02-008"
+      ]
+    },
+    {
+      "code": "STC06-001",
+      "name": "Mew",
+      "type": "P",
+      "weakness": "D",
+      "hp": 120,
+      "set": "ST",
+      "moveCodes": [
+        "STW06-001",
+        "STW06-002",
+        "STW06-003",
+        "STW06-004",
+        "STW06-005",
+        "STW06-006",
+        "STW06-007",
+        "PRW03-008"
+      ]
+    },
+    {
+      "code": "STC07-001",
+      "name": "Gengar",
+      "type": "D",
+      "weakness": "P",
+      "hp": 120,
+      "set": "ST",
+      "moveCodes": [
+        "STW07-001",
+        "STW07-002",
+        "STW07-003",
+        "STW07-004",
+        "STW07-005",
+        "STW07-006",
+        "STW07-007",
+        "PRW02-1-08"
+      ]
+    },
+    {
+      "code": "STC08-001",
+      "name": "Metagross",
+      "type": "M",
+      "weakness": "R",
+      "hp": 120,
+      "set": "ST",
+      "moveCodes": [
+        "STW08-001",
+        "STW08-002",
+        "STW08-003",
+        "STW08-004",
+        "STW08-005",
+        "STW08-006",
+        "STW08-007",
+        "PRW02-2-08"
+      ]
+    },
+    {
+      "code": "STC09-001",
+      "name": "Lucario",
+      "type": "F",
+      "weakness": "R",
+      "hp": 120,
+      "set": "ST",
+      "moveCodes": [
+        "STW09-001",
+        "STW09-002",
+        "STW09-003",
+        "STW09-004",
+        "STW09-005",
+        "STW09-006",
+        "STW09-007",
+        "PRW02-3-08"
+      ]
+    },
+    {
+      "code": "STC10-001",
+      "name": "Altaria",
+      "type": "Y",
+      "weakness": "W",
+      "hp": 120,
+      "set": "ST",
+      "moveCodes": [
+        "STW10-001",
+        "STW10-002",
+        "STW10-003",
+        "STW10-004",
+        "STW10-005",
+        "STW10-006",
+        "STW10-007"
+      ]
+    },
+    {
+      "code": "STC11-001",
+      "name": "Dragonite",
+      "type": "N",
+      "weakness": "N",
+      "hp": 120,
+      "set": "ST",
+      "moveCodes": [
+        "STW11-001",
+        "STW11-002",
+        "STW11-003",
+        "STW11-004",
+        "STW11-005",
+        "STW11-006",
+        "STW11-007"
+      ]
+    },
+    {
+      "code": "EBC01-001",
+      "name": "Pinsir",
+      "type": "G",
+      "weakness": "Y",
+      "hp": 120,
+      "set": "EB01",
+      "moveCodes": [
+        "EBW01-001",
+        "EBW01-002",
+        "EBW01-003",
+        "EBW01-004",
+        "EBW01-005",
+        "EBW01-006",
+        "EBW01-007",
+        "EBW01-008",
+        "EBW01-009",
+        "EBW01-010"
+      ]
+    },
+    {
+      "code": "EBC01-002",
+      "name": "Moltres",
+      "type": "R",
+      "weakness": "W",
+      "hp": 120,
+      "set": "EB01",
+      "moveCodes": [
+        "EBW01-011",
+        "EBW01-012",
+        "EBW01-013",
+        "EBW01-014",
+        "EBW01-015",
+        "EBW01-016",
+        "EBW01-017",
+        "EBW01-018",
+        "EBW01-019",
+        "EBW01-020"
+      ]
+    },
+    {
+      "code": "EBC01-003",
+      "name": "Articuno",
+      "type": "W",
+      "weakness": "M",
+      "hp": 120,
+      "set": "EB01",
+      "moveCodes": [
+        "EBW01-021",
+        "EBW01-022",
+        "EBW01-023",
+        "EBW01-024",
+        "EBW01-025",
+        "EBW01-026",
+        "EBW01-027",
+        "EBW01-028",
+        "EBW01-029",
+        "EBW01-030"
+      ]
+    },
+    {
+      "code": "EBC01-004",
+      "name": "Zapdos",
+      "type": "L",
+      "weakness": "F",
+      "hp": 120,
+      "set": "EB01",
+      "moveCodes": [
+        "EBW01-031",
+        "EBW01-032",
+        "EBW01-033",
+        "EBW01-034",
+        "EBW01-035",
+        "EBW01-036",
+        "EBW01-037",
+        "EBW01-038",
+        "EBW01-039",
+        "EBW01-040"
+      ]
+    },
+    {
+      "code": "EBC01-005",
+      "name": "Onix",
+      "type": "F",
+      "weakness": "G",
+      "hp": 120,
+      "set": "EB01",
+      "moveCodes": [
+        "EBW01-041",
+        "EBW01-042",
+        "EBW01-043",
+        "EBW01-044",
+        "EBW01-045",
+        "EBW01-046",
+        "EBW01-047",
+        "EBW01-048",
+        "EBW01-049",
+        "EBW01-050"
+      ]
+    },
+    {
+      "code": "EBC01-006",
+      "name": "Grimer",
+      "type": "D",
+      "weakness": "F",
+      "hp": 120,
+      "set": "EB01",
+      "moveCodes": [
+        "EBW01-051",
+        "EBW01-052",
+        "EBW01-053",
+        "EBW01-054",
+        "EBW01-055",
+        "EBW01-057",
+        "EBW01-058",
+        "EBW01-059",
+        "EBW01-060"
+      ]
+    },
+    {
+      "code": "EBC02-001",
+      "name": "Greninja",
+      "type": "W",
+      "weakness": "G",
+      "hp": 120,
+      "set": "EB02",
+      "moveCodes": [
+        "EBW02-001",
+        "EBW02-002",
+        "EBW02-003",
+        "EBW02-004",
+        "EBW02-005",
+        "EBW02-006",
+        "EBW02-007",
+        "EBW02-008",
+        "EBW02-009",
+        "EBW02-010"
+      ]
+    },
+    {
+      "code": "EBC02-002",
+      "name": "Tinkatink",
+      "type": "P",
+      "weakness": "R",
+      "hp": 120,
+      "set": "EB02",
+      "moveCodes": [
+        "EBW02-011",
+        "EBW02-012",
+        "EBW02-013",
+        "EBW02-014",
+        "EBW02-015",
+        "EBW02-016",
+        "EBW02-017",
+        "EBW02-018",
+        "EBW02-019",
+        "EBW02-020"
+      ]
+    },
+    {
+      "code": "EBC02-003",
+      "name": "Sableye",
+      "type": "D",
+      "weakness": "P",
+      "hp": 120,
+      "set": "EB02",
+      "moveCodes": [
+        "EBW02-021",
+        "EBW02-022",
+        "EBW02-023",
+        "EBW02-024",
+        "EBW02-025",
+        "EBW02-026",
+        "EBW02-027",
+        "EBW02-028",
+        "EBW02-029",
+        "EBW02-030"
+      ]
+    },
+    {
+      "code": "EBC02-004",
+      "name": "Aggron",
+      "type": "M",
+      "weakness": "F",
+      "hp": 120,
+      "set": "EB02",
+      "moveCodes": [
+        "EBW02-031",
+        "EBW02-032",
+        "EBW02-033",
+        "EBW02-034",
+        "EBW02-035",
+        "EBW02-036",
+        "EBW02-037",
+        "EBW02-038",
+        "EBW02-039",
+        "EBW02-040"
+      ]
+    },
+    {
+      "code": "EBC02-005",
+      "name": "Rayquaza",
+      "type": "N",
+      "weakness": "N",
+      "hp": 120,
+      "set": "EB02",
+      "moveCodes": [
+        "EBW02-041",
+        "EBW02-042",
+        "EBW02-043",
+        "EBW02-044",
+        "EBW02-045",
+        "EBW02-046",
+        "EBW02-047",
+        "EBW02-048",
+        "EBW02-049",
+        "EBW02-050"
+      ]
+    },
+    {
+      "code": "EBC02-006",
+      "name": "Chansey",
+      "type": "C",
+      "weakness": "F",
+      "hp": 120,
+      "set": "EB02",
+      "moveCodes": [
+        "EBW02-051",
+        "EBW02-052",
+        "EBW02-053",
+        "EBW02-054",
+        "EBW02-055",
+        "EBW02-056",
+        "EBW02-057",
+        "EBW02-058",
+        "EBW02-059",
+        "EBW02-060"
+      ]
+    }
+  ],
+  "moves": [
+    {
+      "code": "EBW01-001",
+      "set": "EB01",
+      "pokemonCode": "EBC01-001",
+      "name": "Focus",
+      "official": false,
+      "japanese": "しゅうちゅう",
+      "type": "G",
+      "energy": [
+        "G"
+      ],
+      "damage": null,
+      "effect": null,
+      "orientations": {
+        "standing": "On your next turn, increase the number of Enekoro you roll by 2.",
+        "sideways": "On your next turn, increase the number of Enekoro you roll by 2."
+      }
+    },
+    {
+      "code": "EBW01-002",
+      "set": "EB01",
+      "pokemonCode": "EBC01-001",
+      "name": "Resist",
+      "official": false,
+      "japanese": "たえる",
+      "type": "G",
+      "energy": [
+        "G",
+        "G"
+      ],
+      "damage": null,
+      "effect": "During your opponent's next turn, this Pokémon takes 20 less damage from attacks.",
+      "orientations": {
+        "standing": "Reduce damage taken by an additional 20.",
+        "faceUp": "Reduce damage taken by an additional 20.",
+        "faceDown": "Reduce damage taken by an additional 20."
+      }
+    },
+    {
+      "code": "EBW01-003",
+      "set": "EB01",
+      "pokemonCode": "EBC01-001",
+      "name": "Horn Beat",
+      "official": false,
+      "japanese": "つのでたたく",
+      "type": "G",
+      "energy": [
+        "G",
+        "G",
+        "G"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 30 more damage.",
+        "sideways": "This attack does 30 more damage."
+      }
+    },
+    {
+      "code": "EBW01-004",
+      "set": "EB01",
+      "pokemonCode": "EBC01-001",
+      "name": "Guillotine",
+      "official": true,
+      "japanese": "ハサミギロチン",
+      "type": "C",
+      "energy": [
+        "G",
+        "G",
+        "G",
+        "G",
+        "G"
+      ],
+      "damage": null,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 150 damage."
+      }
+    },
+    {
+      "code": "EBW01-005",
+      "set": "EB01",
+      "pokemonCode": "EBC01-001",
+      "name": "Brick Break",
+      "official": true,
+      "japanese": "かわらわり",
+      "type": "F",
+      "energy": [
+        "F"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 20 more damage.",
+        "faceUp": "This attack does 20 more damage."
+      }
+    },
+    {
+      "code": "EBW01-006",
+      "set": "EB01",
+      "pokemonCode": "EBC01-001",
+      "name": "Pincers Charge",
+      "official": false,
+      "japanese": "チャージばさみ",
+      "type": "G",
+      "energy": [
+        "G",
+        "G"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "On your next turn, increase the number of Enekoro you roll by 1.",
+        "faceUp": "On your next turn, increase the number of Enekoro you roll by 1."
+      }
+    },
+    {
+      "code": "EBW01-007",
+      "set": "EB01",
+      "pokemonCode": "EBC01-001",
+      "name": "Berserk Swing",
+      "official": false,
+      "japanese": "ぎゃくじょうスイング",
+      "type": "G",
+      "energy": [
+        "G",
+        "G",
+        "G"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "During your last turn, if your Enekoro roll failed, this attack does 40 more damage.",
+        "sideways": "During your last turn, if your Enekoro roll failed, this attack does 40 more damage."
+      }
+    },
+    {
+      "code": "EBW01-008",
+      "set": "EB01",
+      "pokemonCode": "EBC01-001",
+      "name": "Reckless Charge",
+      "official": true,
+      "japanese": "とつげき",
+      "type": "G",
+      "energy": [
+        "G",
+        "G",
+        "G"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 20 more damage.",
+        "handstand": "This Pokémon does 20 damage to itself.",
+        "faceUp": "This attack does 20 more damage.",
+        "faceDown": "This Pokémon does 20 damage to itself."
+      }
+    },
+    {
+      "code": "EBW01-009",
+      "set": "EB01",
+      "pokemonCode": "EBC01-001",
+      "name": "Deadly Pincers",
+      "official": false,
+      "japanese": "ひっさつばさみ",
+      "type": "G",
+      "energy": [
+        "G",
+        "G",
+        "G",
+        "G"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 80 more damage."
+      }
+    },
+    {
+      "code": "EBW01-010",
+      "set": "EB01",
+      "pokemonCode": "EBC01-001",
+      "name": "Submission",
+      "official": true,
+      "japanese": "じごくぐるま",
+      "type": "F",
+      "energy": [
+        "F",
+        "C",
+        "C",
+        "C"
+      ],
+      "damage": 30,
+      "effect": "This Pokémon does 20 damage to itself.",
+      "orientations": {
+        "standing": "This attack does 30 more damage.",
+        "handstand": "This attack does 30 more damage.",
+        "faceUp": "This attack does 30 more damage.",
+        "faceDown": "This attack does 30 more damage."
+      }
+    },
+    {
+      "code": "EBW01-011",
+      "set": "EB01",
+      "pokemonCode": "EBC01-002",
+      "name": "Fire Wing",
+      "official": true,
+      "japanese": "ほのおのつばさ",
+      "type": "R",
+      "energy": [
+        "R",
+        "R"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 30 more damage.",
+        "faceUp": "This attack does 30 more damage.",
+        "sideways": "This Pokémon does 20 damage to itself."
+      }
+    },
+    {
+      "code": "EBW01-012",
+      "set": "EB01",
+      "pokemonCode": "EBC01-002",
+      "name": "Heat Wave",
+      "official": true,
+      "japanese": "ねっぷう",
+      "type": "R",
+      "energy": [
+        "R",
+        "R",
+        "R"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 20 more damage.",
+        "sideways": "This attack does 20 more damage."
+      }
+    },
+    {
+      "code": "EBW01-013",
+      "set": "EB01",
+      "pokemonCode": "EBC01-002",
+      "name": "Flamethrower",
+      "official": true,
+      "japanese": "かえんほうしゃ",
+      "type": "R",
+      "energy": [
+        "R",
+        "R",
+        "R",
+        "R"
+      ],
+      "damage": 40,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 40 more damage.",
+        "handstand": "On your next turn, reduce the number of Enekoro you roll by 2.",
+        "faceUp": "This attack does 40 more damage.",
+        "faceDown": "On your next turn, reduce the number of Enekoro you roll by 2.",
+        "sideways": "On your next turn, reduce the number of Enekoro you roll by 2."
+      }
+    },
+    {
+      "code": "EBW01-014",
+      "set": "EB01",
+      "pokemonCode": "EBC01-002",
+      "name": "Flare Blitz",
+      "official": true,
+      "japanese": "フレアドライブ",
+      "type": "R",
+      "energy": [
+        "R",
+        "R",
+        "R",
+        "R",
+        "R"
+      ],
+      "damage": 50,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 40 more damage.",
+        "handstand": "This Pokémon does 40 damage to itself.",
+        "faceUp": "This attack does 40 more damage.",
+        "faceDown": "This attack does 40 more damage.",
+        "sideways": "This Pokémon does 40 damage to itself."
+      }
+    },
+    {
+      "code": "EBW01-015",
+      "set": "EB01",
+      "pokemonCode": "EBC01-002",
+      "name": "Hurricane",
+      "official": true,
+      "japanese": "ぼうふう",
+      "type": "Y",
+      "energy": [
+        "Y",
+        "C",
+        "C",
+        "C"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 60 more damage."
+      }
+    },
+    {
+      "code": "EBW01-016",
+      "set": "EB01",
+      "pokemonCode": "EBC01-002",
+      "name": "Fire Spin",
+      "official": true,
+      "japanese": "ほのおのうず",
+      "type": "R",
+      "energy": [
+        "R",
+        "R"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 40 more damage.",
+        "handstand": "On your next turn, reduce the number of Enekoro you roll by 2.",
+        "faceUp": "This attack does 40 more damage.",
+        "faceDown": "On your next turn, reduce the number of Enekoro you roll by 2.",
+        "sideways": "On your next turn, reduce the number of Enekoro you roll by 2."
+      }
+    },
+    {
+      "code": "EBW01-017",
+      "set": "EB01",
+      "pokemonCode": "EBC01-002",
+      "name": "Heat Breath",
+      "official": true,
+      "japanese": "ヒートブレス",
+      "type": "R",
+      "energy": [
+        "R",
+        "R",
+        "R"
+      ],
+      "damage": 40,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 40 more damage.",
+        "handstand": "This Pokémon does 30 damage to itself.",
+        "faceUp": "This attack does 40 more damage.",
+        "faceDown": "This Pokémon does 30 damage to itself."
+      }
+    },
+    {
+      "code": "EBW01-018",
+      "set": "EB01",
+      "pokemonCode": "EBC01-002",
+      "name": "Burn Up",
+      "official": true,
+      "japanese": "もえつきる",
+      "type": "R",
+      "energy": [
+        "R",
+        "R",
+        "R",
+        "R"
+      ],
+      "damage": 80,
+      "effect": null,
+      "orientations": {
+        "handstand": "This attack does nothing.",
+        "faceUp": "This attack does nothing.",
+        "faceDown": "This attack does nothing."
+      }
+    },
+    {
+      "code": "EBW01-019",
+      "set": "EB01",
+      "pokemonCode": "EBC01-002",
+      "name": "Wing Rush",
+      "official": false,
+      "japanese": "ウイングラッシュ",
+      "type": "Y",
+      "energy": [
+        "Y"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 10 more damage.",
+        "faceUp": "This attack does 10 more damage.",
+        "sideways": "This attack does 10 more damage."
+      }
+    },
+    {
+      "code": "EBW01-020",
+      "set": "EB01",
+      "pokemonCode": "EBC01-002",
+      "name": "Fly",
+      "official": true,
+      "japanese": "そらをとぶ",
+      "type": "Y",
+      "energy": [
+        "Y",
+        "C",
+        "C"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "During your opponent's next turn, this Pokémon doesn't take damage from attacks.",
+        "handstand": "This attack does nothing.",
+        "faceUp": "This attack does nothing.",
+        "faceDown": "This attack does nothing.",
+        "sideways": "During your opponent's next turn, this Pokémon doesn't take damage from attacks."
+      }
+    },
+    {
+      "code": "EBW01-021",
+      "set": "EB01",
+      "pokemonCode": "EBC01-003",
+      "name": "Ice Wing",
+      "official": true,
+      "japanese": "アイスウイング",
+      "type": "W",
+      "energy": [
+        "W",
+        "W"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "On the opponent's next turn, reduce the number of Enekoro they roll by 1.",
+        "faceUp": "On the opponent's next turn, reduce the number of Enekoro they roll by 1.",
+        "sideways": "On the opponent's next turn, reduce the number of Enekoro they roll by 1."
+      }
+    },
+    {
+      "code": "EBW01-022",
+      "set": "EB01",
+      "pokemonCode": "EBC01-003",
+      "name": "Freezing Blade",
+      "official": false,
+      "japanese": "いてつくやいば",
+      "type": "W",
+      "energy": [
+        "W",
+        "W",
+        "W"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "On your opponent's next turn, they cannot roll their Charakoro.",
+        "sideways": "On your opponent's next turn, they cannot roll their Charakoro."
+      }
+    },
+    {
+      "code": "EBW01-023",
+      "set": "EB01",
+      "pokemonCode": "EBC01-003",
+      "name": "Blizzard Storm",
+      "official": false,
+      "japanese": "ブリザードストーム",
+      "type": "W",
+      "energy": [
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 30 more damage.",
+        "faceUp": "This attack does 30 more damage.",
+        "sideways": "This attack does 30 more damage."
+      }
+    },
+    {
+      "code": "EBW01-024",
+      "set": "EB01",
+      "pokemonCode": "EBC01-003",
+      "name": "Air Cutter",
+      "official": true,
+      "japanese": "エアカッター",
+      "type": "Y",
+      "energy": [
+        "Y",
+        "C",
+        "C",
+        "C"
+      ],
+      "damage": 40,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 30 more damage.",
+        "faceUp": "This attack does 30 more damage."
+      }
+    },
+    {
+      "code": "EBW01-025",
+      "set": "EB01",
+      "pokemonCode": "EBC01-003",
+      "name": "Roost",
+      "official": true,
+      "japanese": "はねやすめ",
+      "type": "Y",
+      "energy": [
+        "Y",
+        "Y"
+      ],
+      "damage": null,
+      "effect": "Heal 20 damage from this Pokémon.",
+      "orientations": {
+        "standing": "Heal 20 more damage from this Pokémon.",
+        "sideways": "Heal 20 more damage from this Pokémon."
+      }
+    },
+    {
+      "code": "EBW01-026",
+      "set": "EB01",
+      "pokemonCode": "EBC01-003",
+      "name": "Freeze Dive",
+      "official": false,
+      "japanese": "フリーズダイブ",
+      "type": "W",
+      "energy": [
+        "W"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 20 more damage.",
+        "faceUp": "This attack does 20 more damage."
+      }
+    },
+    {
+      "code": "EBW01-027",
+      "set": "EB01",
+      "pokemonCode": "EBC01-003",
+      "name": "Ice Shot",
+      "official": true,
+      "japanese": "アイスショット",
+      "type": "W",
+      "energy": [
+        "W",
+        "W"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 20 more damage.",
+        "sideways": "This attack does 20 more damage."
+      }
+    },
+    {
+      "code": "EBW01-028",
+      "set": "EB01",
+      "pokemonCode": "EBC01-003",
+      "name": "Cold Breath",
+      "official": true,
+      "japanese": "コールドブレス",
+      "type": "W",
+      "energy": [
+        "W",
+        "W",
+        "W"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "On the opponent's next turn, reduce the number of Enekoro they roll by 2.",
+        "sideways": "On the opponent's next turn, reduce the number of Enekoro they roll by 2."
+      }
+    },
+    {
+      "code": "EBW01-029",
+      "set": "EB01",
+      "pokemonCode": "EBC01-003",
+      "name": "Sheer Cold",
+      "official": true,
+      "japanese": "ぜったいれいど",
+      "type": "W",
+      "energy": [
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      "damage": 40,
+      "effect": null,
+      "orientations": {
+        "standing": "On the opponent's next turn, reduce the number of Enekoro they roll by 2. They cannot roll their Charakoro.",
+        "faceUp": "On the opponent's next turn, reduce the number of Enekoro they roll by 2. They cannot roll their Charakoro."
+      }
+    },
+    {
+      "code": "EBW01-030",
+      "set": "EB01",
+      "pokemonCode": "EBC01-003",
+      "name": "Fly",
+      "official": true,
+      "japanese": "そらをとぶ",
+      "type": "Y",
+      "energy": [
+        "Y",
+        "C",
+        "C"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "During your opponent's next turn, this Pokémon doesn't take damage from attacks.",
+        "handstand": "This attack does nothing.",
+        "faceUp": "This attack does nothing.",
+        "faceDown": "This attack does nothing.",
+        "sideways": "During your opponent's next turn, this Pokémon doesn't take damage from attacks."
+      }
+    },
+    {
+      "code": "EBW01-031",
+      "set": "EB01",
+      "pokemonCode": "EBC01-004",
+      "name": "Thunder Flash",
+      "official": false,
+      "japanese": "でんじフラッシュ",
+      "type": "L",
+      "energy": [
+        "L",
+        "L"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 30 more damage.",
+        "faceUp": "This attack does 30 more damage."
+      }
+    },
+    {
+      "code": "EBW01-032",
+      "set": "EB01",
+      "pokemonCode": "EBC01-004",
+      "name": "Thunder Shock",
+      "official": true,
+      "japanese": "でんきショック",
+      "type": "L",
+      "energy": [
+        "L"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 10 more damage.",
+        "faceUp": "This attack does 10 more damage.",
+        "sideways": "This attack does 10 more damage."
+      }
+    },
+    {
+      "code": "EBW01-033",
+      "set": "EB01",
+      "pokemonCode": "EBC01-004",
+      "name": "Volt Rush",
+      "official": false,
+      "japanese": "ボルトラッシュ",
+      "type": "L",
+      "energy": [
+        "L",
+        "L",
+        "L",
+        "L"
+      ],
+      "damage": 10,
+      "effect": "Roll your Charakoro 3 times.",
+      "orientations": {
+        "standing": "Each time the Charakoro roll succeeds with this attack, this attack does 30 more damage.",
+        "sideways": "Each time the Charakoro roll succeeds with this attack, this attack does 30 more damage."
+      }
+    },
+    {
+      "code": "EBW01-034",
+      "set": "EB01",
+      "pokemonCode": "EBC01-004",
+      "name": "Aerial Ace",
+      "official": true,
+      "japanese": "つばめがえし",
+      "type": "Y",
+      "energy": [
+        "Y"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 20 more damage.",
+        "faceUp": "This attack does 20 more damage."
+      }
+    },
+    {
+      "code": "EBW01-035",
+      "set": "EB01",
+      "pokemonCode": "EBC01-004",
+      "name": "Crackling Wing",
+      "official": false,
+      "japanese": "バリバリウイング",
+      "type": "Y",
+      "energy": [
+        "Y",
+        "C",
+        "C",
+        "C",
+        "C"
+      ],
+      "damage": 40,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 40 more damage.",
+        "sideways": "This attack does 40 more damage."
+      }
+    },
+    {
+      "code": "EBW01-036",
+      "set": "EB01",
+      "pokemonCode": "EBC01-004",
+      "name": "Dual Thunder",
+      "official": false,
+      "japanese": "ダブルサンダー",
+      "type": "L",
+      "energy": [
+        "L"
+      ],
+      "damage": null,
+      "effect": "Roll your Charakoro 2 times.",
+      "orientations": {
+        "standing": "Each time the Charakoro roll succeeds with this attack, this attack does 20 more damage.",
+        "faceUp": "Each time the Charakoro roll succeeds with this attack, this attack does 20 more damage.",
+        "faceDown": "Each time the Charakoro roll succeeds with this attack, this attack does 20 more damage."
+      }
+    },
+    {
+      "code": "EBW01-037",
+      "set": "EB01",
+      "pokemonCode": "EBC01-004",
+      "name": "Electroarrow",
+      "official": false,
+      "japanese": "エレキアロー",
+      "type": "L",
+      "energy": [
+        "L",
+        "L"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 40 more damage."
+      }
+    },
+    {
+      "code": "EBW01-038",
+      "set": "EB01",
+      "pokemonCode": "EBC01-004",
+      "name": "Discharge",
+      "official": true,
+      "japanese": "ほうでん",
+      "type": "L",
+      "energy": [
+        "L",
+        "L",
+        "L"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 20 more damage.",
+        "faceUp": "This attack does 20 more damage.",
+        "faceDown": "This attack does 20 more damage."
+      }
+    },
+    {
+      "code": "EBW01-039",
+      "set": "EB01",
+      "pokemonCode": "EBC01-004",
+      "name": "Thunder Chain",
+      "official": false,
+      "japanese": "サンダーチェイン",
+      "type": "L",
+      "energy": [
+        "L",
+        "L",
+        "L",
+        "L"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 30 more damage. Reroll your Charakoro. (Can be repeated until it fails.)",
+        "faceUp": "This attack does 30 more damage. Reroll your Charakoro. (Can be repeated until it fails.)",
+        "faceDown": "This attack does 30 more damage. Reroll your Charakoro. (Can be repeated until it fails.)"
+      }
+    },
+    {
+      "code": "EBW01-040",
+      "set": "EB01",
+      "pokemonCode": "EBC01-004",
+      "name": "Fly",
+      "official": true,
+      "japanese": "そらをとぶ",
+      "type": "Y",
+      "energy": [
+        "Y",
+        "C",
+        "C"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "During your opponent's next turn, this Pokémon doesn't take damage from attacks.",
+        "handstand": "This attack does nothing.",
+        "faceUp": "This attack does nothing.",
+        "faceDown": "This attack does nothing.",
+        "sideways": "During your opponent's next turn, this Pokémon doesn't take damage from attacks."
+      }
+    },
+    {
+      "code": "EBW01-041",
+      "set": "EB01",
+      "pokemonCode": "EBC01-005",
+      "name": "Rocky Tackle",
+      "official": true,
+      "japanese": "がんせきタックル",
+      "type": "F",
+      "energy": [
+        "F",
+        "F"
+      ],
+      "damage": 10,
+      "effect": "During your opponent's next turn, this Pokémon takes 10 less damage from attacks.",
+      "orientations": {
+        "standing": "Reduce damage taken by an additional 20.",
+        "sideways": "Reduce damage taken by an additional 20."
+      }
+    },
+    {
+      "code": "EBW01-042",
+      "set": "EB01",
+      "pokemonCode": "EBC01-005",
+      "name": "Rock Throw",
+      "official": true,
+      "japanese": "いわおとし",
+      "type": "F",
+      "energy": [
+        "F",
+        "F",
+        "F"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 30 more damage.",
+        "faceUp": "This attack does 30 more damage."
+      }
+    },
+    {
+      "code": "EBW01-043",
+      "set": "EB01",
+      "pokemonCode": "EBC01-005",
+      "name": "Rock Wall",
+      "official": true,
+      "japanese": "ロックウォール",
+      "type": "F",
+      "energy": [
+        "F",
+        "F",
+        "F"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "During your opponent's next turn, this Pokémon takes 30 less damage from attacks.",
+        "faceUp": "During your opponent's next turn, this Pokémon takes 30 less damage from attacks.",
+        "sideways": "During your opponent's next turn, this Pokémon takes 30 less damage from attacks."
+      }
+    },
+    {
+      "code": "EBW01-044",
+      "set": "EB01",
+      "pokemonCode": "EBC01-005",
+      "name": "Hard Impact",
+      "official": false,
+      "japanese": "ハードインパクト",
+      "type": "F",
+      "energy": [
+        "F",
+        "F",
+        "F",
+        "F"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 30 more damage.",
+        "handstand": "On your next turn, reduce the number of Enekoro you roll by 1.",
+        "sideways": "This attack does 30 more damage."
+      }
+    },
+    {
+      "code": "EBW01-045",
+      "set": "EB01",
+      "pokemonCode": "EBC01-005",
+      "name": "Gyro Ball",
+      "official": true,
+      "japanese": "ジャイロボール",
+      "type": "M",
+      "energy": [
+        "M",
+        "C",
+        "C"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "Your opponent also rolls their Charakoro. On {hs}{do}, this attack does 60 more damage.",
+        "faceUp": "Your opponent also rolls their Charakoro. On {hs}{do}, this attack does 60 more damage.",
+        "sideways": "Your opponent also rolls their Charakoro. On {hs}{do}, this attack does 60 more damage."
+      }
+    },
+    {
+      "code": "EBW01-046",
+      "set": "EB01",
+      "pokemonCode": "EBC01-005",
+      "name": "Ram",
+      "official": true,
+      "japanese": "ぶつかる",
+      "type": "F",
+      "energy": [
+        "F"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 10 more damage.",
+        "faceUp": "This attack does 10 more damage.",
+        "faceDown": "This attack does 10 more damage."
+      }
+    },
+    {
+      "code": "EBW01-047",
+      "set": "EB01",
+      "pokemonCode": "EBC01-005",
+      "name": "Rock Slide",
+      "official": true,
+      "japanese": "いわなだれ",
+      "type": "F",
+      "energy": [
+        "F",
+        "F"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 20 more damage.",
+        "sideways": "This attack does 20 more damage."
+      }
+    },
+    {
+      "code": "EBW01-048",
+      "set": "EB01",
+      "pokemonCode": "EBC01-005",
+      "name": "Wild Tackle",
+      "official": true,
+      "japanese": "ワイルドタックル",
+      "type": "F",
+      "energy": [
+        "F",
+        "F",
+        "F"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 20 more damage.",
+        "handstand": "This Pokémon does 20 damage to itself.",
+        "faceUp": "This attack does 20 more damage.",
+        "faceDown": "This Pokémon does 20 damage to itself.",
+        "sideways": "This Pokémon does 20 damage to itself."
+      }
+    },
+    {
+      "code": "EBW01-049",
+      "set": "EB01",
+      "pokemonCode": "EBC01-005",
+      "name": "Rock Barrier",
+      "official": false,
+      "japanese": "がんせきバリア",
+      "type": "F",
+      "energy": [
+        "F",
+        "F",
+        "F",
+        "F"
+      ],
+      "damage": 40,
+      "effect": null,
+      "orientations": {
+        "standing": "During your opponent's next turn, this Pokémon takes 50 less damage from attacks.",
+        "faceUp": "During your opponent's next turn, this Pokémon takes 50 less damage from attacks."
+      }
+    },
+    {
+      "code": "EBW01-050",
+      "set": "EB01",
+      "pokemonCode": "EBC01-005",
+      "name": "Iron Tail",
+      "official": true,
+      "japanese": "アイアンテール",
+      "type": "M",
+      "energy": [
+        "M",
+        "C",
+        "C"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "During your opponent's next turn, this Pokémon takes 10 less damage from attacks.",
+        "sideways": "During your opponent's next turn, this Pokémon takes 10 less damage from attacks."
+      }
+    },
+    {
+      "code": "EBW01-051",
+      "set": "EB01",
+      "pokemonCode": "EBC01-006",
+      "name": "Poison Gas",
+      "official": true,
+      "japanese": "どくガス",
+      "type": "D",
+      "energy": [
+        "D"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "On the opponent's next turn, reduce the number of Enekoro they roll by 1.",
+        "sideways": "On the opponent's next turn, reduce the number of Enekoro they roll by 1."
+      }
+    },
+    {
+      "code": "EBW01-052",
+      "set": "EB01",
+      "pokemonCode": "EBC01-006",
+      "name": "Sludge Toss",
+      "official": false,
+      "japanese": "ベトベトなげ",
+      "type": "D",
+      "energy": [
+        "D",
+        "D"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 20 more damage.",
+        "sideways": "This attack does 20 more damage."
+      }
+    },
+    {
+      "code": "EBW01-053",
+      "set": "EB01",
+      "pokemonCode": "EBC01-006",
+      "name": "Toxic Heal",
+      "official": false,
+      "japanese": "どくどくヒール",
+      "type": "D",
+      "energy": [
+        "D",
+        "D",
+        "D"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "During your last turn, if this Pokémon's \"Poison Gas\" attack was successful, heal 30 damage from this Pokémon.",
+        "faceUp": "During your last turn, if this Pokémon's \"Poison Gas\" attack was successful, heal 30 damage from this Pokémon.",
+        "sideways": "During your last turn, if this Pokémon's \"Poison Gas\" attack was successful, heal 30 damage from this Pokémon."
+      }
+    },
+    {
+      "code": "EBW01-054",
+      "set": "EB01",
+      "pokemonCode": "EBC01-006",
+      "name": "Sludge Ring",
+      "official": false,
+      "japanese": "ヘドロでかこむ",
+      "type": "D",
+      "energy": [
+        "D",
+        "D",
+        "D"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "Choose 1 of your opponent's attacks. During their next turn, they can't use that attack.",
+        "faceUp": "Choose 1 of your opponent's attacks. During their next turn, they can't use that attack.",
+        "faceDown": "Choose 1 of your opponent's attacks. During their next turn, they can't use that attack."
+      }
+    },
+    {
+      "code": "EBW01-055",
+      "set": "EB01",
+      "pokemonCode": "EBC01-006",
+      "name": "Venom Punch",
+      "official": false,
+      "japanese": "ベノムパンチ",
+      "type": "D",
+      "energy": [
+        "D",
+        "D",
+        "D",
+        "D"
+      ],
+      "damage": 40,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 30 more damage.",
+        "faceUp": "This attack does 30 more damage."
+      }
+    },
+    {
+      "code": "EBW01-057",
+      "set": "EB01",
+      "pokemonCode": "EBC01-006",
+      "name": "Venom Slip",
+      "official": false,
+      "japanese": "ベノムスリップ",
+      "type": "D",
+      "energy": [
+        "D",
+        "D"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "Your opponent also rolls their Charakoro. On {hs}{do}{s1}{s2}, this attack does 20 more damage.",
+        "faceUp": "Your opponent also rolls their Charakoro. On {hs}{do}{s1}{s2}, this attack does 20 more damage.",
+        "sideways": "Your opponent also rolls their Charakoro. On {hs}{do}{s1}{s2}, this attack does 20 more damage."
+      }
+    },
+    {
+      "code": "EBW01-058",
+      "set": "EB01",
+      "pokemonCode": "EBC01-006",
+      "name": "Toxic Blast",
+      "official": false,
+      "japanese": "どくどくボンバー",
+      "type": "D",
+      "energy": [
+        "D",
+        "D",
+        "D"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "During your last turn, if this Pokémon's \"Poison Gas\" attack was successful, this attack does 30 more damage.",
+        "faceUp": "During your last turn, if this Pokémon's \"Poison Gas\" attack was successful, this attack does 30 more damage.",
+        "faceDown": "During your last turn, if this Pokémon's \"Poison Gas\" attack was successful, this attack does 30 more damage."
+      }
+    },
+    {
+      "code": "EBW01-059",
+      "set": "EB01",
+      "pokemonCode": "EBC01-006",
+      "name": "Sludge Tackle",
+      "official": false,
+      "japanese": "ヘドロタックル",
+      "type": "D",
+      "energy": [
+        "D",
+        "D",
+        "D"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 40 more damage.",
+        "handstand": "This Pokémon does 20 damage to itself.",
+        "faceUp": "This Pokémon does 20 damage to itself.",
+        "faceDown": "This Pokémon does 20 damage to itself.",
+        "sideways": "This attack does 40 more damage."
+      }
+    },
+    {
+      "code": "EBW01-060",
+      "set": "EB01",
+      "pokemonCode": "EBC01-006",
+      "name": "Harassment Venom",
+      "official": false,
+      "japanese": "いやがらせベノム",
+      "type": "D",
+      "energy": [
+        "D",
+        "D",
+        "D",
+        "D"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "During your opponent's last turn, if their Enekoro roll failed, this attack does 50 more damage.",
+        "sideways": "During your opponent's last turn, if their Enekoro roll failed, this attack does 50 more damage."
+      }
+    },
+    {
+      "code": "EBW02-001",
+      "set": "EB02",
+      "pokemonCode": "EBC02-001",
+      "name": "Waterfall",
+      "official": true,
+      "japanese": "たきのぼり",
+      "type": "W",
+      "energy": [
+        "W",
+        "W"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 20 more damage.",
+        "faceUp": "This attack does 20 more damage.",
+        "faceDown": "This attack does 20 more damage."
+      }
+    },
+    {
+      "code": "EBW02-002",
+      "set": "EB02",
+      "pokemonCode": "EBC02-001",
+      "name": "Shifting Slash",
+      "official": false,
+      "japanese": "へんげぎり",
+      "type": "W",
+      "energy": [
+        "W",
+        "W"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "Choose 1 of your Enekoro and swap out as many chips as you like. (Use chips you already have.)",
+        "faceUp": "Choose 1 of your Enekoro and swap out as many chips as you like. (Use chips you already have.)",
+        "sideways": "Choose 1 of your Enekoro and swap out as many chips as you like. (Use chips you already have.)"
+      }
+    },
+    {
+      "code": "EBW02-003",
+      "set": "EB02",
+      "pokemonCode": "EBC02-001",
+      "name": "Water Shuriken",
+      "official": true,
+      "japanese": "みずしゅりけん",
+      "type": "W",
+      "energy": [
+        "W",
+        "W",
+        "W"
+      ],
+      "damage": null,
+      "effect": "Roll your Charakoro 3 times.",
+      "orientations": {
+        "standing": "Each time the Charakoro roll succeeds with this attack, this attack does 20 more damage.",
+        "sideways": "Each time the Charakoro roll succeeds with this attack, this attack does 20 more damage."
+      }
+    },
+    {
+      "code": "EBW02-004",
+      "set": "EB02",
+      "pokemonCode": "EBC02-001",
+      "name": "Shadow Sneak",
+      "official": true,
+      "japanese": "かげうち",
+      "type": "P",
+      "energy": [
+        "P",
+        "C",
+        "C"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 30 more damage.",
+        "faceUp": "This attack does 30 more damage."
+      }
+    },
+    {
+      "code": "EBW02-005",
+      "set": "EB02",
+      "pokemonCode": "EBC02-001",
+      "name": "Night Slash",
+      "official": true,
+      "japanese": "つじぎり",
+      "type": "D",
+      "energy": [
+        "D",
+        "C",
+        "C",
+        "C"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 30 more damage.",
+        "faceUp": "This attack does 30 more damage.",
+        "faceDown": "This attack does 30 more damage."
+      }
+    },
+    {
+      "code": "EBW02-006",
+      "set": "EB02",
+      "pokemonCode": "EBC02-001",
+      "name": "Water Gun",
+      "official": true,
+      "japanese": "みずでっぽう",
+      "type": "W",
+      "energy": [
+        "W"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 20 more damage.",
+        "faceUp": "This attack does 20 more damage."
+      }
+    },
+    {
+      "code": "EBW02-007",
+      "set": "EB02",
+      "pokemonCode": "EBC02-001",
+      "name": "Mist Slash",
+      "official": true,
+      "japanese": "かすみぎり",
+      "type": "W",
+      "energy": [
+        "W",
+        "W"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 40 more damage."
+      }
+    },
+    {
+      "code": "EBW02-008",
+      "set": "EB02",
+      "pokemonCode": "EBC02-001",
+      "name": "Clone Jutsu",
+      "official": false,
+      "japanese": "ぶんしんのじゅつ",
+      "type": "W",
+      "energy": [
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      "damage": null,
+      "effect": "Roll your Charakoro 2 times.",
+      "orientations": {
+        "standing": "Each time the Charakoro roll succeeds with this attack, this attack does 40 more damage.",
+        "sideways": "Each time the Charakoro roll succeeds with this attack, this attack does 40 more damage."
+      }
+    },
+    {
+      "code": "EBW02-009",
+      "set": "EB02",
+      "pokemonCode": "EBC02-001",
+      "name": "Trailblaze",
+      "official": true,
+      "japanese": "くさわけ",
+      "type": "G",
+      "energy": [
+        "G",
+        "C",
+        "C"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 30 more damage.",
+        "faceUp": "This attack does 30 more damage."
+      }
+    },
+    {
+      "code": "EBW02-010",
+      "set": "EB02",
+      "pokemonCode": "EBC02-001",
+      "name": "Low Kick",
+      "official": true,
+      "japanese": "けたぐり",
+      "type": "F",
+      "energy": [
+        "F",
+        "C",
+        "C"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 20 more damage.",
+        "sideways": "This attack does 20 more damage."
+      }
+    },
+    {
+      "code": "EBW02-011",
+      "set": "EB02",
+      "pokemonCode": "EBC02-002",
+      "name": "Beat",
+      "official": true,
+      "japanese": "たたく",
+      "type": "P",
+      "energy": [
+        "P"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 20 more damage.",
+        "faceUp": "This attack does 20 more damage."
+      }
+    },
+    {
+      "code": "EBW02-012",
+      "set": "EB02",
+      "pokemonCode": "EBC02-002",
+      "name": "Fairy Wind",
+      "official": true,
+      "japanese": "ようせいのかぜ",
+      "type": "P",
+      "energy": [
+        "P",
+        "P"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 30 more damage.",
+        "sideways": "This attack does 30 more damage."
+      }
+    },
+    {
+      "code": "EBW02-013",
+      "set": "EB02",
+      "pokemonCode": "EBC02-002",
+      "name": "Hammer Strike",
+      "official": false,
+      "japanese": "ハンマーストライク",
+      "type": "P",
+      "energy": [
+        "P",
+        "P",
+        "P"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 60 more damage.",
+        "handstand": "On your next turn, reduce the number of Enekoro you roll by 2.",
+        "faceUp": "This attack does 60 more damage.",
+        "faceDown": "This attack does 60 more damage.",
+        "sideways": "On your next turn, reduce the number of Enekoro you roll by 2."
+      }
+    },
+    {
+      "code": "EBW02-014",
+      "set": "EB02",
+      "pokemonCode": "EBC02-002",
+      "name": "Play Rough",
+      "official": true,
+      "japanese": "じゃれつく",
+      "type": "P",
+      "energy": [
+        "P",
+        "P",
+        "P",
+        "P"
+      ],
+      "damage": 10,
+      "effect": "On the opponent's next turn, reduce the number of Enekoro they roll by 1.",
+      "orientations": {
+        "standing": "This attack does 40 more damage.",
+        "sideways": "This attack does 40 more damage."
+      }
+    },
+    {
+      "code": "EBW02-015",
+      "set": "EB02",
+      "pokemonCode": "EBC02-002",
+      "name": "Metal Claw",
+      "official": true,
+      "japanese": "メタルクロー",
+      "type": "M",
+      "energy": [
+        "M",
+        "C"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 40 more damage."
+      }
+    },
+    {
+      "code": "EBW02-016",
+      "set": "EB02",
+      "pokemonCode": "EBC02-002",
+      "name": "Corkscrew Punch",
+      "official": true,
+      "japanese": "どつく",
+      "type": "P",
+      "energy": [
+        "P"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 10 more damage.",
+        "sideways": "This attack does 10 more damage."
+      }
+    },
+    {
+      "code": "EBW02-017",
+      "set": "EB02",
+      "pokemonCode": "EBC02-002",
+      "name": "Draining Kiss",
+      "official": true,
+      "japanese": "ドレインキッス",
+      "type": "P",
+      "energy": [
+        "P",
+        "P"
+      ],
+      "damage": 10,
+      "effect": "Heal 10 damage from this Pokémon.",
+      "orientations": {
+        "standing": "This attack does 30 more damage.",
+        "faceUp": "This attack does 30 more damage."
+      }
+    },
+    {
+      "code": "EBW02-018",
+      "set": "EB02",
+      "pokemonCode": "EBC02-002",
+      "name": "Wail",
+      "official": true,
+      "japanese": "なきわめく",
+      "type": "P",
+      "energy": [
+        "P",
+        "P",
+        "P"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 30 more damage.",
+        "faceUp": "This attack does 30 more damage.",
+        "sideways": "This attack does 30 more damage."
+      }
+    },
+    {
+      "code": "EBW02-019",
+      "set": "EB02",
+      "pokemonCode": "EBC02-002",
+      "name": "Wild Stamp",
+      "official": false,
+      "japanese": "ワイルドスタンプ",
+      "type": "P",
+      "energy": [
+        "P",
+        "P",
+        "P"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 50 more damage.",
+        "handstand": "This Pokémon does 30 damage to itself.",
+        "faceUp": "This Pokémon does 30 damage to itself.",
+        "faceDown": "This Pokémon does 30 damage to itself.",
+        "sideways": "This attack does 50 more damage."
+      }
+    },
+    {
+      "code": "EBW02-020",
+      "set": "EB02",
+      "pokemonCode": "EBC02-002",
+      "name": "Strange Impact",
+      "official": false,
+      "japanese": "ワンダーインパクト",
+      "type": "P",
+      "energy": [
+        "P",
+        "P",
+        "P",
+        "P"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 60 more damage.",
+        "faceUp": "This attack does 60 more damage.",
+        "faceDown": "This attack does 60 more damage."
+      }
+    },
+    {
+      "code": "EBW02-021",
+      "set": "EB02",
+      "pokemonCode": "EBC02-003",
+      "name": "Nail Scratch",
+      "official": false,
+      "japanese": "ツメでひっかく",
+      "type": "D",
+      "energy": [
+        "D"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 10 more damage.",
+        "faceUp": "This attack does 10 more damage.",
+        "faceDown": "This attack does 10 more damage."
+      }
+    },
+    {
+      "code": "EBW02-022",
+      "set": "EB02",
+      "pokemonCode": "EBC02-003",
+      "name": "Feint Attack",
+      "official": true,
+      "japanese": "だましうち",
+      "type": "D",
+      "energy": [
+        "D",
+        "D"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "handstand": "This attack does 20 more damage.",
+        "faceDown": "This attack does 20 more damage."
+      }
+    },
+    {
+      "code": "EBW02-023",
+      "set": "EB02",
+      "pokemonCode": "EBC02-003",
+      "name": "Dig It Up",
+      "official": true,
+      "japanese": "ほりかえす",
+      "type": "D",
+      "energy": [
+        "D",
+        "D"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "On the opponent's next turn, choose 1 rolled Enekoro, and have them roll them again. (You choose which Enekoro to reroll.)",
+        "faceUp": "On the opponent's next turn, choose 1 rolled Enekoro, and have them roll them again. (You choose which Enekoro to reroll.)",
+        "sideways": "On the opponent's next turn, choose 1 rolled Enekoro, and have them roll them again. (You choose which Enekoro to reroll.)"
+      }
+    },
+    {
+      "code": "EBW02-024",
+      "set": "EB02",
+      "pokemonCode": "EBC02-003",
+      "name": "Instigate",
+      "official": true,
+      "japanese": "そそのかす",
+      "type": "D",
+      "energy": [
+        "D",
+        "D",
+        "D"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "Choose 1 of your opponent's attacks. During their next turn, they use that attack.",
+        "sideways": "Choose 1 of your opponent's attacks. During their next turn, they use that attack."
+      }
+    },
+    {
+      "code": "EBW02-025",
+      "set": "EB02",
+      "pokemonCode": "EBC02-003",
+      "name": "Icy Wind",
+      "official": true,
+      "japanese": "こごえるかぜ",
+      "type": "W",
+      "energy": [
+        "W"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 20 more damage.",
+        "faceUp": "This attack does 20 more damage."
+      }
+    },
+    {
+      "code": "EBW02-026",
+      "set": "EB02",
+      "pokemonCode": "EBC02-003",
+      "name": "Dark Claw",
+      "official": false,
+      "japanese": "ダーククロー",
+      "type": "D",
+      "energy": [
+        "D"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 30 more damage."
+      }
+    },
+    {
+      "code": "EBW02-027",
+      "set": "EB02",
+      "pokemonCode": "EBC02-003",
+      "name": "Trip Over",
+      "official": true,
+      "japanese": "ころばす",
+      "type": "D",
+      "energy": [
+        "D",
+        "D"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "On your opponent's next turn, set the direction of their Charakoro to {do}.",
+        "faceUp": "On your opponent's next turn, set the direction of their Charakoro to {do}.",
+        "faceDown": "On your opponent's next turn, set the direction of their Charakoro to {do}."
+      }
+    },
+    {
+      "code": "EBW02-028",
+      "set": "EB02",
+      "pokemonCode": "EBC02-003",
+      "name": "Dark Pulse",
+      "official": true,
+      "japanese": "あくのはどう",
+      "type": "D",
+      "energy": [
+        "D",
+        "D",
+        "D"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 30 more damage.",
+        "faceUp": "This attack does 30 more damage."
+      }
+    },
+    {
+      "code": "EBW02-029",
+      "set": "EB02",
+      "pokemonCode": "EBC02-003",
+      "name": "Jewel Flash",
+      "official": false,
+      "japanese": "ジュエルフラッシュ",
+      "type": "D",
+      "energy": [
+        "D",
+        "D",
+        "D",
+        "D"
+      ],
+      "damage": 50,
+      "effect": null,
+      "orientations": {
+        "standing": "On the opponent's next turn, choose 2 rolled Enekoro, and have them roll them again. (You choose which Enekoro to reroll.)",
+        "faceUp": "On the opponent's next turn, choose 2 rolled Enekoro, and have them roll them again. (You choose which Enekoro to reroll.)",
+        "sideways": "On the opponent's next turn, choose 2 rolled Enekoro, and have them roll them again. (You choose which Enekoro to reroll.)"
+      }
+    },
+    {
+      "code": "EBW02-030",
+      "set": "EB02",
+      "pokemonCode": "EBC02-003",
+      "name": "Psybeam",
+      "official": true,
+      "japanese": "サイケこうせん",
+      "type": "P",
+      "energy": [
+        "P",
+        "P"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 20 more damage.",
+        "faceUp": "This attack does 20 more damage."
+      }
+    },
+    {
+      "code": "EBW02-031",
+      "set": "EB02",
+      "pokemonCode": "EBC02-004",
+      "name": "Metal Claw",
+      "official": true,
+      "japanese": "メタルクロー",
+      "type": "M",
+      "energy": [
+        "M"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 30 more damage."
+      }
+    },
+    {
+      "code": "EBW02-032",
+      "set": "EB02",
+      "pokemonCode": "EBC02-004",
+      "name": "Steel Headbutt",
+      "official": true,
+      "japanese": "はがねのずつき",
+      "type": "M",
+      "energy": [
+        "M",
+        "M"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 20 more damage.",
+        "sideways": "This attack does 20 more damage."
+      }
+    },
+    {
+      "code": "EBW02-033",
+      "set": "EB02",
+      "pokemonCode": "EBC02-004",
+      "name": "Tyrant Shield",
+      "official": false,
+      "japanese": "タイラントシールド",
+      "type": "M",
+      "energy": [
+        "M",
+        "M",
+        "M"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "During your opponent's next turn, prevent all damage done to this Pokémon by attacks if that damage is 40 or less.",
+        "faceUp": "During your opponent's next turn, prevent all damage done to this Pokémon by attacks if that damage is 40 or less.",
+        "faceDown": "During your opponent's next turn, prevent all damage done to this Pokémon by attacks if that damage is 40 or less."
+      }
+    },
+    {
+      "code": "EBW02-034",
+      "set": "EB02",
+      "pokemonCode": "EBC02-004",
+      "name": "Reckless Charge",
+      "official": true,
+      "japanese": "とつげき",
+      "type": "M",
+      "energy": [
+        "M",
+        "M",
+        "M",
+        "M"
+      ],
+      "damage": 40,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 40 more damage.",
+        "handstand": "This Pokémon does 40 damage to itself.",
+        "faceUp": "This attack does 40 more damage.",
+        "faceDown": "This Pokémon does 40 damage to itself."
+      }
+    },
+    {
+      "code": "EBW02-035",
+      "set": "EB02",
+      "pokemonCode": "EBC02-004",
+      "name": "Rock Tomb",
+      "official": true,
+      "japanese": "がんせきふうじ",
+      "type": "F",
+      "energy": [
+        "F",
+        "C",
+        "C",
+        "C"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "On the opponent's next turn, reduce the number of Enekoro they roll by 1.",
+        "faceUp": "On the opponent's next turn, reduce the number of Enekoro they roll by 1.",
+        "faceDown": "On the opponent's next turn, reduce the number of Enekoro they roll by 1."
+      }
+    },
+    {
+      "code": "EBW02-036",
+      "set": "EB02",
+      "pokemonCode": "EBC02-004",
+      "name": "Ram",
+      "official": true,
+      "japanese": "ぶつかる",
+      "type": "M",
+      "energy": [
+        "M"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 10 more damage.",
+        "faceUp": "This attack does 10 more damage.",
+        "sideways": "This attack does 10 more damage."
+      }
+    },
+    {
+      "code": "EBW02-037",
+      "set": "EB02",
+      "pokemonCode": "EBC02-004",
+      "name": "Steel Body",
+      "official": false,
+      "japanese": "こうてつボディ",
+      "type": "M",
+      "energy": [
+        "M",
+        "M"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "During your opponent's next turn, prevent all damage done to this Pokémon by attacks if that damage is 30 or less.",
+        "faceUp": "During your opponent's next turn, prevent all damage done to this Pokémon by attacks if that damage is 30 or less.",
+        "sideways": "During your opponent's next turn, prevent all damage done to this Pokémon by attacks if that damage is 30 or less."
+      }
+    },
+    {
+      "code": "EBW02-038",
+      "set": "EB02",
+      "pokemonCode": "EBC02-004",
+      "name": "Powerful Steel",
+      "official": false,
+      "japanese": "パワフルスチール",
+      "type": "M",
+      "energy": [
+        "M",
+        "M",
+        "M"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "If this Pokémon was not damaged by an attack during your opponent's last turn, this attack does 40 more damage.",
+        "sideways": "If this Pokémon was not damaged by an attack during your opponent's last turn, this attack does 40 more damage."
+      }
+    },
+    {
+      "code": "EBW02-039",
+      "set": "EB02",
+      "pokemonCode": "EBC02-004",
+      "name": "Iron Head",
+      "official": true,
+      "japanese": "アイアンヘッド",
+      "type": "M",
+      "energy": [
+        "M",
+        "M",
+        "M"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 20 more damage.",
+        "faceUp": "This attack does 20 more damage.",
+        "faceDown": "This attack does 20 more damage."
+      }
+    },
+    {
+      "code": "EBW02-040",
+      "set": "EB02",
+      "pokemonCode": "EBC02-004",
+      "name": "Ice Punch",
+      "official": true,
+      "japanese": "れいとうパンチ",
+      "type": "W",
+      "energy": [
+        "W",
+        "C",
+        "C",
+        "C"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 20 more damage.",
+        "sideways": "This attack does 20 more damage."
+      }
+    },
+    {
+      "code": "EBW02-041",
+      "set": "EB02",
+      "pokemonCode": "EBC02-005",
+      "name": "Shred",
+      "official": true,
+      "japanese": "ひきさく",
+      "type": "N",
+      "energy": [
+        "R"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 10 more damage.",
+        "sideways": "This attack does 10 more damage."
+      }
+    },
+    {
+      "code": "EBW02-042",
+      "set": "EB02",
+      "pokemonCode": "EBC02-005",
+      "name": "Dragon Pulse",
+      "official": true,
+      "japanese": "りゅうのはどう",
+      "type": "N",
+      "energy": [
+        "R",
+        "R"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 30 more damage.",
+        "handstand": "On your next turn, reduce the number of Enekoro you roll by 2.",
+        "faceUp": "This attack does 30 more damage.",
+        "faceDown": "On your next turn, reduce the number of Enekoro you roll by 2."
+      }
+    },
+    {
+      "code": "EBW02-043",
+      "set": "EB02",
+      "pokemonCode": "EBC02-005",
+      "name": "Breaking Swipe",
+      "official": true,
+      "japanese": "ワイドブレイカー",
+      "type": "N",
+      "energy": [
+        "R",
+        "R",
+        "L"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "sideways": "On the opponent's next turn, reduce the number of Enekoro they roll by 1."
+      }
+    },
+    {
+      "code": "EBW02-044",
+      "set": "EB02",
+      "pokemonCode": "EBC02-005",
+      "name": "Wild Rampage",
+      "official": false,
+      "japanese": "げきりんランページ",
+      "type": "N",
+      "energy": [
+        "R",
+        "R",
+        "R",
+        "L",
+        "L"
+      ],
+      "damage": 60,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 60 more damage.",
+        "faceUp": "This attack does 60 more damage."
+      }
+    },
+    {
+      "code": "EBW02-045",
+      "set": "EB02",
+      "pokemonCode": "EBC02-005",
+      "name": "Dragon Flame",
+      "official": true,
+      "japanese": "ドラゴンフレイム",
+      "type": "R",
+      "energy": [
+        "R",
+        "R",
+        "C",
+        "C"
+      ],
+      "damage": 40,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 30 more damage.",
+        "handstand": "This Pokémon does 30 damage to itself.",
+        "faceUp": "This Pokémon does 30 damage to itself.",
+        "faceDown": "This Pokémon does 30 damage to itself.",
+        "sideways": "This attack does 30 more damage."
+      }
+    },
+    {
+      "code": "EBW02-046",
+      "set": "EB02",
+      "pokemonCode": "EBC02-005",
+      "name": "Twister",
+      "official": true,
+      "japanese": "たつまき",
+      "type": "N",
+      "energy": [
+        "L"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 10 more damage.",
+        "faceUp": "This attack does 10 more damage.",
+        "sideways": "This attack does 10 more damage."
+      }
+    },
+    {
+      "code": "EBW02-047",
+      "set": "EB02",
+      "pokemonCode": "EBC02-005",
+      "name": "Dragon Claw",
+      "official": true,
+      "japanese": "ドラゴンクロー",
+      "type": "N",
+      "energy": [
+        "R",
+        "L"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 30 more damage.",
+        "faceUp": "This attack does 30 more damage."
+      }
+    },
+    {
+      "code": "EBW02-048",
+      "set": "EB02",
+      "pokemonCode": "EBC02-005",
+      "name": "Dragon Tail",
+      "official": true,
+      "japanese": "ドラゴンテール",
+      "type": "N",
+      "energy": [
+        "R",
+        "L",
+        "L"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 20 more damage.",
+        "sideways": "This attack does 20 more damage."
+      }
+    },
+    {
+      "code": "EBW02-049",
+      "set": "EB02",
+      "pokemonCode": "EBC02-005",
+      "name": "Dragon Burst",
+      "official": true,
+      "japanese": "ドラゴンバースト",
+      "type": "N",
+      "energy": [
+        "R",
+        "C",
+        "C",
+        "C"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 20 damage for each {L} Energy produced.",
+        "faceUp": "This attack does 20 damage for each {L} Energy produced."
+      }
+    },
+    {
+      "code": "EBW02-050",
+      "set": "EB02",
+      "pokemonCode": "EBC02-005",
+      "name": "Thunder",
+      "official": true,
+      "japanese": "かみなり",
+      "type": "L",
+      "energy": [
+        "L",
+        "L",
+        "L"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 60 more damage."
+      }
+    },
+    {
+      "code": "EBW02-051",
+      "set": "EB02",
+      "pokemonCode": "EBC02-006",
+      "name": "Pound",
+      "official": true,
+      "japanese": "はたく",
+      "type": "C",
+      "energy": [
+        "Y",
+        "Y"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 40 more damage."
+      }
+    },
+    {
+      "code": "EBW02-052",
+      "set": "EB02",
+      "pokemonCode": "EBC02-006",
+      "name": "Chance Tackle",
+      "official": false,
+      "japanese": "チャンスタックル",
+      "type": "C",
+      "energy": [
+        "Y",
+        "Y"
+      ],
+      "damage": 20,
+      "effect": "On your next turn, you can reroll your Charakoro.",
+      "orientations": {
+        "standing": "You can reroll it twice, not just once."
+      }
+    },
+    {
+      "code": "EBW02-053",
+      "set": "EB02",
+      "pokemonCode": "EBC02-006",
+      "name": "Curve Strike",
+      "official": true,
+      "japanese": "まるまるアタック",
+      "type": "C",
+      "energy": [
+        "Y",
+        "Y",
+        "Y"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 50 more damage."
+      }
+    },
+    {
+      "code": "EBW02-054",
+      "set": "EB02",
+      "pokemonCode": "EBC02-006",
+      "name": "Drain Slap",
+      "official": true,
+      "japanese": "ドレインビンタ",
+      "type": "C",
+      "energy": [
+        "Y",
+        "Y",
+        "Y",
+        "Y"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "Heal 50 damage from this Pokémon."
+      }
+    },
+    {
+      "code": "EBW02-055",
+      "set": "EB02",
+      "pokemonCode": "EBC02-006",
+      "name": "Shadow Ball",
+      "official": true,
+      "japanese": "シャドーボール",
+      "type": "P",
+      "energy": [
+        "P",
+        "C",
+        "C",
+        "C"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 30 more damage.",
+        "faceUp": "This attack does 30 more damage."
+      }
+    },
+    {
+      "code": "EBW02-056",
+      "set": "EB02",
+      "pokemonCode": "EBC02-006",
+      "name": "Smack",
+      "official": true,
+      "japanese": "ひらてうち",
+      "type": "C",
+      "energy": [
+        "Y"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 40 more damage."
+      }
+    },
+    {
+      "code": "EBW02-057",
+      "set": "EB02",
+      "pokemonCode": "EBC02-006",
+      "name": "Soft-Boiled",
+      "official": true,
+      "japanese": "タマゴうみ",
+      "type": "C",
+      "energy": [
+        "Y",
+        "Y"
+      ],
+      "damage": null,
+      "effect": "Heal 20 damage from this Pokémon.",
+      "orientations": {
+        "standing": "Heal all damage from this Pokémon."
+      }
+    },
+    {
+      "code": "EBW02-058",
+      "set": "EB02",
+      "pokemonCode": "EBC02-006",
+      "name": "Lucky Punch",
+      "official": true,
+      "japanese": "ラッキーパンチ",
+      "type": "C",
+      "energy": [
+        "Y",
+        "Y",
+        "Y"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "On your next turn, you can reroll your Charakoro."
+      }
+    },
+    {
+      "code": "EBW02-059",
+      "set": "EB02",
+      "pokemonCode": "EBC02-006",
+      "name": "Hammer In",
+      "official": true,
+      "japanese": "ぶちかます",
+      "type": "C",
+      "energy": [
+        "Y",
+        "Y",
+        "Y",
+        "Y"
+      ],
+      "damage": 40,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 60 more damage."
+      }
+    },
+    {
+      "code": "EBW02-060",
+      "set": "EB02",
+      "pokemonCode": "EBC02-006",
+      "name": "Flamethrower",
+      "official": true,
+      "japanese": "かえんほうしゃ",
+      "type": "R",
+      "energy": [
+        "R",
+        "C",
+        "C",
+        "C"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 30 more damage.",
+        "handstand": "On your next turn, reduce the number of Enekoro you roll by 1."
+      }
+    },
+    {
+      "code": "STW01-001",
+      "set": "ST",
+      "pokemonCode": "STC01-001",
+      "name": "Vine Whip",
+      "official": true,
+      "japanese": "つるのムチ",
+      "type": "G",
+      "energy": [
+        "G"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 20 more damage.",
+        "faceUp": "This attack does 20 more damage.",
+        "faceDown": "This attack does 20 more damage."
+      }
+    },
+    {
+      "code": "STW01-002",
+      "set": "ST",
+      "pokemonCode": "STC01-001",
+      "name": "Razor Leaf",
+      "official": true,
+      "japanese": "はっぱカッター",
+      "type": "G",
+      "energy": [
+        "G",
+        "G"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 20 more damage.",
+        "sideways": "This attack does 20 more damage."
+      }
+    },
+    {
+      "code": "STW01-003",
+      "set": "ST",
+      "pokemonCode": "STC01-001",
+      "name": "Leech Seed",
+      "official": true,
+      "japanese": "やどりぎのタネ",
+      "type": "G",
+      "energy": [
+        "G",
+        "G"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "On the opponent's next turn, reduce the number of Enekoro they roll by 1. On your next turn, increase the number of Enekoro you roll by 1.",
+        "faceUp": "On the opponent's next turn, reduce the number of Enekoro they roll by 1. On your next turn, increase the number of Enekoro you roll by 1.",
+        "sideways": "On the opponent's next turn, reduce the number of Enekoro they roll by 1. On your next turn, increase the number of Enekoro you roll by 1."
+      }
+    },
+    {
+      "code": "STW01-004",
+      "set": "ST",
+      "pokemonCode": "STC01-001",
+      "name": "Grass Knot",
+      "official": true,
+      "japanese": "くさむすび",
+      "type": "G",
+      "energy": [
+        "G",
+        "G",
+        "G"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "Choose 1 of your opponent's attacks. During their next turn, they can't use that attack.",
+        "faceUp": "Choose 1 of your opponent's attacks. During their next turn, they can't use that attack.",
+        "faceDown": "Choose 1 of your opponent's attacks. During their next turn, they can't use that attack."
+      }
+    },
+    {
+      "code": "STW01-005",
+      "set": "ST",
+      "pokemonCode": "STC01-001",
+      "name": "Reckless Charge",
+      "official": true,
+      "japanese": "とつげき",
+      "type": "G",
+      "energy": [
+        "G",
+        "G",
+        "G"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 40 more damage.",
+        "handstand": "This Pokémon does 30 damage to itself.",
+        "faceUp": "This attack does 40 more damage.",
+        "faceDown": "This Pokémon does 30 damage to itself."
+      }
+    },
+    {
+      "code": "STW01-006",
+      "set": "ST",
+      "pokemonCode": "STC01-001",
+      "name": "Giga Drain",
+      "official": true,
+      "japanese": "ギガドレイン",
+      "type": "G",
+      "energy": [
+        "G",
+        "G",
+        "G",
+        "G"
+      ],
+      "damage": 40,
+      "effect": null,
+      "orientations": {
+        "standing": "Heal 40 damage from this Pokémon.",
+        "sideways": "Heal 40 damage from this Pokémon."
+      }
+    },
+    {
+      "code": "STW01-007",
+      "set": "ST",
+      "pokemonCode": "STC01-001",
+      "name": "Acid Spray",
+      "official": true,
+      "japanese": "アシッドボム",
+      "type": "D",
+      "energy": [
+        "D",
+        "C",
+        "C"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 20 more damage.",
+        "sideways": "This attack does 20 more damage."
+      }
+    },
+    {
+      "code": "PRW01-1-08",
+      "set": "PR",
+      "pokemonCode": "STC01-001",
+      "name": "Aroma Storm",
+      "official": false,
+      "japanese": "アロマストーム",
+      "type": "G",
+      "energy": [
+        "G",
+        "G",
+        "G",
+        "G"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "Heal 50 damage from this Pokémon."
+      }
+    },
+    {
+      "code": "STW02-001",
+      "set": "ST",
+      "pokemonCode": "STC02-001",
+      "name": "Ember",
+      "official": true,
+      "japanese": "ひのこ",
+      "type": "R",
+      "energy": [
+        "R",
+        "R"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 30 more damage.",
+        "faceUp": "This attack does 30 more damage."
+      }
+    },
+    {
+      "code": "STW02-002",
+      "set": "ST",
+      "pokemonCode": "STC02-001",
+      "name": "Heat Up",
+      "official": true,
+      "japanese": "ヒートアップ",
+      "type": "R",
+      "energy": [
+        "R",
+        "R"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "On your next turn, increase the number of Enekoro you roll by 2.",
+        "faceUp": "On your next turn, increase the number of Enekoro you roll by 2."
+      }
+    },
+    {
+      "code": "STW02-003",
+      "set": "ST",
+      "pokemonCode": "STC02-001",
+      "name": "Flamethrower",
+      "official": true,
+      "japanese": "かえんほうしゃ",
+      "type": "R",
+      "energy": [
+        "R",
+        "R",
+        "R"
+      ],
+      "damage": 40,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 20 more damage.",
+        "handstand": "On your next turn, reduce the number of Enekoro you roll by 1.",
+        "faceUp": "This attack does 20 more damage.",
+        "faceDown": "On your next turn, reduce the number of Enekoro you roll by 1.",
+        "sideways": "On your next turn, reduce the number of Enekoro you roll by 1."
+      }
+    },
+    {
+      "code": "STW02-004",
+      "set": "ST",
+      "pokemonCode": "STC02-001",
+      "name": "Fire Fang",
+      "official": true,
+      "japanese": "ほのおのキバ",
+      "type": "R",
+      "energy": [
+        "R",
+        "R",
+        "R",
+        "R"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 30 more damage.",
+        "faceUp": "This attack does 30 more damage.",
+        "faceDown": "This attack does 30 more damage."
+      }
+    },
+    {
+      "code": "STW02-005",
+      "set": "ST",
+      "pokemonCode": "STC02-001",
+      "name": "Flare Storm",
+      "official": true,
+      "japanese": "フレアストーム",
+      "type": "R",
+      "energy": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 10 damage for each {R} Energy produced.",
+        "sideways": "This attack does 10 damage for each {R} Energy produced."
+      }
+    },
+    {
+      "code": "STW02-006",
+      "set": "ST",
+      "pokemonCode": "STC02-001",
+      "name": "Thunder Punch",
+      "official": true,
+      "japanese": "かみなりパンチ",
+      "type": "L",
+      "energy": [
+        "L",
+        "C",
+        "C"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 20 more damage.",
+        "faceUp": "This attack does 20 more damage.",
+        "sideways": "This attack does 20 more damage."
+      }
+    },
+    {
+      "code": "STW02-007",
+      "set": "ST",
+      "pokemonCode": "STC02-001",
+      "name": "Metal Claw",
+      "official": true,
+      "japanese": "メタルクロー",
+      "type": "M",
+      "energy": [
+        "M",
+        "C",
+        "C"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 40 more damage."
+      }
+    },
+    {
+      "code": "PRW01-2-08",
+      "set": "PR",
+      "pokemonCode": "STC02-001",
+      "name": "Flame Up",
+      "official": false,
+      "japanese": "フレイムアップ",
+      "type": "R",
+      "energy": [
+        "R",
+        "R",
+        "R"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "On your next turn, increase the number of Enekoro you roll by 2.",
+        "handstand": "On your next turn, reduce the number of Enekoro you roll by 2."
+      }
+    },
+    {
+      "code": "STW03-001",
+      "set": "ST",
+      "pokemonCode": "STC03-001",
+      "name": "Water Gun",
+      "official": true,
+      "japanese": "みずでっぽう",
+      "type": "W",
+      "energy": [
+        "W"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 20 more damage.",
+        "faceDown": "This attack does 20 more damage."
+      }
+    },
+    {
+      "code": "STW03-002",
+      "set": "ST",
+      "pokemonCode": "STC03-001",
+      "name": "Withdraw",
+      "official": true,
+      "japanese": "からにこもる",
+      "type": "W",
+      "energy": [
+        "W"
+      ],
+      "damage": null,
+      "effect": "During your opponent's next turn, this Pokémon takes 20 less damage from attacks.",
+      "orientations": {
+        "faceDown": "Heal 30 damage from this Pokémon."
+      }
+    },
+    {
+      "code": "STW03-003",
+      "set": "ST",
+      "pokemonCode": "STC03-001",
+      "name": "Water Pulse",
+      "official": true,
+      "japanese": "みずのはどう",
+      "type": "W",
+      "energy": [
+        "W",
+        "W"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 20 more damage.",
+        "sideways": "This attack does 20 more damage."
+      }
+    },
+    {
+      "code": "STW03-004",
+      "set": "ST",
+      "pokemonCode": "STC03-001",
+      "name": "Shell Attack",
+      "official": true,
+      "japanese": "シェルアタック",
+      "type": "W",
+      "energy": [
+        "W",
+        "W",
+        "W"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "During your opponent's next turn, this Pokémon takes 20 less damage from attacks.",
+        "faceUp": "During your opponent's next turn, this Pokémon takes 20 less damage from attacks.",
+        "faceDown": "During your opponent's next turn, this Pokémon takes 20 less damage from attacks."
+      }
+    },
+    {
+      "code": "STW03-005",
+      "set": "ST",
+      "pokemonCode": "STC03-001",
+      "name": "Bubble Beam",
+      "official": true,
+      "japanese": "バブルこうせん",
+      "type": "W",
+      "energy": [
+        "W",
+        "W",
+        "W"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "On the opponent's next turn, reduce the number of Enekoro they roll by 1.",
+        "faceUp": "On the opponent's next turn, reduce the number of Enekoro they roll by 1.",
+        "faceDown": "On the opponent's next turn, reduce the number of Enekoro they roll by 1."
+      }
+    },
+    {
+      "code": "STW03-006",
+      "set": "ST",
+      "pokemonCode": "STC03-001",
+      "name": "Hydro Rage",
+      "official": false,
+      "japanese": "ハイドロアンガー",
+      "type": "W",
+      "energy": [
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      "damage": 40,
+      "effect": null,
+      "orientations": {
+        "standing": "If this Pokémon has 40 or less HP remaining, this attack does 60 more damage.",
+        "faceUp": "If this Pokémon has 40 or less HP remaining, this attack does 60 more damage.",
+        "faceDown": "If this Pokémon has 40 or less HP remaining, this attack does 60 more damage."
+      }
+    },
+    {
+      "code": "STW03-007",
+      "set": "ST",
+      "pokemonCode": "STC03-001",
+      "name": "Mud Shot",
+      "official": true,
+      "japanese": "マッドショット",
+      "type": "F",
+      "energy": [
+        "F",
+        "C",
+        "C",
+        "C"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 30 more damage.",
+        "sideways": "This attack does 30 more damage."
+      }
+    },
+    {
+      "code": "PRW01-3-08",
+      "set": "PR",
+      "pokemonCode": "STC03-001",
+      "name": "Hard Shell",
+      "official": false,
+      "japanese": "カチカチこうら",
+      "type": "W",
+      "energy": [
+        "W",
+        "W",
+        "W"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "faceDown": "During your opponent's next turn, this Pokémon takes 50 less damage from attacks."
+      }
+    },
+    {
+      "code": "STW04-001",
+      "set": "ST",
+      "pokemonCode": "STC04-001",
+      "name": "Gnaw",
+      "official": true,
+      "japanese": "かじる",
+      "type": "L",
+      "energy": [
+        "L"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 30 more damage.",
+        "faceUp": "This attack does 30 more damage."
+      }
+    },
+    {
+      "code": "STW04-002",
+      "set": "ST",
+      "pokemonCode": "STC04-001",
+      "name": "Thunder Shock",
+      "official": true,
+      "japanese": "でんきショック",
+      "type": "L",
+      "energy": [
+        "L",
+        "L"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 20 more damage.",
+        "handstand": "This attack does 20 more damage.",
+        "sideways": "This attack does 20 more damage."
+      }
+    },
+    {
+      "code": "STW04-003",
+      "set": "ST",
+      "pokemonCode": "STC04-001",
+      "name": "Electric Rush",
+      "official": false,
+      "japanese": "エレキラッシュ",
+      "type": "L",
+      "energy": [
+        "L",
+        "L"
+      ],
+      "damage": 20,
+      "effect": "This attack's damage isn't affected by Weakness.",
+      "orientations": {
+        "standing": "Use \"Electric Rush\" 1 more time. (Can be repeated until it fails.)",
+        "faceUp": "Use \"Electric Rush\" 1 more time. (Can be repeated until it fails.)"
+      }
+    },
+    {
+      "code": "STW04-004",
+      "set": "ST",
+      "pokemonCode": "STC04-001",
+      "name": "Thunderbolt",
+      "official": true,
+      "japanese": "10まんボルト",
+      "type": "L",
+      "energy": [
+        "L",
+        "L",
+        "L"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 30 more damage.",
+        "handstand": "On your next turn, reduce the number of Enekoro you roll by 2.",
+        "faceUp": "On your next turn, reduce the number of Enekoro you roll by 2.",
+        "faceDown": "On your next turn, reduce the number of Enekoro you roll by 2.",
+        "sideways": "This attack does 30 more damage."
+      }
+    },
+    {
+      "code": "STW04-005",
+      "set": "ST",
+      "pokemonCode": "STC04-001",
+      "name": "Thunder",
+      "official": true,
+      "japanese": "かみなり",
+      "type": "L",
+      "energy": [
+        "L",
+        "L",
+        "L"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 60 more damage."
+      }
+    },
+    {
+      "code": "STW04-006",
+      "set": "ST",
+      "pokemonCode": "STC04-001",
+      "name": "Volt Tackle",
+      "official": true,
+      "japanese": "ボルテッカー",
+      "type": "L",
+      "energy": [
+        "L",
+        "L",
+        "L",
+        "L"
+      ],
+      "damage": 40,
+      "effect": "This Pokémon does 30 damage to itself.",
+      "orientations": {
+        "standing": "This attack does 40 more damage.",
+        "faceUp": "This attack does 40 more damage.",
+        "faceDown": "This attack does 40 more damage."
+      }
+    },
+    {
+      "code": "STW04-007",
+      "set": "ST",
+      "pokemonCode": "STC04-001",
+      "name": "Iron Tail",
+      "official": true,
+      "japanese": "アイアンテール",
+      "type": "M",
+      "energy": [
+        "M"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "During your opponent's next turn, this Pokémon takes 10 less damage from attacks.",
+        "faceUp": "During your opponent's next turn, this Pokémon takes 10 less damage from attacks.",
+        "faceDown": "During your opponent's next turn, this Pokémon takes 10 less damage from attacks."
+      }
+    },
+    {
+      "code": "PRW01-008",
+      "set": "PR",
+      "pokemonCode": "STC04-001",
+      "name": "Critical Bolt",
+      "official": false,
+      "japanese": "クリティカルボルト",
+      "type": "L",
+      "energy": [
+        "L",
+        "L",
+        "L",
+        "L"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 60 more damage."
+      }
+    },
+    {
+      "code": "STW05-001",
+      "set": "ST",
+      "pokemonCode": "STC05-001",
+      "name": "Tail Slap",
+      "official": true,
+      "japanese": "しっぽではたく",
+      "type": "C",
+      "energy": [
+        "Y"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 10 more damage.",
+        "sideways": "This attack does 10 more damage."
+      }
+    },
+    {
+      "code": "STW05-002",
+      "set": "ST",
+      "pokemonCode": "STC05-001",
+      "name": "Tackle",
+      "official": true,
+      "japanese": "たいあたり",
+      "type": "C",
+      "energy": [
+        "Y",
+        "Y"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 20 more damage.",
+        "faceUp": "This attack does 20 more damage.",
+        "sideways": "This attack does 20 more damage."
+      }
+    },
+    {
+      "code": "STW05-003",
+      "set": "ST",
+      "pokemonCode": "STC05-001",
+      "name": "Take Down",
+      "official": true,
+      "japanese": "とっしん",
+      "type": "C",
+      "energy": [
+        "Y",
+        "Y"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 20 more damage.",
+        "handstand": "This Pokémon does 20 damage to itself.",
+        "faceUp": "This attack does 20 more damage.",
+        "faceDown": "This Pokémon does 20 damage to itself."
+      }
+    },
+    {
+      "code": "STW05-004",
+      "set": "ST",
+      "pokemonCode": "STC05-001",
+      "name": "Flop",
+      "official": true,
+      "japanese": "はねまわる",
+      "type": "C",
+      "energy": [
+        "Y",
+        "Y",
+        "Y"
+      ],
+      "damage": null,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 70 damage.",
+        "handstand": "This attack does 20 damage.",
+        "faceUp": "This attack does 40 damage.",
+        "faceDown": "This attack does 40 damage.",
+        "sideways": "This attack does 20 damage."
+      }
+    },
+    {
+      "code": "STW05-005",
+      "set": "ST",
+      "pokemonCode": "STC05-001",
+      "name": "Best Dash",
+      "official": true,
+      "japanese": "ぜんりょくダッシュ",
+      "type": "C",
+      "energy": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C"
+      ],
+      "damage": 40,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 40 more damage.",
+        "faceUp": "This attack does 40 more damage.",
+        "faceDown": "This attack does 40 more damage."
+      }
+    },
+    {
+      "code": "STW05-006",
+      "set": "ST",
+      "pokemonCode": "STC05-001",
+      "name": "Charm",
+      "official": true,
+      "japanese": "あまえる",
+      "type": "P",
+      "energy": [
+        "P"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "On the opponent's next turn, reduce the number of Enekoro they roll by 2.",
+        "faceUp": "On the opponent's next turn, reduce the number of Enekoro they roll by 2.",
+        "sideways": "On the opponent's next turn, reduce the number of Enekoro they roll by 2."
+      }
+    },
+    {
+      "code": "STW05-007",
+      "set": "ST",
+      "pokemonCode": "STC05-001",
+      "name": "Bite",
+      "official": true,
+      "japanese": "かみつく",
+      "type": "D",
+      "energy": [
+        "D",
+        "C",
+        "C"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 20 more damage.",
+        "sideways": "This attack does 20 more damage."
+      }
+    },
+    {
+      "code": "PRW02-008",
+      "set": "PR",
+      "pokemonCode": "STC05-001",
+      "name": "Roll Over",
+      "official": true,
+      "japanese": "ねころぶ",
+      "type": "C",
+      "energy": [
+        "Y",
+        "Y"
+      ],
+      "damage": null,
+      "effect": "Heal 10 damage from this Pokémon.",
+      "orientations": {
+        "faceUp": "Heal 20 more damage from this Pokémon.",
+        "faceDown": "Heal 20 more damage from this Pokémon."
+      }
+    },
+    {
+      "code": "STW06-001",
+      "set": "ST",
+      "pokemonCode": "STC06-001",
+      "name": "Confusion",
+      "official": true,
+      "japanese": "ねんりき",
+      "type": "P",
+      "energy": [
+        "P"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 20 more damage.",
+        "sideways": "This attack does 20 more damage."
+      }
+    },
+    {
+      "code": "STW06-002",
+      "set": "ST",
+      "pokemonCode": "STC06-001",
+      "name": "Psybeam",
+      "official": true,
+      "japanese": "サイケこうせん",
+      "type": "P",
+      "energy": [
+        "P",
+        "P"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 30 more damage.",
+        "handstand": "This attack does 30 more damage."
+      }
+    },
+    {
+      "code": "STW06-003",
+      "set": "ST",
+      "pokemonCode": "STC06-001",
+      "name": "Barrier",
+      "official": true,
+      "japanese": "バリアー",
+      "type": "P",
+      "energy": [
+        "P",
+        "P"
+      ],
+      "damage": null,
+      "effect": "During your opponent's next turn, this Pokémon takes 20 less damage from attacks.",
+      "orientations": {
+        "standing": "Reduce damage taken by an additional 30.",
+        "faceUp": "Reduce damage taken by an additional 30."
+      }
+    },
+    {
+      "code": "STW06-004",
+      "set": "ST",
+      "pokemonCode": "STC06-001",
+      "name": "Memory Skip",
+      "official": true,
+      "japanese": "メモリースキップ",
+      "type": "P",
+      "energy": [
+        "P",
+        "P"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "Choose 1 of your opponent's attacks. During their next turn, they can't use that attack.",
+        "sideways": "Choose 1 of your opponent's attacks. During their next turn, they can't use that attack."
+      }
+    },
+    {
+      "code": "STW06-005",
+      "set": "ST",
+      "pokemonCode": "STC06-001",
+      "name": "Psyshot",
+      "official": true,
+      "japanese": "サイコショット",
+      "type": "P",
+      "energy": [
+        "P",
+        "P",
+        "P"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 20 more damage.",
+        "handstand": "This attack does 20 more damage.",
+        "faceUp": "This attack does 20 more damage.",
+        "faceDown": "This attack does 20 more damage."
+      }
+    },
+    {
+      "code": "STW06-006",
+      "set": "ST",
+      "pokemonCode": "STC06-001",
+      "name": "Psychic",
+      "official": true,
+      "japanese": "サイコキネシス",
+      "type": "P",
+      "energy": [
+        "P",
+        "P",
+        "P"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "The opponent rolls 3 Enekoro. Add 10 damage for each Energy of the type that was rolled the most.",
+        "faceUp": "The opponent rolls 3 Enekoro. Add 10 damage for each Energy of the type that was rolled the most.",
+        "faceDown": "The opponent rolls 3 Enekoro. Add 10 damage for each Energy of the type that was rolled the most."
+      }
+    },
+    {
+      "code": "STW06-007",
+      "set": "ST",
+      "pokemonCode": "STC06-001",
+      "name": "Reflection",
+      "official": false,
+      "japanese": "リフレクション",
+      "type": "P",
+      "energy": [
+        "P",
+        "P",
+        "P",
+        "P"
+      ],
+      "damage": null,
+      "effect": "This attack does damage equal to the damage of your opponent's last selected attack. (Ignore any Charakoro effects of the selected attack.)",
+      "orientations": {
+        "standing": "Damage dealt by this attack is doubled.",
+        "sideways": "Damage dealt by this attack is doubled."
+      }
+    },
+    {
+      "code": "PRW03-008",
+      "set": "PR",
+      "pokemonCode": "STC06-001",
+      "name": "Miracle Beam",
+      "official": true,
+      "japanese": "ミラクルビーム",
+      "type": "P",
+      "energy": [
+        "P",
+        "P"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 50 more damage."
+      }
+    },
+    {
+      "code": "STW07-001",
+      "set": "ST",
+      "pokemonCode": "STC07-001",
+      "name": "Suffocating Gas",
+      "official": true,
+      "japanese": "ガスでつつむ",
+      "type": "D",
+      "energy": [
+        "D"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 10 more damage.",
+        "sideways": "This attack does 10 more damage."
+      }
+    },
+    {
+      "code": "STW07-002",
+      "set": "ST",
+      "pokemonCode": "STC07-001",
+      "name": "Spooky Shot",
+      "official": true,
+      "japanese": "ホロウショット",
+      "type": "D",
+      "energy": [
+        "D",
+        "D"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 20 more damage.",
+        "faceUp": "This attack does 20 more damage.",
+        "faceDown": "This attack does 20 more damage."
+      }
+    },
+    {
+      "code": "STW07-003",
+      "set": "ST",
+      "pokemonCode": "STC07-001",
+      "name": "Upside Down",
+      "official": false,
+      "japanese": "まっさかさま",
+      "type": "D",
+      "energy": [
+        "D",
+        "D"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "On your opponent's next turn, set the direction of their Charakoro to {hs}.",
+        "sideways": "On your opponent's next turn, set the direction of their Charakoro to {hs}."
+      }
+    },
+    {
+      "code": "STW07-004",
+      "set": "ST",
+      "pokemonCode": "STC07-001",
+      "name": "Shadow Bind",
+      "official": true,
+      "japanese": "かげしばり",
+      "type": "D",
+      "energy": [
+        "D",
+        "D",
+        "D"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "On your opponent's next turn, they cannot roll their Charakoro.",
+        "faceUp": "On your opponent's next turn, they cannot roll their Charakoro.",
+        "sideways": "On your opponent's next turn, they cannot roll their Charakoro."
+      }
+    },
+    {
+      "code": "STW07-005",
+      "set": "ST",
+      "pokemonCode": "STC07-001",
+      "name": "Sludge Bomb",
+      "official": true,
+      "japanese": "ヘドロばくだん",
+      "type": "D",
+      "energy": [
+        "D",
+        "D",
+        "D"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 20 more damage.",
+        "faceUp": "This attack does 20 more damage.",
+        "sideways": "This attack does 20 more damage."
+      }
+    },
+    {
+      "code": "STW07-006",
+      "set": "ST",
+      "pokemonCode": "STC07-001",
+      "name": "Phantom Trick",
+      "official": false,
+      "japanese": "ファントムトリック",
+      "type": "D",
+      "energy": [
+        "D",
+        "D",
+        "D",
+        "D"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "Your opponent also rolls their Charakoro 3 times. For each {hs}{do}, this attack does 40 more damage.",
+        "handstand": "Your opponent also rolls their Charakoro 3 times. For each {hs}{do}, this attack does 40 more damage.",
+        "faceUp": "Your opponent also rolls their Charakoro 3 times. For each {hs}{do}, this attack does 40 more damage.",
+        "faceDown": "Your opponent also rolls their Charakoro 3 times. For each {hs}{do}, this attack does 40 more damage."
+      }
+    },
+    {
+      "code": "STW07-007",
+      "set": "ST",
+      "pokemonCode": "STC07-001",
+      "name": "Psywave",
+      "official": true,
+      "japanese": "サイコウェーブ",
+      "type": "P",
+      "energy": [
+        "P",
+        "C",
+        "C",
+        "C"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 40 more damage."
+      }
+    },
+    {
+      "code": "PRW02-1-08",
+      "set": "PR",
+      "pokemonCode": "STC07-001",
+      "name": "Night Lock",
+      "official": false,
+      "japanese": "ナイトロック",
+      "type": "D",
+      "energy": [
+        "D",
+        "D",
+        "D",
+        "D"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "On the opponent's next turn, reduce the number of Enekoro they roll by 2."
+      }
+    },
+    {
+      "code": "STW08-001",
+      "set": "ST",
+      "pokemonCode": "STC08-001",
+      "name": "Beam",
+      "official": true,
+      "japanese": "ビーム",
+      "type": "M",
+      "energy": [
+        "M"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 20 more damage.",
+        "faceUp": "This attack does 20 more damage."
+      }
+    },
+    {
+      "code": "STW08-002",
+      "set": "ST",
+      "pokemonCode": "STC08-001",
+      "name": "Basic Calculation",
+      "official": false,
+      "japanese": "しそくえんざん",
+      "type": "M",
+      "energy": [
+        "M",
+        "M"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "On your next turn, the direction of your Charakoro becomes the same direction it rolled with this attack.",
+        "faceUp": "On your next turn, the direction of your Charakoro becomes the same direction it rolled with this attack.",
+        "sideways": "On your next turn, the direction of your Charakoro becomes the same direction it rolled with this attack."
+      }
+    },
+    {
+      "code": "STW08-003",
+      "set": "ST",
+      "pokemonCode": "STC08-001",
+      "name": "Wide Press",
+      "official": false,
+      "japanese": "ワイドプレス",
+      "type": "M",
+      "energy": [
+        "M",
+        "M"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "sideways": "This attack does 30 more damage."
+      }
+    },
+    {
+      "code": "STW08-004",
+      "set": "ST",
+      "pokemonCode": "STC08-001",
+      "name": "Straight Stamp",
+      "official": false,
+      "japanese": "ストレートスタンプ",
+      "type": "M",
+      "energy": [
+        "M",
+        "M",
+        "M"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 20 more damage.",
+        "faceUp": "This attack does 20 more damage.",
+        "faceDown": "This attack does 20 more damage."
+      }
+    },
+    {
+      "code": "STW08-005",
+      "set": "ST",
+      "pokemonCode": "STC08-001",
+      "name": "Meteor Mash",
+      "official": true,
+      "japanese": "コメットパンチ",
+      "type": "M",
+      "energy": [
+        "M",
+        "M",
+        "M"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 40 more damage.",
+        "faceUp": "This attack does 40 more damage."
+      }
+    },
+    {
+      "code": "STW08-006",
+      "set": "ST",
+      "pokemonCode": "STC08-001",
+      "name": "Heavy Slam",
+      "official": true,
+      "japanese": "ヘビーボンバー",
+      "type": "M",
+      "energy": [
+        "M",
+        "M",
+        "M",
+        "M"
+      ],
+      "damage": 40,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 40 more damage.",
+        "handstand": "On your next turn, reduce the number of Enekoro you roll by 2.",
+        "faceUp": "On your next turn, reduce the number of Enekoro you roll by 2.",
+        "faceDown": "On your next turn, reduce the number of Enekoro you roll by 2.",
+        "sideways": "This attack does 40 more damage."
+      }
+    },
+    {
+      "code": "STW08-007",
+      "set": "ST",
+      "pokemonCode": "STC08-001",
+      "name": "Explosion",
+      "official": true,
+      "japanese": "だいばくはつ",
+      "type": "C",
+      "energy": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C"
+      ],
+      "damage": 100,
+      "effect": "This Pokémon does 120 damage to itself.",
+      "orientations": {
+        "standing": "Prevent the damage this attack would do to your Pokémon."
+      }
+    },
+    {
+      "code": "PRW02-2-08",
+      "set": "PR",
+      "pokemonCode": "STC08-001",
+      "name": "Steel Claw",
+      "official": false,
+      "japanese": "こうてつのツメ",
+      "type": "M",
+      "energy": [
+        "M"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 30 more damage."
+      }
+    },
+    {
+      "code": "STW09-001",
+      "set": "ST",
+      "pokemonCode": "STC09-001",
+      "name": "Kick",
+      "official": true,
+      "japanese": "キック",
+      "type": "F",
+      "energy": [
+        "F"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 10 more damage.",
+        "faceUp": "This attack does 10 more damage.",
+        "faceDown": "This attack does 10 more damage."
+      }
+    },
+    {
+      "code": "STW09-002",
+      "set": "ST",
+      "pokemonCode": "STC09-001",
+      "name": "Force Palm",
+      "official": true,
+      "japanese": "はっけい",
+      "type": "F",
+      "energy": [
+        "F",
+        "F"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "On the opponent's next turn, reduce the number of Enekoro they roll by 1.",
+        "faceUp": "On the opponent's next turn, reduce the number of Enekoro they roll by 1."
+      }
+    },
+    {
+      "code": "STW09-003",
+      "set": "ST",
+      "pokemonCode": "STC09-001",
+      "name": "Aura Knuckle",
+      "official": true,
+      "japanese": "はどうナックル",
+      "type": "F",
+      "energy": [
+        "F",
+        "F"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "If this Pokémon has 80 or less HP remaining, this attack does 30 more damage.",
+        "faceUp": "If this Pokémon has 80 or less HP remaining, this attack does 30 more damage.",
+        "faceDown": "If this Pokémon has 80 or less HP remaining, this attack does 30 more damage."
+      }
+    },
+    {
+      "code": "STW09-004",
+      "set": "ST",
+      "pokemonCode": "STC09-001",
+      "name": "Rolling Kick",
+      "official": true,
+      "japanese": "まわしげり",
+      "type": "F",
+      "energy": [
+        "F",
+        "F",
+        "F"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 30 more damage.",
+        "sideways": "This attack does 30 more damage."
+      }
+    },
+    {
+      "code": "STW09-005",
+      "set": "ST",
+      "pokemonCode": "STC09-001",
+      "name": "Aura Jab",
+      "official": false,
+      "japanese": "オーラづき",
+      "type": "F",
+      "energy": [
+        "F",
+        "F",
+        "F"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "If this Pokémon has 80 or less HP remaining, during your opponent's next turn, this Pokémon takes 20 less damage from attacks.",
+        "faceUp": "If this Pokémon has 80 or less HP remaining, during your opponent's next turn, this Pokémon takes 20 less damage from attacks.",
+        "sideways": "If this Pokémon has 80 or less HP remaining, during your opponent's next turn, this Pokémon takes 20 less damage from attacks."
+      }
+    },
+    {
+      "code": "STW09-006",
+      "set": "ST",
+      "pokemonCode": "STC09-001",
+      "name": "Aura Sphere",
+      "official": true,
+      "japanese": "はどうだん",
+      "type": "F",
+      "energy": [
+        "F",
+        "F",
+        "F",
+        "F"
+      ],
+      "damage": 40,
+      "effect": null,
+      "orientations": {
+        "standing": "If this Pokémon has 40 or less HP remaining, this attack does 50 more damage.",
+        "faceUp": "If this Pokémon has 40 or less HP remaining, this attack does 50 more damage.",
+        "faceDown": "If this Pokémon has 40 or less HP remaining, this attack does 50 more damage."
+      }
+    },
+    {
+      "code": "STW09-007",
+      "set": "ST",
+      "pokemonCode": "STC09-001",
+      "name": "Metal Claw",
+      "official": true,
+      "japanese": "メタルクロー",
+      "type": "M",
+      "energy": [
+        "M",
+        "C",
+        "C",
+        "C"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 40 more damage."
+      }
+    },
+    {
+      "code": "PRW02-3-08",
+      "set": "PR",
+      "pokemonCode": "STC09-001",
+      "name": "Vacuum Wave",
+      "official": true,
+      "japanese": "しんくうは",
+      "type": "F",
+      "energy": [
+        "F",
+        "F",
+        "F"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 50 more damage."
+      }
+    },
+    {
+      "code": "STW10-001",
+      "set": "ST",
+      "pokemonCode": "STC10-001",
+      "name": "Peck",
+      "official": true,
+      "japanese": "つつく",
+      "type": "Y",
+      "energy": [
+        "Y"
+      ],
+      "damage": 10,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 20 more damage.",
+        "faceUp": "This attack does 20 more damage."
+      }
+    },
+    {
+      "code": "STW10-002",
+      "set": "ST",
+      "pokemonCode": "STC10-001",
+      "name": "Fluffy Flight",
+      "official": false,
+      "japanese": "ふわふわひこう",
+      "type": "Y",
+      "energy": [
+        "Y",
+        "Y"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "On the opponent's next turn, if the Charakoro rolls {s1}{s2}, you do not take damage from attacks. (You are still affected by other effects.)",
+        "sideways": "On the opponent's next turn, if the Charakoro rolls {s1}{s2}, you do not take damage from attacks. (You are still affected by other effects.)"
+      }
+    },
+    {
+      "code": "STW10-003",
+      "set": "ST",
+      "pokemonCode": "STC10-001",
+      "name": "Roost",
+      "official": true,
+      "japanese": "はねやすめ",
+      "type": "Y",
+      "energy": [
+        "Y",
+        "Y"
+      ],
+      "damage": null,
+      "effect": "Heal 20 damage from this Pokémon.",
+      "orientations": {
+        "standing": "Heal 20 more damage from this Pokémon.",
+        "sideways": "Heal 20 more damage from this Pokémon."
+      }
+    },
+    {
+      "code": "STW10-004",
+      "set": "ST",
+      "pokemonCode": "STC10-001",
+      "name": "Aerial Ace",
+      "official": true,
+      "japanese": "つばめがえし",
+      "type": "Y",
+      "energy": [
+        "Y",
+        "Y",
+        "Y"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 20 more damage.",
+        "faceUp": "This attack does 20 more damage."
+      }
+    },
+    {
+      "code": "STW10-005",
+      "set": "ST",
+      "pokemonCode": "STC10-001",
+      "name": "Fly",
+      "official": true,
+      "japanese": "そらをとぶ",
+      "type": "Y",
+      "energy": [
+        "Y",
+        "Y",
+        "Y"
+      ],
+      "damage": 40,
+      "effect": null,
+      "orientations": {
+        "standing": "During your opponent's next turn, this Pokémon doesn't take damage from attacks. (You are still affected by other effects.)",
+        "handstand": "This attack does nothing.",
+        "faceUp": "This attack does nothing.",
+        "faceDown": "This attack does nothing.",
+        "sideways": "During your opponent's next turn, this Pokémon doesn't take damage from attacks. (You are still affected by other effects.)"
+      }
+    },
+    {
+      "code": "STW10-006",
+      "set": "ST",
+      "pokemonCode": "STC10-001",
+      "name": "Sky Attack",
+      "official": true,
+      "japanese": "ゴッドバード",
+      "type": "Y",
+      "energy": [
+        "Y",
+        "Y",
+        "Y",
+        "Y"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 50 more damage.",
+        "handstand": "On your next turn, reduce the number of Enekoro you roll by 2.",
+        "faceUp": "This attack does 50 more damage.",
+        "faceDown": "On your next turn, reduce the number of Enekoro you roll by 2."
+      }
+    },
+    {
+      "code": "STW10-007",
+      "set": "ST",
+      "pokemonCode": "STC10-001",
+      "name": "Moonblast",
+      "official": true,
+      "japanese": "ムーンフォース",
+      "type": "P",
+      "energy": [
+        "P",
+        "C",
+        "C",
+        "C"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "If the opponent is a {N} type, this attack does 40 more damage.",
+        "sideways": "If the opponent is a {N} type, this attack does 40 more damage."
+      }
+    },
+    {
+      "code": "STW11-001",
+      "set": "ST",
+      "pokemonCode": "STC11-001",
+      "name": "Dragon Pulse",
+      "official": true,
+      "japanese": "りゅうのはどう",
+      "type": "N",
+      "energy": [
+        "W",
+        "L"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 30 more damage.",
+        "handstand": "On your next turn, reduce the number of Enekoro you roll by 1.",
+        "faceUp": "This attack does 30 more damage.",
+        "faceDown": "On your next turn, reduce the number of Enekoro you roll by 1."
+      }
+    },
+    {
+      "code": "STW11-002",
+      "set": "ST",
+      "pokemonCode": "STC11-001",
+      "name": "Claw Slash",
+      "official": true,
+      "japanese": "ツメできりさく",
+      "type": "N",
+      "energy": [
+        "L",
+        "L"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 20 more damage.",
+        "sideways": "This attack does 20 more damage."
+      }
+    },
+    {
+      "code": "STW11-003",
+      "set": "ST",
+      "pokemonCode": "STC11-001",
+      "name": "Wrack Down",
+      "official": true,
+      "japanese": "たたきつぶす",
+      "type": "N",
+      "energy": [
+        "W",
+        "W",
+        "W"
+      ],
+      "damage": 20,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 30 more damage.",
+        "faceUp": "This attack does 30 more damage.",
+        "faceDown": "This attack does 30 more damage."
+      }
+    },
+    {
+      "code": "STW11-004",
+      "set": "ST",
+      "pokemonCode": "STC11-001",
+      "name": "Dragon Blast",
+      "official": true,
+      "japanese": "ドラゴンブラスト",
+      "type": "N",
+      "energy": [
+        "W",
+        "W",
+        "W",
+        "L",
+        "L"
+      ],
+      "damage": 60,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 40 more damage.",
+        "faceUp": "This attack does 40 more damage.",
+        "faceDown": "This attack does 40 more damage."
+      }
+    },
+    {
+      "code": "STW11-005",
+      "set": "ST",
+      "pokemonCode": "STC11-001",
+      "name": "Scale Press",
+      "official": false,
+      "japanese": "スケイルプレス",
+      "type": "W",
+      "energy": [
+        "W",
+        "W",
+        "C",
+        "C"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "During your opponent's next turn, this Pokémon takes 50 less damage from attacks.",
+        "faceUp": "During your opponent's next turn, this Pokémon takes 50 less damage from attacks."
+      }
+    },
+    {
+      "code": "STW11-006",
+      "set": "ST",
+      "pokemonCode": "STC11-001",
+      "name": "Hurricane Tail",
+      "official": true,
+      "japanese": "ハリケーンテール",
+      "type": "L",
+      "energy": [
+        "L",
+        "L",
+        "C",
+        "C"
+      ],
+      "damage": 20,
+      "effect": "Roll your Charakoro 3 times.",
+      "orientations": {
+        "standing": "Each time the Charakoro roll succeeds with this attack, this attack does 20 more damage.",
+        "sideways": "Each time the Charakoro roll succeeds with this attack, this attack does 20 more damage."
+      }
+    },
+    {
+      "code": "STW11-007",
+      "set": "ST",
+      "pokemonCode": "STC11-001",
+      "name": "Extreme Speed",
+      "official": true,
+      "japanese": "しんそく",
+      "type": "C",
+      "energy": [
+        "C",
+        "C",
+        "C",
+        "C"
+      ],
+      "damage": 30,
+      "effect": null,
+      "orientations": {
+        "standing": "This attack does 40 more damage."
+      }
+    }
+  ]
+}
