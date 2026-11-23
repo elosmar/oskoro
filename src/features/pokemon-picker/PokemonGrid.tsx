@@ -1,5 +1,5 @@
 import { TypeBadge } from "@/components/TypeBadge";
-import type { EnergyType } from "@/lib/data/schema";
+import type { EnergyType } from "@/lib/data/constants";
 import { CardLink } from "@/ui";
 
 export interface PokemonTile {

@@ -28,5 +28,20 @@
   },
   "footer": {
     "unofficial": "Unofficial fan project. Not affiliated with Pokémon, Bandai or Nintendo."
+  },
+  "team": {
+    "title": "Pick 4 moves",
+    "hint": "Tap a card to pick it. Open \"Show effects\" to read what it does on each Charakoro face.",
+    "counter": "{count}/{total}",
+    "continue": "Continue",
+    "changePokemon": "Change Pokémon"
+  },
+  "card": {
+    "energy": "Energy",
+    "damage": "Damage",
+    "effect": "Effect",
+    "noEffect": "No effect",
+    "fanTranslation": "Fan translation",
+    "showEffects": "Show effects"
   }
 }

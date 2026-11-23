@@ -1,4 +1,4 @@
-import type { EnergyType } from "@/lib/data/schema";
+import type { EnergyType } from "@/lib/data/constants";
 import { cx } from "@/ui";
 
 /** Static class names so Tailwind can detect them. Colors live in tokens.css. */

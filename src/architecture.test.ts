@@ -34,6 +34,13 @@ describe("layer boundaries", () => {
     expect(offenders).toEqual([]);
   });
 
+  it("client-facing code does not pull Zod into the browser", () => {
+    const offenders = files("{components,features,ui}/**/*.{ts,tsx}").filter((f) =>
+      /from "(zod|@\/lib\/data\/schema)"/.test(read(f)),
+    );
+    expect(offenders).toEqual([]);
+  });
+
   it("lib/ has no UI", () => {
     expect(files("lib/**/*.tsx")).toEqual([]);
   });

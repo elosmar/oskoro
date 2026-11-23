@@ -1,9 +1,7 @@
 import { z } from "zod";
+import { ENERGY_TYPES, LANGS, ORIENTATIONS, SETS } from "./constants";
 
-export const ENERGY_TYPES = ["G", "R", "W", "L", "P", "F", "D", "M", "N", "Y", "C"] as const;
-export const ORIENTATIONS = ["standing", "handstand", "faceUp", "faceDown", "sideways"] as const;
-export const SETS = ["ST", "EB01", "EB02", "PR"] as const;
-export const LANGS = ["es", "en"] as const;
+export * from "./constants";
 
 export const EnergyTypeSchema = z.enum(ENERGY_TYPES);
 export const OrientationSchema = z.enum(ORIENTATIONS);
@@ -47,10 +45,6 @@ export const DataBundleSchema = z.object({
   moves: z.array(MoveSchema),
 });
 
-export type EnergyType = z.infer<typeof EnergyTypeSchema>;
-export type Orientation = z.infer<typeof OrientationSchema>;
-export type CardSet = z.infer<typeof SetSchema>;
-export type Lang = z.infer<typeof LangSchema>;
 export type Move = z.infer<typeof MoveSchema>;
 export type Pokemon = z.infer<typeof PokemonSchema>;
 export type DataBundle = z.infer<typeof DataBundleSchema>;

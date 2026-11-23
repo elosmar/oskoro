@@ -1,7 +1,7 @@
 "use client";
 
 import { usePathname, useSearchParams } from "next/navigation";
-import { LANGS, type Lang } from "@/lib/data/schema";
+import { LANGS, type Lang } from "@/lib/data/constants";
 import { ButtonLink } from "@/ui";
 
 /** Swaps the `[lang]` segment and keeps the query string, so the setup survives. */

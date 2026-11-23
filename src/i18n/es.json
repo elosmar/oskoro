@@ -28,5 +28,20 @@
   },
   "footer": {
     "unofficial": "Proyecto de fans no oficial. No está afiliado a Pokémon, Bandai ni Nintendo."
+  },
+  "team": {
+    "title": "Elige 4 ataques",
+    "hint": "Toca una carta para elegirla. Abre \"Ver efectos\" para leer qué hace en cada cara del Charakoro.",
+    "counter": "{count}/{total}",
+    "continue": "Continuar",
+    "changePokemon": "Cambiar Pokémon"
+  },
+  "card": {
+    "energy": "Energía",
+    "damage": "Daño",
+    "effect": "Efecto",
+    "noEffect": "Sin efecto",
+    "fanTranslation": "Traducción de fans",
+    "showEffects": "Ver efectos"
   }
 }
