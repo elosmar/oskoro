@@ -43,5 +43,36 @@
     "noEffect": "Sin efecto",
     "fanTranslation": "Traducción de fans",
     "showEffects": "Ver efectos"
+  },
+  "rival": {
+    "title": "¿Contra quién juegas?",
+    "hint": "Elige el Pokémon de tu rival para consultar sus ataques durante la partida.",
+    "missingSetup": "Primero elige tu Pokémon y tus 4 ataques.",
+    "start": "Elegir mi Pokémon",
+    "changeTeam": "Cambiar ataques"
+  },
+  "table": {
+    "title": "Mi mesa",
+    "turn": "Turno {n}",
+    "endTurn": "Terminar turno",
+    "enekoro": "Enekoro a tirar",
+    "enekoroHint": "Base 3. Si un efecto lo cambia, ajústalo con − y +.",
+    "hp": "HP",
+    "whoStarts": "¿Quién empieza?",
+    "meStarts": "Yo (tiro 2 Enekoro)",
+    "rivalStarts": "Mi rival",
+    "face": "¿Cómo cayó el Charakoro?",
+    "myCards": "Mis cartas",
+    "rivalCards": "Rival: {name}",
+    "markUsed": "Toca la carta que usaste este turno.",
+    "used": "Usado este turno",
+    "blocked": "Bloqueado: lo usaste el turno anterior",
+    "reset": "Reiniciar partida",
+    "resetConfirm": "¿Reiniciar los contadores de la partida?",
+    "invalid": "La configuración de la partida no es válida.",
+    "decrease": "Restar",
+    "increase": "Sumar",
+    "tabs": "Cartas",
+    "changeRival": "Cambiar rival"
   }
 }

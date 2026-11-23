@@ -5,3 +5,5 @@
 export { Button, ButtonLink, buttonStyles } from "./Button";
 export { Card, CardLink, cardStyles } from "./Card";
 export { cx } from "./cx";
+export { SegmentedControl } from "./SegmentedControl";
+export { Stepper } from "./Stepper";

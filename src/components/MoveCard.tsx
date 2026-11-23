@@ -92,7 +92,13 @@ export function MoveCard({
         header
       )}
 
-      <details open={defaultOpen} className="group border-t border-border pt-2 text-sm">
+      {/* Choosing a face opens the effects so the highlight is visible; the key
+          remounts it so a later face change reopens it after a manual close. */}
+      <details
+        key={highlight ?? "none"}
+        open={defaultOpen || highlight !== null}
+        className="group border-t border-border pt-2 text-sm"
+      >
         <summary className="cursor-pointer select-none text-muted marker:content-none">
           <span className="inline-block transition group-open:rotate-90" aria-hidden>
             ▸

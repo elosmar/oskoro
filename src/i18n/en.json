@@ -43,5 +43,36 @@
     "noEffect": "No effect",
     "fanTranslation": "Fan translation",
     "showEffects": "Show effects"
+  },
+  "rival": {
+    "title": "Who are you playing against?",
+    "hint": "Pick your rival's Pokémon to check their moves during the match.",
+    "missingSetup": "First pick your Pokémon and your 4 moves.",
+    "start": "Pick my Pokémon",
+    "changeTeam": "Change moves"
+  },
+  "table": {
+    "title": "My table",
+    "turn": "Turn {n}",
+    "endTurn": "End turn",
+    "enekoro": "Enekoro to roll",
+    "enekoroHint": "Base 3. If an effect changes it, adjust with − and +.",
+    "hp": "HP",
+    "whoStarts": "Who goes first?",
+    "meStarts": "Me (I roll 2 Enekoro)",
+    "rivalStarts": "My rival",
+    "face": "How did the Charakoro land?",
+    "myCards": "My cards",
+    "rivalCards": "Rival: {name}",
+    "markUsed": "Tap the card you used this turn.",
+    "used": "Used this turn",
+    "blocked": "Blocked: you used it last turn",
+    "reset": "Reset match",
+    "resetConfirm": "Reset the match counters?",
+    "invalid": "The match setup is not valid.",
+    "decrease": "Decrease",
+    "increase": "Increase",
+    "tabs": "Cards",
+    "changeRival": "Change rival"
   }
 }
