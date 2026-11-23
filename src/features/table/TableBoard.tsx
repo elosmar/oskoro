@@ -66,8 +66,6 @@ export function TableBoard({
       <CountersPanel
         state={state}
         texts={texts}
-        onStarter={(starter) => dispatch({ type: "setStarter", starter })}
-        onEnekoro={(delta) => dispatch({ type: "adjustEnekoro", delta })}
         onHp={(delta) => dispatch({ type: "adjustHp", delta })}
         onEndTurn={() => dispatch({ type: "endTurn" })}
       />

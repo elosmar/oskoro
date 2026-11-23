@@ -56,12 +56,7 @@
     "title": "Mi mesa",
     "turn": "Turno {n}",
     "endTurn": "Terminar turno",
-    "enekoro": "Enekoro a tirar",
-    "enekoroHint": "Base 3. Si un efecto lo cambia, ajústalo con − y +.",
     "hp": "HP",
-    "whoStarts": "¿Quién empieza?",
-    "meStarts": "Yo (tiro 2 Enekoro)",
-    "rivalStarts": "Mi rival",
     "face": "¿Cómo cayó el Charakoro?",
     "myCards": "Mis cartas",
     "rivalCards": "Rival: {name}",
@@ -74,7 +69,8 @@
     "decrease": "Restar",
     "increase": "Sumar",
     "tabs": "Cartas",
-    "changeRival": "Cambiar rival"
+    "changeRival": "Cambiar rival",
+    "firstTurnHint": "Turno 1: si empiezas tú, tira solo 2 Enekoro."
   },
   "about": {
     "title": "Acerca de",

@@ -7,7 +7,7 @@
 
 ## Contexto
 
-Queremos una webapp para jugar Plakoro en físico con cartas japonesas. Cada jugador la usa en **su propio celular**: consulta la traducción de sus ataques y de los del Pokémon rival, arma su equipo de 4 ataques y lleva sus contadores (Enekoro del próximo turno, ataque bloqueado y HP).
+Queremos una webapp para jugar Plakoro en físico con cartas japonesas. Cada jugador la usa en **su propio celular**: consulta la traducción de sus ataques y de los del Pokémon rival, arma su equipo de 4 ataques y lleva su turno, el ataque bloqueado y su HP.
 
 - **Fuente de datos**: PlakoroDB (CC BY-NC 4.0), en Markdown con tablas de 14 filas por ataque; las etiquetas están traducidas en cada idioma.
 - **Volumen**: 23 Pokémon y 205 ataques (crecerá con EB03 y EB04).
@@ -19,7 +19,7 @@ Queremos una webapp para jugar Plakoro en físico con cartas japonesas. Cada jug
 1. **Next.js (App Router) con export estático** (`output: 'export'`), TypeScript estricto y Tailwind CSS. Se fija la versión estable más reciente al iniciar el proyecto.
 2. **Sin backend y sin persistencia de datos del usuario.**
    - La **configuración** (mi Pokémon, mis 4 ataques y el Pokémon rival) va en los search params de la URL, por ejemplo `/es/mesa?me=STC04-001&moves=STW04-001,...&rival=STC01-001`. No es persistencia: sobrevive al cambio de idioma y a una recarga sin escribir en el navegador. Se valida contra los datos (códigos existentes, 4 ataques del Pokémon elegido, sin repetir); si no es válida, se vuelve a la selección.
-   - Los **contadores** (Enekoro del próximo turno, ataque bloqueado, primer turno y HP) se manejan con `useReducer` y se guardan en `sessionStorage` bajo una clave derivada de la configuración. Así sobreviven a una recarga y a que el navegador móvil descarte la pestaña. Al cerrar la pestaña se borran; si cambia la configuración, se empieza de cero. Toda lectura y escritura va en `try/catch` y, si el almacenamiento falla, la app sigue funcionando solo en memoria.
+   - Los **contadores** (turno, ataque bloqueado y HP) se manejan con `useReducer` y se guardan en `sessionStorage` bajo una clave derivada de la configuración. Así sobreviven a una recarga y a que el navegador móvil descarte la pestaña. Al cerrar la pestaña se borran; si cambia la configuración, se empieza de cero. Toda lectura y escritura va en `try/catch` y, si el almacenamiento falla, la app sigue funcionando solo en memoria.
    - No se usan `localStorage`, cookies, cuentas ni analítica con datos personales. Los contadores no son datos personales y responden a una función pedida por el usuario, así que no requieren aviso de consentimiento.
 3. **Pipeline de datos en build**:
    - `scripts/sync-plakorodb.ts` hace un clon parcial y sparse (`git clone --filter=blob:none --sparse` + `sparse-checkout set` de `database*/text`) en `vendor/PlakoroDB`, ignorado por git, y hace checkout del commit fijado en una constante del script. No se usa submódulo: el repo pesa ~716 MB por los PNG y cada clon los descargaría.
@@ -115,7 +115,7 @@ vendor/PlakoroDB (clon sparse, ignorado por git)
 
 - Equipo: 1 Pokémon y exactamente 4 ataques de ese Pokémon, sin repetidos.
 - Mi mesa (un jugador por dispositivo):
-  - Enekoro por turno: base 3; el primer turno del jugador que empieza es 2; modificadores ±N para el próximo turno, con mínimo 0.
+  - Enekoro: sin contador (decisión del 23/11/2026). La regla base (2 en el primer turno del que empieza, 3 después) se conoce y se muestra como texto en el turno 1; los efectos que la modifican quedan para un recordatorio en v2.
   - El ataque marcado como usado queda bloqueado el turno siguiente.
   - HP propio: inicial 120, mínimo 0. Es secundario porque el juego físico trae un reloj de HP.
   - Rival: solo consulta de los ataques de su Pokémon; no se registran sus turnos.
@@ -151,7 +151,7 @@ vendor/PlakoroDB (clon sparse, ignorado por git)
 1. `npm run build` genera un sitio estático sin errores y con datos para `es` y `en`.
 2. Al elegir Pikachu se listan sus 8 ataques. La tarjeta `STW04-001` muestra "かじる" junto con "Roer" (ES) o "Gnaw" (EN), 1 energía eléctrica y 10 de daño, y al expandirla muestra los efectos por orientación.
 3. La selección permite exactamente 4 ataques del Pokémon elegido, sin repetir, y bloquea los demás al llegar a 4.
-4. Mi mesa muestra mis 4 cartas, lleva Enekoro del próximo turno, ataque bloqueado y HP, y permite consultar todos los ataques del Pokémon rival.
+4. Mi mesa muestra mis 4 cartas, lleva turno, ataque bloqueado y HP, y permite consultar todos los ataques del Pokémon rival.
 4b. Cambiar de idioma en cualquier pantalla conserva la selección hecha.
 5. La app no escribe en `localStorage`, cookies ni IndexedDB. Solo usa `sessionStorage` para los contadores de la partida en curso, además de la caché técnica del service worker. Al recargar Mi mesa se conservan los contadores.
 6. Tras la primera visita, la app abre y funciona sin conexión.

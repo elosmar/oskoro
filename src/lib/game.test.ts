@@ -5,25 +5,18 @@ import { gameKey, loadGame, saveGame } from "./session-store";
 const run = (...actions: Parameters<typeof gameReducer>[1][]) => actions.reduce(gameReducer, s0);
 
 describe("gameReducer", () => {
-  it("starts at 120 HP and 3 Enekoro", () => {
-    expect(s0).toMatchObject({ hp: 120, enekoro: 3, turn: 1, starter: null });
+  it("starts at turn 1 with 120 HP", () => {
+    expect(s0).toEqual({ turn: 1, hp: 120, usedMove: null, blockedMove: null });
   });
 
-  it("gives 2 Enekoro to the starter on turn 1 only", () => {
-    expect(run({ type: "setStarter", starter: "me" }).enekoro).toBe(2);
-    expect(run({ type: "setStarter", starter: "rival" }).enekoro).toBe(3);
-    const later = run({ type: "endTurn" }, { type: "setStarter", starter: "me" });
-    expect(later.starter).toBeNull();
-  });
-
-  it("never goes below 0 HP or 0 Enekoro", () => {
+  it("never goes below 0 HP", () => {
     expect(run({ type: "adjustHp", delta: -200 }).hp).toBe(0);
-    expect(run({ type: "adjustEnekoro", delta: -5 }).enekoro).toBe(0);
+    expect(run({ type: "adjustHp", delta: -20 }, { type: "adjustHp", delta: 10 }).hp).toBe(110);
   });
 
   it("blocks the move used in the previous turn", () => {
     const s = run({ type: "toggleUsedMove", code: "A" }, { type: "endTurn" });
-    expect(s).toMatchObject({ turn: 2, blockedMove: "A", usedMove: null, enekoro: 3 });
+    expect(s).toMatchObject({ turn: 2, blockedMove: "A", usedMove: null });
     expect(gameReducer(s, { type: "toggleUsedMove", code: "A" }).usedMove).toBeNull();
     expect(gameReducer(s, { type: "toggleUsedMove", code: "B" }).usedMove).toBe("B");
   });
@@ -31,11 +24,6 @@ describe("gameReducer", () => {
   it("unblocks after a turn without using it", () => {
     const s = run({ type: "toggleUsedMove", code: "A" }, { type: "endTurn" }, { type: "endTurn" });
     expect(s.blockedMove).toBeNull();
-  });
-
-  it("resets the Enekoro modifier at the end of the turn", () => {
-    const s = run({ type: "adjustEnekoro", delta: 2 }, { type: "endTurn" });
-    expect(s.enekoro).toBe(3);
   });
 
   it("toggles the used move", () => {
@@ -47,7 +35,8 @@ describe("isGameState", () => {
   it("rejects malformed data", () => {
     expect(isGameState(s0)).toBe(true);
     expect(isGameState({ ...s0, hp: -1 })).toBe(false);
-    expect(isGameState({ ...s0, starter: "x" })).toBe(false);
+    expect(isGameState({ ...s0, turn: 0 })).toBe(false);
+    expect(isGameState({ ...s0, usedMove: 3 })).toBe(false);
     expect(isGameState("nope")).toBe(false);
   });
 });

@@ -12,7 +12,8 @@
     "data:sync": "tsx scripts/sync-plakorodb.ts",
     "data:build": "tsx scripts/build-data.ts",
     "typecheck": "next typegen && tsc --noEmit",
-    "icons": "tsx scripts/build-icons.ts"
+    "icons": "tsx scripts/build-icons.ts",
+    "preview": "python3 -m http.server 4173 --directory out --bind 0.0.0.0"
   },
   "dependencies": {
     "next": "16.4.6",

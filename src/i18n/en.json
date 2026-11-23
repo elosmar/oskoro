@@ -56,12 +56,7 @@
     "title": "My table",
     "turn": "Turn {n}",
     "endTurn": "End turn",
-    "enekoro": "Enekoro to roll",
-    "enekoroHint": "Base 3. If an effect changes it, adjust with − and +.",
     "hp": "HP",
-    "whoStarts": "Who goes first?",
-    "meStarts": "Me (I roll 2 Enekoro)",
-    "rivalStarts": "My rival",
     "face": "How did the Charakoro land?",
     "myCards": "My cards",
     "rivalCards": "Rival: {name}",
@@ -74,7 +69,8 @@
     "decrease": "Decrease",
     "increase": "Increase",
     "tabs": "Cards",
-    "changeRival": "Change rival"
+    "changeRival": "Change rival",
+    "firstTurnHint": "Turn 1: if you go first, roll only 2 Enekoro."
   },
   "about": {
     "title": "About",

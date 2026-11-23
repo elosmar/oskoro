@@ -49,7 +49,7 @@ Cada jugador usa **su propio celular**. La app es una ayuda visual para la parti
 - **Ya cubre buena parte de la idea.** Decisión: **app propia, diferenciada** por:
   - Lista visual de ataques que imita la carta física, con título en japonés y traducido.
   - Selección de 4 ataques que valida las reglas.
-  - Seguimiento de efectos persistentes (Enekoro del próximo turno, ataque bloqueado).
+  - Recordatorio del ataque bloqueado (no se puede repetir dos turnos seguidos).
   - Consulta rápida de los ataques del Pokémon rival.
   - Prioridad al español y uso sin conexión.
 
@@ -83,13 +83,13 @@ Cada jugador usa **su propio celular**. La app es una ayuda visual para la parti
 5. **Mi mesa** (un jugador por celular):
    - **Mis cartas**: los 4 ataques en tarjetas grandes. Al tocar una se ven el efecto y las 5 caras del Charakoro; al tocar la cara que salió se resalta su efecto.
    - **"Usé este ataque"**: lo marca como usado y queda bloqueado visualmente el turno siguiente.
-   - **Enekoro del próximo turno** (protagonista): base 3, el primer turno del que empieza es 2, modificadores ±, mínimo 0.
+   - **Turno**: "Terminar turno" avanza el turno y aplica el bloqueo del ataque usado. En el turno 1 se recuerda que el que empieza tira solo 2 Enekoro (texto, sin contador).
    - **HP propio** (secundario y compacto): empieza en 120, con botones de ±10 y ±20. El juego físico trae un reloj para esto, así que en la app es opcional para el jugador.
    - **Pestaña "Rival"**: lista todos los ataques del Pokémon rival (de 7 a 10). Al tocar el que jugó se ven su traducción y su efecto por cara. Si el efecto te afecta, ajustás tus contadores a mano.
 6. **Idiomas**: interfaz y datos en ES y EN, intercambiables en cualquier momento sin perder la selección.
 7. **Funciona sin conexión** (PWA), para jugar en tiendas con mala señal.
 
-La configuración (tu Pokémon, tus 4 ataques y el Pokémon rival) viaja en la URL, así sobrevive al cambio de idioma y a una recarga sin guardar nada en el navegador. Los contadores (HP, Enekoro, primer turno y ataque bloqueado) se guardan en `sessionStorage`, asociados a esa configuración. Así sobreviven a una recarga y a que el navegador del celular descarte la pestaña en segundo plano (por ejemplo, al salir a otra app). Al cerrar la pestaña o cambiar la configuración, arrancan de cero.
+La configuración (tu Pokémon, tus 4 ataques y el Pokémon rival) viaja en la URL, así sobrevive al cambio de idioma y a una recarga sin guardar nada en el navegador. Los contadores (turno, HP y ataque bloqueado) se guardan en `sessionStorage`, asociados a esa configuración. Así sobreviven a una recarga y a que el navegador del celular descarte la pestaña en segundo plano (por ejemplo, al salir a otra app). Al cerrar la pestaña o cambiar la configuración, arrancan de cero.
 
 ### Fuera de alcance en v1
 - Guardar equipos, historial o cualquier dato del usuario.
@@ -105,7 +105,7 @@ La configuración (tu Pokémon, tus 4 ataques y el Pokémon rival) viaja en la U
 - Dados digitales con chips personalizados.
 
 ### Ideas para v2
-Buscador global por código o nombre japonés, registro de turnos del rival, dados digitales que respeten los chips de cada Enekoro, OCR y sincronización entre dos teléfonos (requeriría un servicio en tiempo real).
+Buscador global por código o nombre japonés, registro de turnos del rival, recordatorio de efectos diferidos sobre los Enekoro ("Próximo turno: −1 Enekoro"; afectan a 28 de 205 ataques, todos de Exploration Box), dados digitales que respeten los chips de cada Enekoro, OCR y sincronización entre dos teléfonos (requeriría un servicio en tiempo real).
 
 ## 5. Requisitos técnicos
 
