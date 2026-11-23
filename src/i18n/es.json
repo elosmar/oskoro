@@ -57,6 +57,7 @@
     "weakness": "Débil a",
     "turn": "Turno {n}",
     "endTurn": "Terminar turno",
+    "endTurnNeedsMove": "Toca el ataque que usaste para terminar el turno.",
     "hp": "HP",
     "face": "¿Cómo cayó el Charakoro?",
     "myCards": "Mis cartas",

@@ -21,9 +21,19 @@ describe("gameReducer", () => {
     expect(gameReducer(s, { type: "toggleUsedMove", code: "B" }).usedMove).toBe("B");
   });
 
-  it("unblocks after a turn without using it", () => {
-    const s = run({ type: "toggleUsedMove", code: "A" }, { type: "endTurn" }, { type: "endTurn" });
-    expect(s.blockedMove).toBeNull();
+  it("unblocks after a turn using another move", () => {
+    const s = run(
+      { type: "toggleUsedMove", code: "A" },
+      { type: "endTurn" },
+      { type: "toggleUsedMove", code: "B" },
+      { type: "endTurn" },
+    );
+    expect(s.blockedMove).toBe("B");
+    expect(gameReducer(s, { type: "toggleUsedMove", code: "A" }).usedMove).toBe("A");
+  });
+
+  it("can't end a turn without marking the used move (no passing)", () => {
+    expect(run({ type: "endTurn" })).toBe(s0);
   });
 
   it("toggles the used move", () => {

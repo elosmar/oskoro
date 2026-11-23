@@ -34,6 +34,8 @@ export function gameReducer(state: GameState, action: GameAction): GameState {
       if (action.code === state.blockedMove) return state;
       return { ...state, usedMove: state.usedMove === action.code ? null : action.code };
     case "endTurn":
+      // Rules: you can't pass, every turn uses exactly 1 move.
+      if (!state.usedMove) return state;
       return { ...state, turn: state.turn + 1, blockedMove: state.usedMove, usedMove: null };
     case "reset":
       return initialGameState;

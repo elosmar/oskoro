@@ -57,6 +57,7 @@
     "weakness": "Weak to",
     "turn": "Turn {n}",
     "endTurn": "End turn",
+    "endTurnNeedsMove": "Tap the move you used to end your turn.",
     "hp": "HP",
     "face": "How did the Charakoro land?",
     "myCards": "My cards",
