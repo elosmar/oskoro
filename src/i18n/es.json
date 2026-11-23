@@ -70,7 +70,8 @@
     "increase": "Sumar",
     "tabs": "Cartas",
     "changeRival": "Cambiar rival",
-    "firstTurnHint": "Turno 1: si empiezas tú, tira solo 2 Enekoro."
+    "firstTurnHint": "Turno 1: si empiezas tú, tira solo 2 Enekoro.",
+    "faceNeedsMove": "Primero toca el ataque que usaste."
   },
   "about": {
     "title": "Acerca de",

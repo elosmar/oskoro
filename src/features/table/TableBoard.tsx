@@ -14,6 +14,7 @@ import { CountersPanel, type CountersTexts } from "./CountersPanel";
 
 export interface TableTexts extends CountersTexts {
   face: string;
+  faceNeedsMove: string;
   tabs: string;
   myCards: string;
   rivalCards: string;
@@ -67,7 +68,10 @@ export function TableBoard({
         state={state}
         texts={texts}
         onHp={(delta) => dispatch({ type: "adjustHp", delta })}
-        onEndTurn={() => dispatch({ type: "endTurn" })}
+        onEndTurn={() => {
+          dispatch({ type: "endTurn" });
+          setFaces((f) => ({ ...f, mine: null })); // a new turn means a new roll
+        }}
       />
 
       <SegmentedControl
@@ -90,6 +94,9 @@ export function TableBoard({
           onClear={() => setFace(null)}
           options={ORIENTATIONS.map((o) => ({ value: o, label: symbols.orientations[o].name }))}
         />
+        {tab === "mine" && face && !state.usedMove && (
+          <p className="text-xs font-semibold text-accent">{texts.faceNeedsMove}</p>
+        )}
       </div>
 
       {tab === "mine" ? (
@@ -112,7 +119,8 @@ export function TableBoard({
                     onPress={() => dispatch({ type: "toggleUsedMove", code: move.code })}
                     pressed={used}
                     disabled={blocked}
-                    highlight={face}
+                    // The roll only matters for the move used this turn: open just that card.
+                    highlight={used ? face : null}
                     footer={
                       (blocked || used) && (
                         <p className={blocked ? "text-xs font-semibold text-danger" : "text-xs font-semibold text-accent"}>

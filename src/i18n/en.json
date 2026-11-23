@@ -70,7 +70,8 @@
     "increase": "Increase",
     "tabs": "Cards",
     "changeRival": "Change rival",
-    "firstTurnHint": "Turn 1: if you go first, roll only 2 Enekoro."
+    "firstTurnHint": "Turn 1: if you go first, roll only 2 Enekoro.",
+    "faceNeedsMove": "First tap the move you used."
   },
   "about": {
     "title": "About",
