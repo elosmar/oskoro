@@ -71,7 +71,9 @@
     "tabs": "Cards",
     "changeRival": "Change rival",
     "firstTurnHint": "Turn 1: if you go first, roll only 2 Enekoro.",
-    "faceNeedsMove": "First tap the move you used."
+    "faceNeedsMove": "First tap the move you used.",
+    "faceNeedsRivalMove": "First tap the move your rival used.",
+    "markRivalMove": "Tap the card your rival played to read its effect."
   },
   "about": {
     "title": "About",

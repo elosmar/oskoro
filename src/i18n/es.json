@@ -71,7 +71,9 @@
     "tabs": "Cartas",
     "changeRival": "Cambiar rival",
     "firstTurnHint": "Turno 1: si empiezas tú, tira solo 2 Enekoro.",
-    "faceNeedsMove": "Primero toca el ataque que usaste."
+    "faceNeedsMove": "Primero toca el ataque que usaste.",
+    "faceNeedsRivalMove": "Primero toca el ataque que usó tu rival.",
+    "markRivalMove": "Toca la carta que jugó tu rival para leer su efecto."
   },
   "about": {
     "title": "Acerca de",

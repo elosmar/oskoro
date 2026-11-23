@@ -15,6 +15,8 @@ import { CountersPanel, type CountersTexts } from "./CountersPanel";
 export interface TableTexts extends CountersTexts {
   face: string;
   faceNeedsMove: string;
+  faceNeedsRivalMove: string;
+  markRivalMove: string;
   tabs: string;
   myCards: string;
   rivalCards: string;
@@ -52,6 +54,8 @@ export function TableBoard({
   const [tab, setTab] = useState<Tab>("mine");
   // The face is only a reading aid: kept per tab, not persisted.
   const [faces, setFaces] = useState<Record<Tab, Orientation | null>>({ mine: null, rival: null });
+  // Rival move being read right now. Only a reading aid: not a turn log, not persisted.
+  const [rivalMove, setRivalMove] = useState<string | null>(null);
 
   useEffect(() => saveGame(storageKey, state), [storageKey, state]);
 
@@ -70,7 +74,9 @@ export function TableBoard({
         onHp={(delta) => dispatch({ type: "adjustHp", delta })}
         onEndTurn={() => {
           dispatch({ type: "endTurn" });
-          setFaces((f) => ({ ...f, mine: null })); // a new turn means a new roll
+          // A new turn means new rolls: clear both faces and the rival's move.
+          setFaces({ mine: null, rival: null });
+          setRivalMove(null);
         }}
       />
 
@@ -94,8 +100,10 @@ export function TableBoard({
           onClear={() => setFace(null)}
           options={ORIENTATIONS.map((o) => ({ value: o, label: symbols.orientations[o].name }))}
         />
-        {tab === "mine" && face && !state.usedMove && (
-          <p className="text-xs font-semibold text-accent">{texts.faceNeedsMove}</p>
+        {face && !(tab === "mine" ? state.usedMove : rivalMove) && (
+          <p className="text-xs font-semibold text-accent">
+            {tab === "mine" ? texts.faceNeedsMove : texts.faceNeedsRivalMove}
+          </p>
         )}
       </div>
 
@@ -140,12 +148,23 @@ export function TableBoard({
             <TypeBadge type={rival.type} label={rival.typeLabel} size="sm" />
             {rival.name}
           </h2>
+          <p className="text-sm text-muted">{texts.markRivalMove}</p>
           <ul className="grid gap-3 sm:grid-cols-2">
-            {rivalMoves.map((move) => (
-              <li key={move.code}>
-                <MoveCard move={move} symbols={symbols} labels={cardLabels} highlight={face} />
-              </li>
-            ))}
+            {rivalMoves.map((move) => {
+              const played = rivalMove === move.code;
+              return (
+                <li key={move.code}>
+                  <MoveCard
+                    move={move}
+                    symbols={symbols}
+                    labels={cardLabels}
+                    onPress={() => setRivalMove((current) => (current === move.code ? null : move.code))}
+                    pressed={played}
+                    highlight={played ? face : null}
+                  />
+                </li>
+              );
+            })}
           </ul>
         </section>
       )}
