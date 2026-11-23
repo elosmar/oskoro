@@ -4,6 +4,7 @@
  */
 import { describe, expect, it } from "vitest";
 import { DataBundleSchema, LANGS } from "@/lib/data/schema";
+import { toMoveView } from "@/lib/move-view";
 import en from "./en.json";
 import es from "./es.json";
 
@@ -18,6 +19,12 @@ describe.each(LANGS)("%s bundle", (lang) => {
     expect(data.moves.filter((m) => m.set === "ST")).toHaveLength(77);
     expect(data.moves.filter((m) => m.set === "EB01" || m.set === "EB02")).toHaveLength(119);
     expect(data.moves.filter((m) => m.set === "PR")).toHaveLength(9);
+  });
+
+  it("flags only PR moves as promo (not in any box)", () => {
+    const promos = data.moves.map(toMoveView).filter((m) => m.promo);
+    expect(promos).toHaveLength(9);
+    expect(promos.every((m) => m.code.startsWith("PRW"))).toBe(true);
   });
 
   it("links every move to an existing Pokémon", () => {

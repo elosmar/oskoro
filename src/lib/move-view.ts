@@ -10,6 +10,8 @@ export interface MoveView {
   name: string;
   japanese: string;
   official: boolean;
+  /** Promo card: not in any box, only from special distributions. */
+  promo: boolean;
   type: EnergyType;
   energy: EnergyType[];
   damage: number | null;
@@ -28,6 +30,7 @@ export const toMoveView = (move: Move): MoveView => ({
   name: move.name,
   japanese: move.japanese,
   official: move.official,
+  promo: move.set === "PR",
   type: move.type,
   energy: move.energy,
   damage: move.damage,

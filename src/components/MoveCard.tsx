@@ -12,6 +12,7 @@ export interface MoveCardLabels {
   effect: string;
   noEffect: string;
   fanTranslation: string;
+  promo: string;
   showEffects: string;
 }
 
@@ -66,6 +67,11 @@ export function MoveCard({
       </p>
       <p className="flex flex-wrap items-center gap-2 font-semibold">
         {move.name}
+        {move.promo && (
+          <span className="rounded-full bg-surface-muted px-2 py-0.5 text-[10px] font-semibold text-foreground">
+            {labels.promo}
+          </span>
+        )}
         {!move.official && (
           <span className="rounded-full border border-border px-2 py-0.5 text-[10px] font-medium text-muted">
             {labels.fanTranslation}
