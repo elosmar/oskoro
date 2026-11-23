@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
 import { LangSwitcher } from "@/components/LangSwitcher";
+import { OrientationSprite } from "@/components/OrientationIcon";
 import { ServiceWorkerRegister } from "@/components/ServiceWorkerRegister";
 import { getDictionary, isLang } from "@/i18n";
 import { LANGS } from "@/lib/data/constants";
@@ -32,6 +33,7 @@ export default async function LangLayout({ children, params }: LayoutProps<"/[la
   return (
     <html lang={lang} className="h-full antialiased">
       <body className="flex min-h-full flex-col">
+        <OrientationSprite />
         <header className="border-b border-border bg-surface">
           <div className="mx-auto flex max-w-3xl items-center justify-between px-4 py-3">
             <Link href={`/${lang}/`} className="text-lg font-bold tracking-tight">

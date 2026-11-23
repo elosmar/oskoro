@@ -1,8 +1,9 @@
 import type { Orientation } from "@/lib/data/constants";
 import type { SymbolLabels } from "@/lib/move-view";
 import { cx } from "@/ui";
+import { OrientationIcon } from "./OrientationIcon";
 
-/** Charakoro face. Shows the Japanese label too, to match the physical icon. */
+/** Charakoro face: our pictogram, name and Japanese label (as printed on the card). */
 export function OrientationChip({
   orientation,
   labels,
@@ -21,6 +22,7 @@ export function OrientationChip({
         highlighted ? "bg-accent text-accent-foreground" : "bg-surface-muted text-foreground",
       )}
     >
+      <OrientationIcon orientation={orientation} />
       {name}
       <span lang="ja" className="text-[10px] opacity-70">
         {japanese}

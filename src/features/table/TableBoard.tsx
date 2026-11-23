@@ -2,6 +2,7 @@
 
 import { useEffect, useReducer, useState } from "react";
 import { MoveCard, type MoveCardLabels } from "@/components/MoveCard";
+import { OrientationIcon } from "@/components/OrientationIcon";
 import { TypeBadge } from "@/components/TypeBadge";
 import { ORIENTATIONS, type Orientation } from "@/lib/data/constants";
 import { format } from "@/lib/format";
@@ -138,7 +139,11 @@ export function TableBoard({
           value={face}
           onChange={setFace}
           onClear={() => setFace(null)}
-          options={ORIENTATIONS.map((o) => ({ value: o, label: symbols.orientations[o].name }))}
+          options={ORIENTATIONS.map((o) => ({
+            value: o,
+            label: symbols.orientations[o].name,
+            icon: <OrientationIcon orientation={o} size="md" />,
+          }))}
         />
         {face && !(tab === "mine" ? state.usedMove : rivalMove) && (
           <p className="text-xs font-semibold text-accent">
