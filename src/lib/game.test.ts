@@ -6,7 +6,15 @@ const run = (...actions: Parameters<typeof gameReducer>[1][]) => actions.reduce(
 
 describe("gameReducer", () => {
   it("starts at turn 1 with 120 HP", () => {
-    expect(s0).toEqual({ turn: 1, hp: 120, usedMove: null, blockedMove: null });
+    expect(s0).toEqual({
+      turn: 1,
+      hp: 120,
+      usedMove: null,
+      blockedMove: null,
+      rivalMove: null,
+      rivalSeen: [],
+      rivalMoveIsNew: false,
+    });
   });
 
   it("never heals beyond the Characard max HP (120)", () => {
@@ -43,6 +51,47 @@ describe("gameReducer", () => {
 
   it("toggles the used move", () => {
     expect(run({ type: "toggleUsedMove", code: "A" }, { type: "toggleUsedMove", code: "A" }).usedMove).toBeNull();
+  });
+});
+
+describe("rival moves", () => {
+  it("remembers rival moves across turns, in first-seen order", () => {
+    const s = run(
+      { type: "toggleRivalMove", code: "R2" },
+      { type: "toggleUsedMove", code: "A" },
+      { type: "endTurn" },
+      { type: "toggleRivalMove", code: "R1" },
+    );
+    expect(s.rivalSeen).toEqual(["R2", "R1"]);
+    expect(s.rivalMove).toBe("R1");
+  });
+
+  it("clears the mark on end turn but keeps what was seen", () => {
+    const s = run({ type: "toggleRivalMove", code: "R1" }, { type: "toggleUsedMove", code: "A" }, { type: "endTurn" });
+    expect(s).toMatchObject({ rivalMove: null, rivalSeen: ["R1"], rivalMoveIsNew: false });
+  });
+
+  it("forgets a move first seen by a mark that is undone (misclick)", () => {
+    expect(run({ type: "toggleRivalMove", code: "R1" }, { type: "toggleRivalMove", code: "R1" }).rivalSeen).toEqual([]);
+    // Misclick on R1, then the right card R2.
+    expect(run({ type: "toggleRivalMove", code: "R1" }, { type: "toggleRivalMove", code: "R2" }).rivalSeen).toEqual([
+      "R2",
+    ]);
+  });
+
+  it("keeps a move seen in an earlier turn when its mark is undone", () => {
+    const s = run(
+      { type: "toggleRivalMove", code: "R1" },
+      { type: "toggleUsedMove", code: "A" },
+      { type: "endTurn" },
+      { type: "toggleRivalMove", code: "R1" },
+      { type: "toggleRivalMove", code: "R1" },
+    );
+    expect(s).toMatchObject({ rivalMove: null, rivalSeen: ["R1"] });
+  });
+
+  it("reset forgets the rival moves", () => {
+    expect(run({ type: "toggleRivalMove", code: "R1" }, { type: "reset" })).toBe(s0);
   });
 });
 
@@ -86,6 +135,12 @@ describe("session store", () => {
     saveGame(gameKey("new"), state, storage);
     expect(loadGame(gameKey("new"), storage)).toEqual(state);
     expect(loadGame(gameKey("old"), storage)).toBeNull();
+  });
+
+  it("keeps a match saved before rival tracking existed", () => {
+    const storage = new MemoryStorage();
+    storage.setItem(gameKey("v1"), JSON.stringify({ turn: 3, hp: 80, usedMove: null, blockedMove: "A" }));
+    expect(loadGame(gameKey("v1"), storage)).toEqual({ ...s0, turn: 3, hp: 80, blockedMove: "A" });
   });
 
   it("ignores corrupt data and failing storage", () => {

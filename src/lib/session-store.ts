@@ -14,7 +14,10 @@ export function loadGame(key: string, storage?: Storage): GameState | null {
     const raw = (storage ?? window.sessionStorage).getItem(key);
     if (!raw) return null;
     const parsed: unknown = JSON.parse(raw);
-    return isGameState(parsed) ? parsed : null;
+    // Matches saved before rival tracking existed: fill the new fields instead of dropping the match.
+    const migrated =
+      parsed && typeof parsed === "object" ? { rivalMove: null, rivalSeen: [], rivalMoveIsNew: false, ...parsed } : parsed;
+    return isGameState(migrated) ? migrated : null;
   } catch {
     return null;
   }
