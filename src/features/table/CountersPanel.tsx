@@ -2,7 +2,7 @@
 
 import { useId } from "react";
 import { format } from "@/lib/format";
-import type { GameState } from "@/lib/game-reducer";
+import { START_HP, type GameState } from "@/lib/game-reducer";
 import { Button, Stepper } from "@/ui";
 
 export interface CountersTexts {
@@ -45,6 +45,8 @@ export function CountersPanel({ state, texts, onHp, onEndTurn }: CountersPanelPr
         label={texts.hp}
         value={state.hp}
         steps={[20, 10]}
+        min={0}
+        max={START_HP}
         onChange={onHp}
         decreaseLabel={texts.decrease}
         increaseLabel={texts.increase}

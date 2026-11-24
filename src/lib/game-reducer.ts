@@ -2,6 +2,7 @@
  * "Mi mesa" state for ONE player. Effects are never resolved automatically:
  * the player adjusts the numbers by hand after reading the card.
  */
+/** Max HP on every Characard today; healing can't go beyond it (FAQ Basic Rules 27). */
 export const START_HP = 120;
 
 export interface GameState {
@@ -29,7 +30,7 @@ export const initialGameState: GameState = {
 export function gameReducer(state: GameState, action: GameAction): GameState {
   switch (action.type) {
     case "adjustHp":
-      return { ...state, hp: Math.max(0, state.hp + action.delta) };
+      return { ...state, hp: Math.min(START_HP, Math.max(0, state.hp + action.delta)) };
     case "toggleUsedMove":
       if (action.code === state.blockedMove) return state;
       return { ...state, usedMove: state.usedMove === action.code ? null : action.code };

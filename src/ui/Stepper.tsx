@@ -12,6 +12,9 @@ export interface StepperProps {
   size?: "md" | "lg";
   decreaseLabel: string;
   increaseLabel: string;
+  /** Bounds: at a bound, the buttons that push past it are disabled. */
+  min?: number;
+  max?: number;
 }
 
 /** Numeric counter with symmetric −/+ buttons. */
@@ -23,6 +26,8 @@ export function Stepper({
   size = "md",
   decreaseLabel,
   increaseLabel,
+  min = -Infinity,
+  max = Infinity,
 }: StepperProps) {
   const showAmount = steps.length > 1 || steps[0] !== 1;
   const text = (sign: "−" | "+", step: number) => (showAmount ? `${sign}${step}` : sign);
@@ -38,6 +43,7 @@ export function Stepper({
             size="sm"
             aria-label={`${decreaseLabel} ${step}`}
             onClick={() => onChange(-step)}
+            disabled={value <= min}
             className="min-w-10"
           >
             {text("−", step)}
@@ -56,6 +62,7 @@ export function Stepper({
             size="sm"
             aria-label={`${increaseLabel} ${step}`}
             onClick={() => onChange(step)}
+            disabled={value >= max}
             className="min-w-10"
           >
             {text("+", step)}

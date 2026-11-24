@@ -9,6 +9,11 @@ describe("gameReducer", () => {
     expect(s0).toEqual({ turn: 1, hp: 120, usedMove: null, blockedMove: null });
   });
 
+  it("never heals beyond the Characard max HP (120)", () => {
+    expect(run({ type: "adjustHp", delta: 20 }).hp).toBe(120);
+    expect(run({ type: "adjustHp", delta: -10 }, { type: "adjustHp", delta: 20 }).hp).toBe(120);
+  });
+
   it("never goes below 0 HP", () => {
     expect(run({ type: "adjustHp", delta: -200 }).hp).toBe(0);
     expect(run({ type: "adjustHp", delta: -20 }, { type: "adjustHp", delta: 10 }).hp).toBe(110);
